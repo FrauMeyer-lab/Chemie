@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Der isoelektrische Punkt | Aminosäuren · Klasse 11</title>
+  <style>
+    :root{--ink:#183047;--muted:#52677b;--paper:#f6f9fc;--card:#fff;--line:#dce6ee;--blue:#1265b3;--teal:#087f78;--orange:#c75c20;--red:#b3444b;--shadow:0 14px 38px rgba(23,50,76,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}a{color:var(--blue)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #f8aa4c;outline-offset:3px}.wrap{max-width:1080px;margin:auto;padding:0 22px}.hero{background:linear-gradient(125deg,#123b62,#087f78);color:#fff;padding:54px 0 44px}.eyebrow{font-size:.79rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#aee8dc}h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.08;max-width:800px;margin:12px 0 18px}h2{font-size:clamp(1.55rem,3vw,2.1rem);line-height:1.2;margin:0 0 12px}h3{font-size:1.15rem;margin:0 0 9px}.hero p{max-width:700px;font-size:1.13rem;margin:0}.hero .meta{margin-top:25px;display:flex;gap:10px;flex-wrap:wrap}.pill{border:1px solid #ffffff70;border-radius:99px;padding:5px 12px;font-size:.87rem}nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;box-shadow:0 4px 14px #1830470b}nav .wrap{display:flex;gap:8px;overflow:auto;padding-top:9px;padding-bottom:9px}nav a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:700;padding:7px 12px;border-radius:9px}nav a:hover{background:#e9f4f6}main{padding-bottom:54px}section{scroll-margin-top:75px;margin-top:40px}.section-lead{color:var(--muted);max-width:760px;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card,.panel{background:var(--card);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.card{padding:20px}.panel{padding:24px;margin-top:18px}.num{display:inline-flex;width:29px;height:29px;align-items:center;justify-content:center;border-radius:50%;background:#e2f3f0;color:var(--teal);font-weight:800;margin-bottom:11px}.card p{margin:0}.callout{border-left:5px solid var(--teal);background:#eaf6f3;padding:15px 19px;border-radius:0 12px 12px 0;margin-top:18px}.callout p{margin:0}.chem{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:1.05rem}.equation{text-align:center;font-weight:800;font-size:clamp(1.3rem,3vw,1.8rem);padding:12px;color:#123b62;background:#edf5fb;border-radius:12px}.small{font-size:.88rem;color:var(--muted)}.lab-controls{display:grid;grid-template-columns:1fr 2fr;gap:18px;align-items:end}.control label{display:block;font-weight:750;margin-bottom:7px}.control select,.answer-input{width:100%;border:1px solid #b8cbd9;border-radius:9px;padding:10px;background:#fff;color:var(--ink)}.slider-head{display:flex;justify-content:space-between;gap:10px}.slider-head output{font-weight:800;color:var(--blue);font-size:1.12rem}input[type=range]{width:100%;accent-color:var(--teal);margin:14px 0 4px}.range-labels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted)}.lab-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:18px;margin-top:24px}.plot-box{border:1px solid var(--line);border-radius:13px;padding:10px;background:#fff}svg{max-width:100%;display:block}.plot-title{font-weight:800;margin:3px 8px 6px}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin:5px 9px}.key{display:inline-block;width:14px;height:4px;vertical-align:middle;margin-right:5px;border-radius:3px}.status{border-radius:14px;background:#f0f6fb;padding:18px}.status .big{font-size:2rem;font-weight:850;line-height:1.1;margin:6px 0}.charge-positive{color:var(--blue)}.charge-negative{color:var(--red)}.charge-zero{color:var(--teal)}.molecule{margin:15px 0;padding:14px;background:white;border-radius:10px;border:1px solid var(--line);overflow-wrap:anywhere}.molecule strong{display:block;font-size:.81rem;color:var(--muted);margin-bottom:4px}.note{background:#fff8e8;border:1px solid #f4dcaa;border-radius:10px;padding:12px;margin-top:12px;font-size:.9rem}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chip{border:1px solid #bdd4e2;border-radius:99px;background:#f4fafc;padding:6px 10px;color:var(--ink)}.chip:hover{background:#dff2f2}.formula-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:17px}.formula-card{border:1px solid var(--line);padding:15px;border-radius:12px;background:#fbfdff}.formula-card h3{margin:0 0 7px}.formula-card p{margin:5px 0}.formula-card .result{font-weight:850;color:var(--teal)}.task{border-top:1px solid var(--line);padding:22px 0}.task:first-child{border-top:0;padding-top:0}.task-title{font-weight:800;font-size:1.09rem;margin:0 0 8px}.task p{margin:0 0 12px}.options{display:grid;gap:8px;margin:10px 0}.option{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer}.option:has(input:checked){border-color:var(--blue);background:#edf6fe}.option input{margin-top:5px;accent-color:var(--blue)}.task-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.primary,.secondary{border-radius:9px;border:1px solid var(--blue);padding:9px 15px;font-weight:750}.primary{color:white;background:var(--blue)}.primary:hover{background:#084d8f}.secondary{color:var(--blue);background:white}.feedback{min-height:1.5em;margin-top:10px!important;font-weight:700}.feedback.good{color:#087144}.feedback.try{color:#a34519}.detail{margin-top:9px;color:var(--muted)}details{margin-top:12px}summary{cursor:pointer;font-weight:750;color:var(--blue)}.source-list{padding-left:20px}.source-list li{margin:7px 0}footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.87rem}@media(max-width:760px){.grid,.formula-grid,.lab-layout,.lab-controls{grid-template-columns:1fr}.hero{padding:39px 0 32px}.panel{padding:18px}.wrap{padding-left:16px;padding-right:16px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <div class="eyebrow">Chemie · Gymnasium · Jahrgang 11</div>
+    <h1>Wann ist eine Aminosäure elektrisch neutral?</h1>
+    <p>Entdecke den isoelektrischen Punkt mit einem pH-Regler, einer Ladungskurve und Aufgaben zum Ausprobieren.</p>
+    <div class="meta"><span class="pill">ca. 25–35 Minuten</span><span class="pill">Glycin · Asparaginsäure · Lysin</span><span class="pill">Funktioniert offline</span></div>
+  </div></header>
+  <nav aria-label="Seitennavigation"><div class="wrap"><a href="#wissen">1 · Wissen</a><a href="#labor">2 · pH-Labor</a><a href="#feld">3 · Elektrisches Feld</a><a href="#aufgaben">4 · Üben</a><a href="#quellen">Quellen</a></div></nav>
+  <main class="wrap">
+    <div id="jsNotice" class="callout" role="status"><p><strong>Interaktionen sind hier nicht verfügbar.</strong> Diese Datei wird wahrscheinlich nur als Vorschau angezeigt. Öffne die Lernseite über einen Weblink in Safari; dann funktionieren pH-Regler und „Prüfen“-Knöpfe.</p></div>
+    <section id="wissen">
+      <h2>1 · Das Wichtigste zuerst</h2>
+      <p class="section-lead">Eine Aminosäure besitzt eine Aminogruppe und eine Carboxylgruppe. Manche Aminosäuren haben außerdem eine weitere geladene Gruppe in ihrer Seitenkette. Diese Gruppen können Protonen (H⁺) aufnehmen oder abgeben. Deshalb hängt die Ladung vom pH-Wert ab.</p>
+      <div class="grid">
+        <article class="card"><span class="num">1</span><h3>In saurer Lösung</h3><p>Der pH-Wert ist niedrig. Die Aminosäure nimmt eher Protonen auf. Eine Aminogruppe kann dadurch als <span class="chem">–NH₃⁺</span> vorliegen. Insgesamt ist die Aminosäure häufig <strong>positiv</strong> geladen.</p></article>
+        <article class="card"><span class="num">2</span><h3>Wenn der pH-Wert steigt</h3><p>Die Aminosäure gibt zunehmend Protonen ab. Aus <span class="chem">–COOH</span> wird <span class="chem">–COO⁻</span>, später kann aus <span class="chem">–NH₃⁺</span> die ungeladene Gruppe <span class="chem">–NH₂</span> werden. Die Gesamtladung wird dadurch weniger positiv oder negativer.</p></article>
+        <article class="card"><span class="num">3</span><h3>Am isoelektrischen Punkt</h3><p>Es gibt einen bestimmten pH-Wert, bei dem sich positive und negative Ladungen <strong>im Durchschnitt ausgleichen</strong>. Dieser pH-Wert heißt isoelektrischer Punkt, kurz <strong>pI</strong>.</p></article>
+      </div>
+      <div class="callout"><p><strong>Wichtig:</strong> „Gesamtladung 0“ heißt nicht, dass es keine geladenen Gruppen gibt. Ein <strong>Zwitterion</strong> trägt gleichzeitig eine positive und eine negative Gruppe. Diese Ladungen gleichen sich aus. In einer Lösung können außerdem verschiedene Formen der Aminosäure nebeneinander vorkommen.</p></div>
+      <div class="panel">
+        <h3>Was ist mit „Ladung“ gemeint?</h3>
+        <p>Eine positive Ladung bedeutet: Ein Teilchen hat insgesamt mehr positive als negative Ladungsanteile. Eine negative Ladung bedeutet das Gegenteil. Wir betrachten hier die <strong>Gesamtladung</strong> der Aminosäure: Positive und negative Gruppen werden zusammengezählt.</p>
+        <p>Im Labor siehst du Dezimalzahlen wie <strong>−0,01 e</strong>. Das <strong>e</strong> ist die <em>Elementarladung</em>, also die Ladungsmenge eines Protons (+1 e) oder Elektrons (−1 e). <strong>−0,01 e</strong> bedeutet hier: Die <em>durchschnittliche</em> Ladung vieler Aminosäure-Moleküle ist ganz leicht negativ und praktisch nahe 0. Es bedeutet nicht, dass ein einzelnes Molekül „ein Hundertstel Elektron“ besitzt.</p>
+      </div>
+    </section>
+
+    <section id="labor">
+      <h2>2 · Interaktives pH-Labor</h2>
+      <p class="section-lead">Wähle eine Aminosäure und verschiebe den pH-Regler. Vergleiche die mittlere Ladung, die typische Struktur und die Position auf der Kurve.</p>
+      <div class="panel">
+        <div class="lab-controls">
+          <div class="control"><label for="amino">Aminosäure</label><select id="amino"><option value="gly">Glycin (Gly)</option><option value="asp">Asparaginsäure (Asp)</option><option value="lys">Lysin (Lys)</option></select></div>
+          <div class="control"><div class="slider-head"><label for="ph">pH-Wert</label><output id="phOut" for="ph">6,0</output></div><input type="range" id="ph" min="0" max="14" step="0.1" value="6"><div class="range-labels"><span>0 · sauer</span><span>7 · neutral</span><span>14 · basisch</span></div></div>
+        </div>
+        <div class="chips" aria-label="Beispielwerte"><button class="chip" type="button" data-ph="1">pH 1</button><button class="chip" type="button" data-ph="2">pH 2</button><button class="chip" type="button" data-ph="3">pH 3</button><button class="chip" type="button" data-ph="7">pH 7</button><button class="chip" type="button" data-ph="11">pH 11</button><button class="chip" type="button" id="jumpPi">Zum pI springen</button></div>
+        <div class="lab-layout">
+          <div class="plot-box"><div class="plot-title">Mittlere Nettoladung in Abhängigkeit vom pH</div><svg id="chargePlot" viewBox="0 0 700 350" role="img" aria-labelledby="plotTitle plotDesc"><title id="plotTitle">Ladungskurve der ausgewählten Aminosäure</title><desc id="plotDesc">Die Kurve zeigt die berechnete mittlere Nettoladung von pH 0 bis 14. Ein Punkt markiert den gewählten pH-Wert.</desc><g id="plotGrid"></g><path id="plotPath" fill="none" stroke="#1265b3" stroke-width="4" stroke-linecap="round"></path><line id="piLine" stroke="#087f78" stroke-width="2" stroke-dasharray="6 5"></line><text id="piText" fill="#087f78" font-size="15" font-weight="700"></text><line id="cursorLine" stroke="#c75c20" stroke-width="2" stroke-dasharray="4 4"></line><circle id="cursorDot" r="7" fill="#c75c20" stroke="white" stroke-width="2"></circle></svg><div class="legend"><span><i class="key" style="background:#1265b3"></i>mittlere Ladung</span><span><i class="key" style="background:#087f78"></i>pI</span><span><i class="key" style="background:#c75c20"></i>gewählter pH</span></div></div>
+          <div class="status" aria-live="polite"><div id="aminoName" class="small"></div><div id="chargeValue" class="big"></div><div id="chargeMeaning"></div><div id="statusText" style="margin-top:10px"></div><div class="molecule"><strong>Häufige Form bei diesem pH-Wert (vereinfacht)</strong><div id="structure" class="chem"></div></div><div id="groupText" class="small"></div><div class="note">Die Struktur zeigt eine typische Form. In der Lösung können mehrere Formen gleichzeitig vorkommen. Die Kurve zeigt deshalb einen <em>Durchschnittswert</em>.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feld">
+      <h2>3 · Aminosäuren im elektrischen Feld</h2>
+      <p class="section-lead">Ein elektrisches Feld entsteht zwischen zwei Elektroden: einer negativen Elektrode (Kathode) und einer positiven Elektrode (Anode). Geladene Aminosäuren können sich darin bewegen.</p>
+      <div class="panel">
+        <h3>Welche Richtung nimmt die Aminosäure?</h3>
+        <p>Entgegengesetzte Ladungen ziehen sich an. Eine <strong>positiv geladene</strong> Aminosäure wandert deshalb zur <strong>negativen Kathode</strong>. Eine <strong>negativ geladene</strong> Aminosäure wandert zur <strong>positiven Anode</strong>.</p>
+        <svg viewBox="0 0 800 240" role="img" aria-labelledby="fieldTitle fieldDesc" style="width:100%;margin:20px auto;background:#f0f6fb;border-radius:12px"><title id="fieldTitle">Wanderung geladener Aminosäuren im elektrischen Feld</title><desc id="fieldDesc">Links liegt die negative Kathode, rechts die positive Anode. Positive Aminosäuren wandern nach links, negative nach rechts. Am isoelektrischen Punkt gibt es im Mittel keine gerichtete Wanderung.</desc><rect x="25" y="32" width="112" height="176" rx="15" fill="#1265b3"/><text x="81" y="103" text-anchor="middle" fill="white" font-size="42" font-weight="800">−</text><text x="81" y="142" text-anchor="middle" fill="white" font-size="17">Kathode</text><rect x="663" y="32" width="112" height="176" rx="15" fill="#c75c20"/><text x="719" y="103" text-anchor="middle" fill="white" font-size="42" font-weight="800">+</text><text x="719" y="142" text-anchor="middle" fill="white" font-size="17">Anode</text><text x="400" y="48" text-anchor="middle" fill="#183047" font-size="19" font-weight="700">Aminosäure in der Mitte</text><circle cx="400" cy="112" r="27" fill="#e2f3f0" stroke="#087f78" stroke-width="2"/><text x="400" y="119" text-anchor="middle" fill="#087f78" font-size="19" font-weight="800">AS</text><path d="M365 93 H213 M213 93 l16 -11 M213 93 l16 11" fill="none" stroke="#1265b3" stroke-width="5" stroke-linecap="round"/><text x="288" y="77" text-anchor="middle" fill="#1265b3" font-size="16">wenn positiv</text><path d="M435 132 H587 M587 132 l-16 -11 M587 132 l-16 11" fill="none" stroke="#c75c20" stroke-width="5" stroke-linecap="round"/><text x="512" y="158" text-anchor="middle" fill="#a34b1e" font-size="16">wenn negativ</text><text x="400" y="211" text-anchor="middle" fill="#087f78" font-size="16">am pI: im Mittel keine gerichtete Wanderung</text></svg>
+        <div class="grid">
+          <article class="card"><h3>pH unter dem pI</h3><p>Die Aminosäure ist im Durchschnitt <strong>positiv</strong> geladen. Sie wird von der negativen Kathode angezogen.</p></article>
+          <article class="card"><h3>pH am pI</h3><p>Die positiven und negativen Ladungen gleichen sich im Durchschnitt aus. Es gibt <strong>keine gerichtete Wanderung im Mittel</strong>.</p></article>
+          <article class="card"><h3>pH über dem pI</h3><p>Die Aminosäure ist im Durchschnitt <strong>negativ</strong> geladen. Sie wird von der positiven Anode angezogen.</p></article>
+        </div>
+        <div class="callout"><p><strong>Beispiel:</strong> Lysin hat einen pI von ungefähr 9,73. Bei pH 7 liegt es <em>unter</em> seinem pI. Lysin ist dann im Durchschnitt positiv geladen und wandert zur negativen Kathode. Stelle Lysin und pH 7 im Labor oben ein und prüfe es an der Kurve.</p></div>
+      </div>
+    </section>
+
+    <section id="aufgaben">
+      <h2>4 · Jetzt bist du dran</h2>
+      <p class="section-lead">Nutze die Erklärungen und das pH-Labor. Nach jeder Antwort erhältst du eine kurze Rückmeldung.</p>
+      <div class="panel">
+        <div class="task" id="task1"><div class="task-title">Aufgabe 1 · Was bedeutet pI?</div><p>Wähle die fachlich richtige Aussage.</p><div class="options"><label class="option"><input type="radio" name="q1" value="a">Am pI hat jedes Molekül keinerlei elektrische Ladung.</label><label class="option"><input type="radio" name="q1" value="b">Am pI ist die mittlere Nettoladung der Aminosäure 0.</label><label class="option"><input type="radio" name="q1" value="c">Am pI sind alle Gruppen vollständig deprotoniert.</label></div><button class="primary" type="button" data-check="1">Prüfen</button><p class="feedback" id="feedback1" aria-live="polite"></p></div>
+        <div class="task" id="task2"><div class="task-title">Aufgabe 2 · Was bedeutet −0,01 e?</div><p>Im Labor wird für eine Aminosäure die mittlere Ladung −0,01 e angezeigt. Was bedeutet das?</p><div class="options"><label class="option"><input type="radio" name="q2" value="a">Ein einzelnes Molekül besitzt ein Hundertstel eines Elektrons.</label><label class="option"><input type="radio" name="q2" value="b">Die durchschnittliche Ladung vieler Moleküle ist leicht negativ und nahe 0.</label><label class="option"><input type="radio" name="q2" value="c">Alle Moleküle sind stark negativ geladen.</label></div><button class="primary" type="button" data-check="2">Prüfen</button><p class="feedback" id="feedback2" aria-live="polite"></p></div>
+        <div class="task" id="task3"><div class="task-title">Aufgabe 3 · Glycin im pH-Labor</div><p>Stelle Glycin und pH 2 ein. Wie ist Glycin im Durchschnitt geladen?</p><div class="options"><label class="option"><input type="radio" name="q3" value="a">Positiv</label><label class="option"><input type="radio" name="q3" value="b">Negativ</label><label class="option"><input type="radio" name="q3" value="c">Genau 0</label></div><button class="primary" type="button" data-check="3">Prüfen</button><p class="feedback" id="feedback3" aria-live="polite"></p></div>
+        <div class="task" id="task4"><div class="task-title">Aufgabe 4 · Transfer: elektrisches Feld</div><p>Eine Lösung mit Lysin hat pH 7. Der pI von Lysin liegt bei etwa 9,73. Welche Bewegung erwartest du im elektrischen Feld?</p><div class="options"><label class="option"><input type="radio" name="q4" value="a">Zur positiven Elektrode (Anode)</label><label class="option"><input type="radio" name="q4" value="b">Zur negativen Elektrode (Kathode)</label><label class="option"><input type="radio" name="q4" value="c">Im Mittel keine gerichtete Wanderung</label></div><button class="primary" type="button" data-check="4">Prüfen</button><p class="feedback" id="feedback4" aria-live="polite"></p></div>
+        <div class="task" id="task5"><div class="task-title">Aufgabe 5 · Eigene Begründung</div><p>Erkläre in zwei Sätzen, warum Lysin bei pH 7 zur negativen Elektrode wandert. Nutze die Begriffe <em>pI</em>, <em>positiv</em> und <em>Kathode</em>.</p><textarea id="reflection" class="answer-input" rows="3" aria-label="Eigene Begründung" placeholder="Meine Erklärung …"></textarea><div class="task-actions" style="margin-top:10px"><button class="primary" type="button" data-check="5">Prüfen</button><span class="small">Die automatische Prüfung erkennt Kerngedanken, aber nicht jede mögliche Formulierung.</span></div><p class="feedback" id="feedback5" aria-live="polite"></p><details><summary>Musterlösung anzeigen</summary><p>Der pH-Wert 7 liegt unter dem pI von Lysin (ungefähr 9,73). Deshalb ist Lysin im Durchschnitt positiv geladen und wandert zur negativen Kathode.</p></details></div>
+        <div class="task"><button type="button" class="secondary" id="resetTasks">Antworten zurücksetzen</button><span class="small">Deine Eingaben bleiben nur auf dieser geöffneten Seite.</span></div>
+      </div>
+    </section>
+
+    <section id="quellen"><h2>Quellen und Modellhinweise</h2><p class="section-lead">Die pI-Werte und die Ladungskurve beruhen auf veröffentlichten Stoffdaten. Die Kurve ist ein vereinfachtes Modell für freie Aminosäuren in Lösung. Die angezeigte Ladung ist ein Mittelwert, keine „Bruchladung“ eines einzelnen Moleküls.</p><ul class="source-list"><li><a href="https://knowledge.uchicago.edu/record/7717/files/smll202305440-sup-0001-suppmat.pdf" target="_blank" rel="noopener noreferrer">University of Chicago Knowledge Repository: Stoffdaten von Aminosäuren</a></li><li><a href="https://biosci.mcdb.ucsb.edu/biochemistry/tw-exp/electrophoresis.htm" target="_blank" rel="noopener noreferrer">University of California, Santa Barbara: pH-abhängige Elektrophorese von Glycin</a></li></ul></section>
+  </main>
+  <footer><div class="wrap">Lernmaterial Chemie · Klasse 11 · Alle Grafiken und Interaktionen sind in dieser HTML-Datei enthalten.</div></footer>
+  <script>
+  (() => {
+    'use strict';
+    const acids = {
+      gly: {name:'Glycin',short:'Gly',pka:[2.34,9.60],pi:5.97,groups:[{kind:'acid',name:'α-Carboxylgruppe',pka:2.34},{kind:'base',name:'α-Aminogruppe',pka:9.60}]},
+      asp: {name:'Asparaginsäure',short:'Asp',pka:[2.09,3.86,9.82],pi:(2.09+3.86)/2,groups:[{kind:'acid',name:'α-Carboxylgruppe',pka:2.09},{kind:'acid',name:'Carboxylgruppe der Seitenkette',pka:3.86},{kind:'base',name:'α-Aminogruppe',pka:9.82}]},
+      lys: {name:'Lysin',short:'Lys',pka:[2.18,8.95,10.50],pi:(8.95+10.50)/2,groups:[{kind:'acid',name:'α-Carboxylgruppe',pka:2.18},{kind:'base',name:'α-Aminogruppe',pka:8.95},{kind:'base',name:'Aminogruppe der Seitenkette',pka:10.50}]}
+    };
+    const $=s=>document.querySelector(s); const fmt=(x,n=2)=>x.toFixed(n).replace('.',',');
+    const avgCharge=(a,ph)=>a.groups.reduce((sum,g)=>{const deprot=1/(1+Math.pow(10,g.pka-ph));return sum+(g.kind==='acid'?-deprot:1-deprot)},0);
+    const form=(a,ph)=>{
+      const carboxyl=ph<a.groups[0].pka?'COOH':'COO⁻';
+      const amine=ph<a.groups.find(g=>g.name==='α-Aminogruppe').pka?'H₃N⁺':'H₂N';
+      if(a.short==='Gly')return `${amine}–CH₂–${carboxyl}`;
+      if(a.short==='Asp')return `${amine}–CH(CH₂–${ph<a.groups[1].pka?'COOH':'COO⁻'})–${carboxyl}`;
+      return `${amine}–CH((CH₂)₄–${ph<a.groups[2].pka?'NH₃⁺':'NH₂'})–${carboxyl}`;
+    };
+    const W=700,H=350,L=57,R=24,T=25,B=45;
+    const x=ph=>L+(W-L-R)*ph/14, y=q=>T+(H-T-B)*(2-q)/4;
+    const grid=$('#plotGrid');
+    for(let p=0;p<=14;p+=2){grid.insertAdjacentHTML('beforeend',`<line x1="${x(p)}" y1="${T}" x2="${x(p)}" y2="${H-B}" stroke="#e7edf2"/><text x="${x(p)}" y="${H-15}" text-anchor="middle" fill="#52677b" font-size="13">${p}</text>`)}
+    for(let q=-2;q<=2;q++){grid.insertAdjacentHTML('beforeend',`<line x1="${L}" y1="${y(q)}" x2="${W-R}" y2="${y(q)}" stroke="${q===0?'#9ab4bd':'#e7edf2'}" stroke-width="${q===0?2:1}"/><text x="${L-12}" y="${y(q)+4}" text-anchor="end" fill="#52677b" font-size="13">${q>0?'+':''}${q}</text>`)}
+    grid.insertAdjacentHTML('beforeend',`<text x="${(L+W-R)/2}" y="${H-1}" text-anchor="middle" fill="#52677b" font-size="14">pH-Wert</text><text x="15" y="${H/2}" transform="rotate(-90 15 ${H/2})" text-anchor="middle" fill="#52677b" font-size="14">Ladung</text>`);
+    function update(){
+      const a=acids[$('#amino').value],ph=Number($('#ph').value),q=avgCharge(a,ph),delta=ph-a.pi;
+      $('#phOut').textContent=fmt(ph,1); $('#aminoName').textContent=`${a.name} · pI ≈ ${fmt(a.pi)}`;
+      $('#chargeValue').textContent=Math.abs(q)<0.005?'≈ 0,00 e':`${q>=0?'+':''}${fmt(q)} e`;
+      $('#chargeValue').className=`big ${Math.abs(q)<0.05?'charge-zero':q>0?'charge-positive':'charge-negative'}`;
+      $('#chargeMeaning').textContent=Math.abs(q)<0.05?'Fast 0: Positive und negative Ladungen gleichen sich im Durchschnitt nahezu aus.':q>0?'Im Durchschnitt positiv geladen.':'Im Durchschnitt negativ geladen.';
+      $('#statusText').textContent=Math.abs(delta)<0.06?'Am pI: im Mittel keine gerichtete Wanderung.':delta<0?'Unter dem pI: im Mittel positiv geladen → zur Kathode (−).':'Über dem pI: im Mittel negativ geladen → zur Anode (+).';
+      $('#structure').textContent=form(a,ph);
+      $('#groupText').textContent='e bedeutet Elementarladung. Die Dezimalzahl ist ein Durchschnittswert für viele Moleküle.';
+      let d='';for(let p=0;p<=14.001;p+=.07)d+=`${d?' L':'M'}${x(p).toFixed(1)} ${y(avgCharge(a,p)).toFixed(1)}`;
+      $('#plotPath').setAttribute('d',d);
+      $('#piLine').setAttribute('x1',x(a.pi));$('#piLine').setAttribute('x2',x(a.pi));$('#piLine').setAttribute('y1',T);$('#piLine').setAttribute('y2',H-B);
+      $('#piText').setAttribute('x',Math.min(x(a.pi)+8,W-105));$('#piText').setAttribute('y',T+18);$('#piText').textContent=`pI ${fmt(a.pi)}`;
+      $('#cursorLine').setAttribute('x1',x(ph));$('#cursorLine').setAttribute('x2',x(ph));$('#cursorLine').setAttribute('y1',T);$('#cursorLine').setAttribute('y2',H-B);
+      $('#cursorDot').setAttribute('cx',x(ph));$('#cursorDot').setAttribute('cy',y(q));
+      $('#plotDesc').textContent=`${a.name}: mittlere Ladung bei pH ${fmt(ph,1)} etwa ${fmt(q)}. Der pI liegt bei etwa ${fmt(a.pi)}.`;
+    }
+    $('#amino').addEventListener('change',update);$('#ph').addEventListener('input',update);
+    document.querySelectorAll('[data-ph]').forEach(b=>b.addEventListener('click',()=>{$('#ph').value=b.dataset.ph;update()}));
+    $('#jumpPi').addEventListener('click',()=>{$('#ph').value=acids[$('#amino').value].pi;update()});
+    const messages={
+      1:{good:'Richtig. Am pI ist die mittlere Gesamtladung 0. Einzelne Gruppen können trotzdem geladen sein.',bad:'Schau dir im Wissensteil den Unterschied zwischen Gesamtladung und geladenen Gruppen an.'},
+      2:{good:'Richtig. e ist die Elementarladung; −0,01 e ist hier ein Durchschnittswert nahe 0.',bad:'Die Dezimalzahl beschreibt viele Moleküle im Durchschnitt, nicht ein einzelnes Molekül.'},
+      3:{good:'Richtig. pH 2 liegt unter dem pI von Glycin. Glycin ist im Durchschnitt positiv geladen.',bad:'Vergleiche pH 2 mit dem pI von Glycin im Labor. Unter dem pI ist die Ladung positiv.'},
+      4:{good:'Richtig. pH 7 liegt unter dem pI: Lysin ist im Durchschnitt positiv und wandert zur negativen Kathode.',bad:'Vergleiche pH und pI: Unter dem pI ist die Aminosäure im Durchschnitt positiv geladen.'}
+    };
+    function feedback(n,ok,text){const el=$(`#feedback${n}`);el.textContent=text;el.className=`feedback ${ok?'good':'try'}`}
+    function checkReflection(value){
+      const t=value.toLocaleLowerCase('de').replace(/\s+/g,' ').trim();
+      if(!t)return {ok:false,text:'Schreibe zuerst eine Erklärung in das Textfeld.'};
+      const belowPi=/\b(?:unter|kleiner|niedriger|geringer)\b[^.!?]{0,55}\bpi\b/.test(t)||/\bpi\b[^.!?]{0,55}\b(?:über|oberhalb|höher|größer)\b/.test(t)||/\b7\s*<\s*9[,.]73\b/.test(t);
+      const positive=/\bpositiv(?:e|en|er|es)?\b/.test(t)&&!/\bnicht\s+positiv\b/.test(t);
+      const cathode=/\bkathode\b/.test(t)&&/\bnegativ(?:e|en|er|es)?\b/.test(t);
+      const missing=[];
+      if(!belowPi)missing.push('dass pH 7 unter dem pI liegt');
+      if(!positive)missing.push('dass Lysin positiv geladen ist');
+      if(!cathode)missing.push('dass die Kathode die negative Elektrode ist');
+      if(missing.length)return {ok:false,text:`Ergänze noch, ${missing.join('; ')}. Prüfe danach deine Erklärung erneut.`};
+      return {ok:true,text:'Deine Erklärung enthält die drei wichtigen Gedanken: pH 7 liegt unter dem pI, Lysin ist positiv geladen und wandert zur negativen Kathode. Vergleiche sie auch mit der Musterlösung.'};
+    }
+    document.querySelectorAll('[data-check]').forEach(b=>b.addEventListener('click',()=>{
+      const n=Number(b.dataset.check);
+      if(n===5){const result=checkReflection($('#reflection').value);feedback(5,result.ok,result.text);return}
+      const choice=document.querySelector(`input[name=q${n}]:checked`);if(!choice){feedback(n,false,'Wähle zuerst eine Antwort.');return}
+      const ok=choice.value===(n===3?'a':'b');feedback(n,ok,ok?messages[n].good:messages[n].bad);
+    }));
+    $('#resetTasks').addEventListener('click',()=>{document.querySelectorAll('#aufgaben input[type=radio]').forEach(el=>el.checked=false);$('#reflection').value='';for(let n=1;n<=5;n++){const el=$(`#feedback${n}`);el.textContent='';el.className='feedback'}});
+    update();
+    document.querySelector('#jsNotice').hidden=true;
+  })();
+  </script>
+</body>
+</html>
