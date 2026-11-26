@@ -1,45 +1,2949 @@
-t<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Elektrophile Addition | Chemie 10</title><style>
-:root{--ink:#182c38;--muted:#526776;--teal:#087e82;--dark:#07565d;--paper:#fff;--bg:#eef4f5;--line:#d5e1e4;--orange:#b85c19;--green:#137044;--red:#a52d3f;--soft:#e7f4f2}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:var(--. bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}header{background:#113a47;color:#fff;padding:48px max(22px,calc((100% - 1000px)/2)) 42px}header p{max-width:700px;color:#d1e7e9;margin:12px 0}h1{font-size:clamp(32px,5vw,52px);letter-spacing:-.04em;line-height:1.08;margin:10px 0 18px}h2{font-size:clamp(23px,3vw,30px);line-height:1.2;letter-spacing:-.02em;margin:0 0 15px}h3{font-size:19px;margin:24px 0 10px}p{margin:8px 0 16px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.14em;text-transform:uppercase}.nav{position:sticky;top:0;z-index:3;background:white;border-bottom:1px solid var(--line);box-shadow:0 2px 8px #1639410a}.navinner{max-width:1040px;margin:auto;display:flex;align-items:center;gap:15px;padding:10px 20px;overflow:auto;white-space:nowrap}.nav a{font-weight:650;text-decoration:none;color:var(--dark);font-size:14px}.nav a:hover{text-decoration:underline}.nav .spacer{flex:1}.nav button{white-space:nowrap}main{max-width:1040px;margin:0 auto;padding:24px 20px 60px}section{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,4vw,34px);margin:20px 0;box-shadow:0 3px 14px #17394307}.num{color:var(--teal);font-size:13px;letter-spacing:.12em;font-weight:800;margin-bottom:7px}.lead{font-size:18px;color:var(--muted)}.eq{font-size:clamp(17px,3.4vw,24px);font-weight:650;text-align:center;padding:15px 8px;background:#f4f8f8;border-radius:10px;margin:12px 0;overflow-wrap:anywhere}.eq small{font-size:12px;display:inline-block;line-height:1.1;vertical-align:middle;text-align:center;margin:0 4px}.arrow{font-size:24px}.note{border-left:4px solid var(--teal);background:var(--soft);padding:12px 16px;border-radius:0 8px 8px 0;margin:15px 0}.note p:last-child{margin-bottom:0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.mini{border:1px solid var(--line);border-radius:12px;padding:15px;text-align:center}.rad{color:var(--red);font-weight:800}.formula{font-size:27px;font-weight:700;line-height:1.3}.caption{color:var(--muted);font-size:13px;line-height:1.5}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.tab{background:#edf4f4;color:var(--dark);border:1px solid var(--line)}.tab[aria-selected=true]{background:var(--dark);color:white}.phase{padding:12px 0;min-height:220px}.phase[hidden]{display:none}button,select,input,textarea{font:inherit}button{cursor:pointer;background:var(--dark);color:white;border:1px solid transparent;border-radius:8px;padding:9px 15px;font-weight:650;line-height:1.4}button:hover{filter:brightness(.92)}button.secondary{background:white;color:var(--dark);border:1px solid #a5bfc2}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #e4a33a;outline-offset:3px}input[type=text],select,textarea{background:white;border:1px solid #aabfc4;border-radius:7px;padding:8px 10px;color:var(--ink);max-width:100%}textarea{width:100%;min-height:82px;resize:vertical}input[type=text]{width:100%}.task{border-top:1px solid var(--line);padding:22px 0 12px}.task:first-of-type{border-top:0}.task h3{margin:0 0 8px}.level{display:inline-block;font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 6px;vertical-align:middle;margin-left:6px}.question{padding:10px 0}.question label{display:block;margin-bottom:6px;font-weight:600}.feedback{min-height:24px;font-size:14px;font-weight:650;margin:8px 0;color:var(--muted)}.correct{color:var(--green)!important}.wrong{color:var(--red)!important}.solution{margin:10px 0;background:#f2f7f5;border:1px solid #d5e5de;border-radius:8px;padding:10px 14px}.solution summary{cursor:pointer;color:var(--dark);font-weight:650}.solution p:last-child{margin-bottom:0}.inline-select{display:inline-block;width:auto;max-width:100%;margin:4px 2px;font-size:15px}.matchrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(140px,205px);gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0}.matchrow:last-child{border:0}.choices{display:flex;gap:12px;flex-wrap:wrap}.choices label{display:flex;align-items:center;gap:5px;font-weight:500;margin:0}.claim{padding:12px 0;border-bottom:1px solid var(--line)}.claim p{margin:0 0 7px}.claim .why{font-size:14px;margin:6px 0 0}.progresswrap{max-width:650px;display:flex;align-items:center;gap:10px;margin-top:24px}.progress{flex:1;height:8px;background:#ffffff33;border-radius:20px;overflow:hidden}.progress>div{height:100%;width:0;background:#9ce1ce;transition:width .25s}.progresslabel{font-size:13px;white-space:nowrap;color:#d9eeee}.figure{border:1px solid var(--line);border-radius:12px;background:#fbfdfd;padding:10px;margin:15px 0}.figure svg{display:block;width:100%;height:auto;max-width:720px;margin:auto}.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted);justify-content:center;margin:10px 0}.legend i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:5px}.chain{display:flex;gap:6px;align-items:center;justify-content:center;flex-wrap:wrap}.chain>span{background:#edf5f4;padding:9px 12px;border-radius:7px;font-weight:700}.chain>b{color:var(--teal)}.rowbuttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.status{font-weight:700;color:var(--dark)}.footer{text-align:center;font-size:13px;color:var(--muted)}.diagramlabel{font-size:13px;fill:var(--ink)}.diagramsmall{font-size:11px;fill:var(--muted)}.diagramhighlight{opacity:0;transition:opacity .2s}.diagramhighlight.show{opacity:1}.active-step{border:2px solid var(--teal)!important}.stepbox{border:2px solid transparent;border-radius:10px;padding:8px}.stepbox.active-step{background:#eff9f7}.checkline{display:block;margin:9px 0}.checkline input{margin-right:8px}.printonly{display:none}@media(max-width:560px){.navinner{gap:12px;padding:9px 12px}main{padding:10px 10px 40px}section{border-radius:12px}.matchrow{grid-template-columns:1fr}.matchrow select{width:100%}.phase{min-height:0}.progresswrap{flex-wrap:wrap}.progress{min-width:100px}.inline-select{max-width:100%;font-size:14px}.figure{padding:3px}}@media print{body{background:white;font-size:11pt}header{padding:18px;background:white;color:#172f3c;border-bottom:2px solid #172f3c}header p{color:#333}.nav,.rowbuttons,.tabs,.progresswrap,button,.feedback,.screenonly{display:none!important}main{max-width:none;padding:0}section{border:0;box-shadow:none;padding:12px 0;margin:0;border-radius:0}h1{font-size:26pt}.phase[hidden]{display:block!important}.phase{min-height:0}.task,.figure,.note,.mini{break-inside:avoid}.printonly{display:block}.solution{display:none}.diagramhighlight{opacity:1}textarea{min-height:50px}.footer{display:none}a{color:inherit}section#aufgaben{break-before:page}}
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elektrophile Addition · Interaktives Chemie-Labor (Klasse 10)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ==========================================================================
+       DESIGN TOKENS & THEME VARIABLES (LIGHT & DARK LAB MODE)
+       ========================================================================== */
+    :root {
+      --bg: #f1f5f9;
+      --bg-mesh-1: rgba(13, 148, 136, 0.09);
+      --bg-mesh-2: rgba(245, 158, 11, 0.07);
+      --surface: #ffffff;
+      --surface-elevated: #f8fafc;
+      --surface-glass: rgba(255, 255, 255, 0.84);
+      --ink: #0f172a;
+      --ink-secondary: #334155;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --line-strong: #cbd5e1;
 
-.sortlist{list-style:none;padding:0;display:grid;gap:10px}.sortitem{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:12px;background:#f9fbfb}.sortitem .index{font-weight:800;color:var(--teal);text-align:center}.sortitem .moves{display:flex;gap:5px}.moves button{padding:7px 10px;min-width:36px}.moves button:disabled,button:disabled{opacity:.35;cursor:default}.sortitem.good{border-color:#137044;background:#eef9f1}.sortitem.bad{border-color:#a52d3f;background:#fff5f5}.sortitem.dragging{opacity:.45}.stepcounter{font-weight:750;color:var(--teal)}.formula2{font-size:clamp(18px,3.5vw,25px);font-weight:700}.pill{display:inline-block;border:1px solid var(--line);padding:3px 9px;border-radius:20px;color:var(--dark);font-size:13px}.arrowlayer{transition:opacity .2s}.arrowlayer.off{opacity:0}.choicegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.choicegrid label{border:1px solid var(--line);padding:12px;border-radius:9px}.choicegrid input{margin-right:6px}.molecule text{fill:var(--ink);font-size:24px;font-family:system-ui,sans-serif}.molecule .sm{font-size:15px;fill:var(--muted)}.molecule .charge{fill:var(--red);font-weight:700}.molecule .electron{fill:#087e82;stroke:none}.molecule .bond{stroke:var(--ink);stroke-width:2.5;fill:none;stroke-linecap:round}.molecule .ep{stroke:#087e82;stroke-width:2.5;fill:none;stroke-linecap:round}.sortprint{display:none}@media(max-width:560px){.sortitem{grid-template-columns:23px minmax(0,1fr) auto;padding:8px;gap:5px}.moves button{padding:6px 8px}.sortitem{font-size:14px}}@media print{.sortprint{display:block}.sortitem{break-inside:avoid}.moves{display:none!important}.sortitem{grid-template-columns:25px 1fr}.arrowlayer.off{opacity:1}.sortitem.good,.sortitem.bad{background:white;border-color:#ccc}}
-</style></head><body>
-<header><div class="eyebrow">Chemie · Jahrgang 10 · Organische Chemie</div><h1>Elektrophile<br>Addition</h1><p>Wie die Doppelbindung der Alkene reagiert – und wie aus einer elektronenreichen Doppelbindung zwei neue Einfachbindungen entstehen.</p><div class="progresswrap"><div class="progress" role="progressbar" aria-label="Gelöste Selbstchecks" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><div id="bar"></div></div><span class="progresslabel" id="progresslabel">0 / 6 Selbstchecks gelöst</span></div></header>
-<nav class="nav"><div class="navinner"><a href="#wissen">Grundlagen</a><a href="#mechanismus">Mechanismus</a><a href="#energie">Energiediagramm</a><a href="#produkte">Produkte</a><a href="#aufgaben">Aufgaben</a><a href="#sortieren">Sortieraufgabe</a><span class="spacer"></span><button class="secondary" onclick="window.print()">Drucken / PDF</button></div></nav>
-<main>
-<section id="wissen"><div class="num">01 · GRUNDLAGEN</div><h2>Was ist eine elektrophile Addition?</h2><p>Alkene sind ungesättigte Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung. Eine Doppelbindung besteht aus einer σ-Bindung (Sigma-Bindung) und einer π-Bindung (Pi-Bindung). Die Elektronendichte der π-Bindung liegt ober- und unterhalb der Bindungsachse. Sie ist für angreifende Teilchen gut zugänglich.</p>
-<div class="figure"><svg viewBox="0 0 520 180" role="img" aria-label="Schematische Darstellung der Sigma- und Pi-Bindung von Ethen"><ellipse cx="260" cy="45" rx="91" ry="25" fill="#087e82" opacity=".2"/><ellipse cx="260" cy="126" rx="91" ry="25" fill="#087e82" opacity=".2"/><path d="M210 85H310" stroke="#182c38" stroke-width="6" stroke-linecap="round"/><g font-size="26" font-weight="600" fill="#182c38" text-anchor="middle"><text x="193" y="94">C</text><text x="327" y="94">C</text></g><g stroke="#182c38" stroke-width="2"><path d="M181 75L137 40M181 96L137 130M339 75L383 40M339 96L383 130"/></g><g font-size="22" fill="#182c38" text-anchor="middle"><text x="122" y="39">H</text><text x="122" y="145">H</text><text x="398" y="39">H</text><text x="398" y="145">H</text></g><path d="M355 43H423" stroke="#087e82"/><text x="430" y="48" fill="#087e82" font-size="16">π</text><path d="M260 86V165H330" fill="none" stroke="#182c38"/><text x="337" y="170" font-size="16" fill="#182c38">σ</text></svg><div class="caption">Vereinfachtes Modell: Die farbigen Bereiche zeigen die π-Elektronendichte; die σ-Bindung liegt zwischen den Kohlenstoffatomen.</div></div>
-<p>Bei einer <strong>Addition</strong> lagern sich Atome oder Atomgruppen an die Kohlenstoffatome einer Mehrfachbindung an. Bei einer C=C-Doppelbindung wird dabei die π-Bindung aufgelöst, die C–C-σ-Bindung bleibt erhalten. Es entstehen zwei neue σ-Bindungen zu den addierten Teilchen.</p><div class="eq">CH₂=CH₂ + HBr ⟶ CH₃–CH₂Br</div><div class="caption" style="text-align:center">Ethen + Bromwasserstoff → Bromethan (kein weiteres stöchiometrisches Produkt)</div>
-<div class="cards"><div class="mini"><div class="formula" style="color:var(--teal)">E⁺</div><strong>Elektrophil</strong><p>Elektronenpaarakzeptor: nimmt ein Elektronenpaar zur Bindungsbildung auf. Beispiel: das H-Atom in HBr (Hδ⁺).</p></div><div class="mini"><div class="formula" style="color:var(--teal)">Nu⁻</div><strong>Nukleophil</strong><p>Elektronenpaardonator: stellt ein Elektronenpaar zur Bindungsbildung bereit. Beispiele: π-Bindung des Alkens und Br⁻.</p></div><div class="mini"><div class="formula" style="color:var(--red)">C⁺</div><strong>Carbokation</strong><p>Positiv geladenes Zwischenprodukt mit elektronenarmem Kohlenstoffatom. Es reagiert mit einem Nukleophil.</p></div></div><div class="note"><strong>Merke:</strong> Elektrophile und Nukleophile müssen nicht zwingend vollständig geladen sein. Auch die Partialladung eines Atoms kann eine Reaktion begünstigen.</div></section>
-<section id="mechanismus"><div class="num">02 · REAKTIONSMECHANISMUS</div><h2>Die Addition von HBr an Ethen</h2><p>Verfolge die Elektronenbewegungen Schritt für Schritt. Die grünen gebogenen Pfeile zeigen, von wo nach wo ein <strong>ganzes Elektronenpaar</strong> verschoben wird. Anders als bei der radikalischen Substitution entstehen hier im dargestellten Mechanismus keine Radikale.</p>
-<div class="tabs" role="group" aria-label="Mechanismusschritte"><button class="tab" data-step="0" aria-selected="true">1 · Ausgangslage</button><button class="tab" data-step="1" aria-selected="false">2 · Elektrophiler Angriff</button><button class="tab" data-step="2" aria-selected="false">3 · Zwischenprodukt</button><button class="tab" data-step="3" aria-selected="false">4 · Nukleophiler Angriff</button><button class="tab" data-step="4" aria-selected="false">5 · Produkt</button></div>
-<div id="mechanismPanels"><div class="phase" data-panel="0"><div class="stepcounter">Schritt 1 von 5</div><h3>Ethen und polarer Bromwasserstoff</h3><div class="figure"><svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 1"><defs><marker id="arr0" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L8 4.5L0 9Z" fill="#087e82"/></marker></defs><text x="120" y="105" class="" text-anchor="middle">CH₂</text><text x="240" y="105" class="" text-anchor="middle">CH₂</text><path class="bond" d="M151 91L209 91"/><path class="bond" d="M151 101L209 101"/><text x="302" y="105" class="" text-anchor="middle">+</text><text x="365" y="105" class="" text-anchor="middle">H</text><text x="455" y="105" class="" text-anchor="middle">Br</text><path class="bond" d="M381 97L435 97"/><text x="365" y="71" class="charge" text-anchor="middle">δ⁺</text><text x="455" y="71" class="charge" text-anchor="middle">δ⁻</text><circle class="electron" cx="451" cy="121" r="2.5"/><circle class="electron" cx="459" cy="121" r="2.5"/><circle class="electron" cx="451" cy="82" r="2.5"/><circle class="electron" cx="459" cy="82" r="2.5"/><circle class="electron" cx="480" cy="96" r="2.5"/><circle class="electron" cx="488" cy="96" r="2.5"/></svg></div><p>Die H–Br-Bindung ist polar: Brom zieht das Bindungselektronenpaar stärker an. Das H-Atom trägt eine positive Partialladung und ist elektrophil.</p></div><div class="phase" data-panel="1" hidden><div class="stepcounter">Schritt 2 von 5</div><h3>Protonierung: Bildung der ersten neuen Bindung</h3><div class="figure"><svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 2"><defs><marker id="arr1" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L8 4.5L0 9Z" fill="#087e82"/></marker></defs><text x="120" y="105" class="" text-anchor="middle">CH₂</text><text x="240" y="105" class="" text-anchor="middle">CH₂</text><path class="bond" d="M151 91L209 91"/><path class="bond" d="M151 101L209 101"/><text x="365" y="105" class="" text-anchor="middle">H</text><text x="455" y="105" class="" text-anchor="middle">Br</text><path class="bond" d="M381 97L435 97"/><text x="365" y="71" class="charge" text-anchor="middle">δ⁺</text><text x="455" y="71" class="charge" text-anchor="middle">δ⁻</text><circle class="electron" cx="451" cy="121" r="2.5"/><circle class="electron" cx="459" cy="121" r="2.5"/><circle class="electron" cx="451" cy="82" r="2.5"/><circle class="electron" cx="459" cy="82" r="2.5"/><circle class="electron" cx="480" cy="96" r="2.5"/><circle class="electron" cx="488" cy="96" r="2.5"/><g class="arrowlayer"><path class="ep" d="M180 91 Q235 9 354 87" marker-end="url(#arr1)"/><path class="ep" d="M407 97 Q425 145 449 109" marker-end="url(#arr1)"/></g></svg></div><p>Das π-Elektronenpaar bildet eine neue C–H-Bindung. Gleichzeitig wird die H–Br-Bindung heterolytisch gespalten: Beide Bindungselektronen gehen zum Bromatom.</p></div><div class="phase" data-panel="2" hidden><div class="stepcounter">Schritt 3 von 5</div><h3>Carbokation und Bromidion</h3><div class="figure"><svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 3"><defs><marker id="arr2" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L8 4.5L0 9Z" fill="#087e82"/></marker></defs><text x="135" y="105" class="" text-anchor="middle">CH₃</text><text x="255" y="105" class="" text-anchor="middle">CH₂</text><path class="bond" d="M166 97L224 97"/><text x="279" y="79" class="charge" text-anchor="middle">⁺</text><text x="340" y="105" class="" text-anchor="middle">+</text><text x="425" y="105" class="" text-anchor="middle">Br</text><text x="447" y="77" class="charge" text-anchor="middle">⁻</text><circle class="electron" cx="420" cy="77" r="2.5"/><circle class="electron" cx="428" cy="77" r="2.5"/><circle class="electron" cx="420" cy="120" r="2.5"/><circle class="electron" cx="428" cy="120" r="2.5"/><circle class="electron" cx="395" cy="96" r="2.5"/><circle class="electron" cx="403" cy="96" r="2.5"/><circle class="electron" cx="451" cy="99" r="2.5"/><circle class="electron" cx="459" cy="99" r="2.5"/></svg></div><p>Nach der Protonierung trägt das zweite Kohlenstoffatom die positive Ladung. Das Bromidion besitzt die negative Ladung. Das Carbokation ist ein reaktives Zwischenprodukt.</p></div><div class="phase" data-panel="3" hidden><div class="stepcounter">Schritt 4 von 5</div><h3>Bromid greift das Carbokation an</h3><div class="figure"><svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 4"><defs><marker id="arr3" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L8 4.5L0 9Z" fill="#087e82"/></marker></defs><text x="135" y="105" class="" text-anchor="middle">CH₃</text><text x="255" y="105" class="" text-anchor="middle">CH₂</text><path class="bond" d="M166 97L224 97"/><text x="279" y="79" class="charge" text-anchor="middle">⁺</text><text x="425" y="105" class="" text-anchor="middle">Br</text><text x="447" y="77" class="charge" text-anchor="middle">⁻</text><circle class="electron" cx="420" cy="77" r="2.5"/><circle class="electron" cx="428" cy="77" r="2.5"/><circle class="electron" cx="420" cy="120" r="2.5"/><circle class="electron" cx="428" cy="120" r="2.5"/><circle class="electron" cx="395" cy="96" r="2.5"/><circle class="electron" cx="403" cy="96" r="2.5"/><circle class="electron" cx="451" cy="99" r="2.5"/><circle class="electron" cx="459" cy="99" r="2.5"/><g class="arrowlayer"><path class="ep" d="M399 96 Q355 24 273 89" marker-end="url(#arr3)"/></g></svg></div><p>Ein freies Elektronenpaar des Bromidions bildet eine neue C–Br-Bindung zum positiv geladenen Kohlenstoffatom. Die Ladungen werden dadurch ausgeglichen.</p></div><div class="phase" data-panel="4" hidden><div class="stepcounter">Schritt 5 von 5</div><h3>Bromethan ist entstanden</h3><div class="figure"><svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 5"><defs><marker id="arr4" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L8 4.5L0 9Z" fill="#087e82"/></marker></defs><text x="120" y="105" class="" text-anchor="middle">CH₃</text><text x="240" y="105" class="" text-anchor="middle">CH₂</text><text x="365" y="105" class="" text-anchor="middle">Br</text><path class="bond" d="M151 97L209 97"/><path class="bond" d="M272 97L343 97"/><circle class="electron" cx="360" cy="77" r="2.5"/><circle class="electron" cx="368" cy="77" r="2.5"/><circle class="electron" cx="360" cy="120" r="2.5"/><circle class="electron" cx="368" cy="120" r="2.5"/><circle class="electron" cx="389" cy="97" r="2.5"/><circle class="electron" cx="397" cy="97" r="2.5"/></svg></div><p>Beide Kohlenstoffatome besitzen wieder vier Bindungen. Die C=C-Doppelbindung ist zur C–C-Einfachbindung geworden. Das Produkt ist ein Halogenalkan.</p></div></div><div class="rowbuttons screenonly"><button class="secondary" id="prev">← Zurück</button><button id="next">Weiter →</button><button class="secondary" id="toggleArrows" aria-pressed="true">Elektronenpfeile ausblenden</button></div><div class="note"><strong>Heterolytische Bindungsspaltung:</strong> Beide Elektronen einer Bindung gehen zu demselben Bindungspartner. Hier entstehen nach der Protonierung Ionen, keine Radikale.</div></section>
-<section id="energie"><div class="num">03 · ENERGIE</div><h2>Reaktionsenergiediagramm</h2><p>Der vereinfachte Mechanismus besitzt zwei Teilschritte und ein Zwischenprodukt. Jeder Teilschritt hat eine eigene Aktivierungsenergie. Für die Addition von HBr an Ethen ist die Gesamtreaktion exotherm.</p><div class="figure"><svg viewBox="0 0 620 325" role="img" aria-label="Qualitatives Energiediagramm der Addition mit zwei Maxima und einem Zwischenminimum"><defs><marker id="axis" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L7 4L0 8Z" fill="#182c38"/></marker></defs><g fill="none" stroke="#182c38" stroke-width="1.7"><path d="M55 276V18" marker-end="url(#axis)"/><path d="M55 276H598" marker-end="url(#axis)"/></g><g fill="#182c38" font-size="14"><text x="22" y="140" transform="rotate(-90 22 140)" text-anchor="middle">Energie</text><text x="330" y="310" text-anchor="middle">Reaktionsverlauf</text></g><path d="M65 194H111C145 194 155 56 198 56S250 125 292 125H316C348 125 354 94 386 94S441 245 486 245H563" fill="none" stroke="#087e82" stroke-width="3.5"/><g fill="#182c38" font-size="13" text-anchor="middle"><text x="99" y="211">Ethen + HBr</text><text x="198" y="39">Übergangszustand 1</text><text x="303" y="145">Carbokation + Br⁻</text><text x="410" y="77">Übergangszustand 2</text><text x="526" y="263">Bromethan</text></g><g id="ea1" class="diagramhighlight" stroke="#b85c19" stroke-width="1.8" fill="none"><path d="M155 194H65M155 194V56H198" stroke-dasharray="4 4"/><path d="M155 194V56M150 64L155 56L160 64M150 186L155 194L160 186"/><text x="145" y="122" text-anchor="end" fill="#b85c19" stroke="none" font-size="15">Eₐ₁</text></g><g id="ea2" class="diagramhighlight" stroke="#b85c19" stroke-width="1.8" fill="none"><path d="M338 125V94H386" stroke-dasharray="4 4"/><path d="M338 125V94M333 102L338 94L343 102M333 117L338 125L343 117"/><text x="331" y="89" text-anchor="end" fill="#b85c19" stroke="none" font-size="15">Eₐ₂</text></g><g id="de" class="diagramhighlight" fill="none" stroke="#2563a5" stroke-width="1.8"><path d="M65 194H570" stroke-dasharray="4 4"/><path d="M570 194V245M565 237L570 245L575 237"/><text x="563" y="222" text-anchor="end" fill="#2563a5" stroke="none" font-size="15">ΔE</text></g></svg><div class="caption">Qualitatives Modell, nicht maßstabsgetreu. Gezeigt wird ein typischer zweistufiger ionischer Reaktionsweg; die genauen Energien hängen von den Bedingungen ab.</div></div><div class="rowbuttons"><button class="secondary energy" data-target="ea1" aria-pressed="false">Aktivierungsenergie 1</button><button class="secondary energy" data-target="ea2" aria-pressed="false">Aktivierungsenergie 2</button><button class="secondary energy" data-target="de" aria-pressed="false">Reaktionsenergie</button></div><p>Die Maxima stehen für Übergangszustände, das Minimum dazwischen für das Zwischenprodukt. Weil das Produkt energetisch tiefer liegt als die Edukte, ist ΔE negativ. Der erste Schritt besitzt im dargestellten Modell die größere Energiebarriere.</p></section>
-<section id="produkte"><div class="num">04 · TRANSFER</div><h2>Welche Produkte können entstehen?</h2><h3>Addition von HBr an Propen</h3><p>Bei einem unsymmetrischen Alken gibt es zwei Möglichkeiten, das H-Atom an die Doppelbindung zu addieren. Je nach Position der positiven Ladung entsteht ein primäres oder sekundäres Carbokation.</p><div class="eq">CH₃–CH=CH₂ + HBr</div><p>Wähle, an welches C-Atom der Doppelbindung das H-Atom gebunden wird.</p><div class="rowbuttons"><button class="secondary regio" data-r="end">H an endständiges C (CH₂)</button><button class="secondary regio" data-r="middle">H an mittleres C (CH)</button></div><div id="regioOut" class="note" aria-live="polite">Wähle eine Möglichkeit aus.</div><div class="printonly">H an endständiges C: CH₃–CH⁺–CH₃ → 2-Brompropan (Hauptprodukt). H an mittleres C: CH₃–CH₂–CH₂⁺ → 1-Brompropan (weniger begünstigter Weg).</div><p><strong>Markownikow-Regel:</strong> Bei der gewöhnlichen ionischen Addition von HBr an unsymmetrische Alkene wie Propen bindet sich H bevorzugt an das C-Atom der Doppelbindung, das bereits mehr H-Atome trägt. Das stabilere Carbokation wird bevorzugt gebildet. Bei Propen ist 2-Brompropan das Hauptprodukt. Die Regel gilt hier für den ionischen Weg ohne radikalische Initiatoren wie Peroxide.</p>
-<h3>Exkurs: Brom als Nachweis von Doppelbindungen</h3><div class="eq">CH₂=CH₂ + Br₂ ⟶ BrCH₂–CH₂Br</div><p>Auch elementares Brom kann elektrophil an Alkene addiert werden. Die π-Elektronen polarisieren das Br₂-Molekül. Es bildet sich im üblichen Mechanismus zunächst ein verbrücktes <strong>Bromoniumion</strong>, das anschließend von Br⁻ geöffnet wird. Hier entsteht also nicht dasselbe freie Carbokation wie bei der HBr-Addition.</p><div class="figure"><svg viewBox="0 0 540 145" role="img" aria-label="Bromoniumion mit Dreiring und Bromid"><g class="molecule"><path class="bond" d="M216 93L274 93M214 81L240 40M276 81L250 40"/><text x="192" y="102" text-anchor="middle">CH₂</text><text x="298" y="102" text-anchor="middle">CH₂</text><text x="245" y="35" text-anchor="middle">Br</text><text x="269" y="20" class="charge">⁺</text><text x="377" y="79">+</text><text x="420" y="79">Br</text><text x="450" y="61" class="charge">⁻</text></g></svg><div class="caption">Verbrücktes Bromoniumion + Bromidion (vereinfachte Strukturformel)</div></div><p>Die orange-braune Farbe von Brom verschwindet beim Verbrauch von Br₂. In Wasser können zusätzlich Bromhydrine gebildet werden; die obige Gleichung beschreibt die Addition von Br₂ zum Dibromalkan unter geeigneten nichtwässrigen Bedingungen.</p></section>
-<section id="aufgaben"><div class="num">05 · ÜBUNGEN</div><h2>Überprüfe dein Wissen</h2><p>Bearbeite die Aufgaben in der Reihenfolge. Bei Selbstchecks erhältst du sofort Rückmeldung. Freie Antworten kannst du mit der Musterlösung vergleichen.</p>
-<div class="task"><h3>1 · Grundbegriffe <span class="level">AFB I</span></h3><p>Ordne jeder Beschreibung den richtigen Fachbegriff zu.</p><div id="q1" data-check="q1"><div class="matchrow"><label for="q1_0">Teilchen, das ein Elektronenpaar aufnimmt.</label><select id="q1_0" data-answer="Elektrophil"><option value="">Auswählen …</option><option>Addition</option><option>Carbokation</option><option>Elektrophil</option><option>Heterolyse</option><option>Nukleophil</option></select></div><div class="matchrow"><label for="q1_1">Teilchen, das ein Elektronenpaar zur Verfügung stellt.</label><select id="q1_1" data-answer="Nukleophil"><option value="">Auswählen …</option><option>Addition</option><option>Carbokation</option><option>Elektrophil</option><option>Heterolyse</option><option>Nukleophil</option></select></div><div class="matchrow"><label for="q1_2">Positiv geladenes Kohlenstoff-Zwischenprodukt.</label><select id="q1_2" data-answer="Carbokation"><option value="">Auswählen …</option><option>Addition</option><option>Carbokation</option><option>Elektrophil</option><option>Heterolyse</option><option>Nukleophil</option></select></div><div class="matchrow"><label for="q1_3">Bindungsspaltung, bei der beide Elektronen zum selben Atom gelangen.</label><select id="q1_3" data-answer="Heterolyse"><option value="">Auswählen …</option><option>Addition</option><option>Carbokation</option><option>Elektrophil</option><option>Heterolyse</option><option>Nukleophil</option></select></div><div class="matchrow"><label for="q1_4">Anlagerung an eine Mehrfachbindung.</label><select id="q1_4" data-answer="Addition"><option value="">Auswählen …</option><option>Addition</option><option>Carbokation</option><option>Elektrophil</option><option>Heterolyse</option><option>Nukleophil</option></select></div><button class="check" data-id="q1">Überprüfen</button><div class="feedback" aria-live="polite"></div></div></div>
-<div class="task"><h3>2 · Lückentext <span class="level">AFB I–II</span></h3><div id="q2" data-check="q2"><p>Bei der elektrophilen Addition reagiert die <select class="inline-select" aria-label="Bindung" data-answer="π-Bindung"><option value="">…</option><option>σ-Bindung</option><option>π-Bindung</option></select> des Alkens zuerst mit dem <select class="inline-select" aria-label="Reaktionspartner" data-answer="Elektrophil"><option value="">…</option><option>Nukleophil</option><option>Elektrophil</option></select>. Im HBr-Mechanismus wird die H–Br-Bindung <select class="inline-select" aria-label="Bindungsspaltung" data-answer="heterolytisch"><option value="">…</option><option>homolytisch</option><option>heterolytisch</option></select> gespalten. Es entsteht ein <select class="inline-select" aria-label="Zwischenprodukt" data-answer="Carbokation"><option value="">…</option><option>Carbokation</option><option>Alkylradikal</option></select>. Anschließend reagiert es mit dem <select class="inline-select" aria-label="Ion" data-answer="Bromidion"><option value="">…</option><option>Bromidion</option><option>Chlorradikal</option></select>.</p><button class="check" data-id="q2">Überprüfen</button><div class="feedback" aria-live="polite"></div></div></div>
-<div class="task"><h3>3 · Reaktionsgleichungen <span class="level">AFB II</span></h3><p>Formuliere die Reaktionsgleichungen in Halbstrukturformeln und benenne die Produkte. Gehe jeweils von einer einfachen Addition aus.</p><label for="free3a">a) Ethen + HCl</label><textarea id="free3a"></textarea><label for="free3b">b) But-2-en + HBr</label><textarea id="free3b"></textarea><label for="free3c">c) Ethen + Br₂ (nichtwässrige Bedingungen)</label><textarea id="free3c"></textarea><details class="solution"><summary>Musterlösung</summary><p>a) CH₂=CH₂ + HCl → CH₃–CH₂Cl (Chlorethan).<br>b) CH₃–CH=CH–CH₃ + HBr → CH₃–CHBr–CH₂–CH₃ (2-Brombutan).<br>c) CH₂=CH₂ + Br₂ → BrCH₂–CH₂Br (1,2-Dibromethan).</p></details></div>
-<div class="task"><h3>4 · Elektronenpfeile verstehen <span class="level">AFB II</span></h3><div id="q3" data-check="q3"><p>Wähle für jeden Pfeil den korrekten Start- und Endpunkt aus.</p><div class="question"><label for="p0">Pfeil 1 beim elektrophilen Angriff</label><select id="p0" data-answer="1"><option value="">Auswählen …</option><option value="0">Vom H-Atom zur π-Bindung</option><option value="1">Von der π-Bindung zum H-Atom</option><option value="2">Vom Br-Atom zum H-Atom</option></select></div><div class="question"><label for="p1">Pfeil 2 bei der H–Br-Spaltung</label><select id="p1" data-answer="2"><option value="">Auswählen …</option><option value="0">Von der H–Br-Bindung zum H-Atom</option><option value="1">Vom C-Atom zum Br-Atom</option><option value="2">Von der H–Br-Bindung zum Br-Atom</option></select></div><div class="question"><label for="p2">Pfeil beim nukleophilen Angriff</label><select id="p2" data-answer="0"><option value="">Auswählen …</option><option value="0">Vom freien Elektronenpaar des Br⁻ zum C⁺</option><option value="1">Vom C⁺ zum Br⁻</option><option value="2">Von der C–C-Bindung zum Br⁻</option></select></div><button class="check" data-id="q3">Überprüfen</button><div class="feedback" aria-live="polite"></div></div><p>Zeichne danach den gesamten Mechanismus der Addition von HCl an Ethen auf Papier mit Elektronenpaarpfeilen.</p><details class="solution"><summary>Musterlösung zum Zeichnen</summary><p>π-Bindung → H; H–Cl-Bindung → Cl. Zwischenprodukt: CH₃–CH₂⁺ + Cl⁻. Freies Elektronenpaar am Cl⁻ → positiv geladenes C-Atom. Produkt: CH₃–CH₂Cl.</p></details></div>
-<div class="task"><h3>5 · Energie auswerten <span class="level">AFB II</span></h3><div id="q4" data-check="q4"><p>Nutze das Energiediagramm aus Abschnitt 03.</p><div class="question"><label for="e0">Wie viele Übergangszustände sind dargestellt?</label><select id="e0" data-answer="1"><option value="">Auswählen …</option><option value="0">Einer</option><option value="1">Zwei</option><option value="2">Drei</option></select></div><div class="question"><label for="e1">Was beschreibt das Minimum zwischen den Maxima?</label><select id="e1" data-answer="1"><option value="">Auswählen …</option><option value="0">Edukte</option><option value="1">Zwischenprodukt</option><option value="2">Endprodukt</option></select></div><div class="question"><label for="e2">Ist die Gesamtreaktion exotherm oder endotherm?</label><select id="e2" data-answer="0"><option value="">Auswählen …</option><option value="0">Exotherm</option><option value="1">Endotherm</option><option value="2">Energieneutral</option></select></div><div class="question"><label for="e3">Welche Aktivierungsenergie ist im Modell größer?</label><select id="e3" data-answer="0"><option value="">Auswählen …</option><option value="0">Erster Teilschritt</option><option value="1">Zweiter Teilschritt</option><option value="2">Beide gleich</option></select></div><button class="check" data-id="q4">Überprüfen</button><div class="feedback" aria-live="polite"></div></div><label for="free5">Erkläre, warum auch eine exotherme Reaktion eine Aktivierungsenergie benötigt.</label><textarea id="free5"></textarea><details class="solution"><summary>Musterlösung</summary><p>Damit neue Bindungen entstehen können, müssen zunächst Bindungen umgeordnet oder teilweise gelöst werden. Die dafür notwendige Energiebarriere muss überwunden werden, auch wenn die Produkte insgesamt energieärmer sind.</p></details></div>
-<div class="task"><h3>6 · Richtig oder falsch? <span class="level">AFB II–III</span></h3><div id="q5" data-check="q5"><div class="claim"><p>1. Bei der elektrophilen Addition wird ein H-Atom des Alkens ausgetauscht.</p><div class="choices" data-radio="c0" data-answer="false"><label><input type="radio" name="c0" value="true">Richtig</label><label><input type="radio" name="c0" value="false">Falsch</label></div><p class="why" hidden>Bei der Addition werden Teilchen an die Doppelbindung angelagert, nicht ausgetauscht.</p></div><div class="claim"><p>2. Das π-Elektronenpaar kann als Elektronenpaardonator reagieren.</p><div class="choices" data-radio="c1" data-answer="true"><label><input type="radio" name="c1" value="true">Richtig</label><label><input type="radio" name="c1" value="false">Falsch</label></div><p class="why" hidden>Die Doppelbindung ist elektronenreich.</p></div><div class="claim"><p>3. HBr wird im dargestellten ionischen Mechanismus homolytisch gespalten.</p><div class="choices" data-radio="c2" data-answer="false"><label><input type="radio" name="c2" value="true">Richtig</label><label><input type="radio" name="c2" value="false">Falsch</label></div><p class="why" hidden>Die Bindungsspaltung erfolgt heterolytisch.</p></div><div class="claim"><p>4. Ein vollständiger gebogener Elektronenpfeil steht für ein Elektronenpaar.</p><div class="choices" data-radio="c3" data-answer="true"><label><input type="radio" name="c3" value="true">Richtig</label><label><input type="radio" name="c3" value="false">Falsch</label></div><p class="why" hidden>Ein halbseitiger Pfeil steht dagegen für ein einzelnes Elektron.</p></div><div class="claim"><p>5. Bei der ionischen Addition von HBr an Propen entsteht bevorzugt 2-Brompropan.</p><div class="choices" data-radio="c4" data-answer="true"><label><input type="radio" name="c4" value="true">Richtig</label><label><input type="radio" name="c4" value="false">Falsch</label></div><p class="why" hidden>Das sekundäre Carbokation ist gegenüber dem primären begünstigt.</p></div><div class="claim"><p>6. Bei der Addition von Br₂ an Ethen entsteht üblicherweise zuerst ein freies Carbokation.</p><div class="choices" data-radio="c5" data-answer="false"><label><input type="radio" name="c5" value="true">Richtig</label><label><input type="radio" name="c5" value="false">Falsch</label></div><p class="why" hidden>Im üblichen Mechanismus bildet sich ein verbrücktes Bromoniumion.</p></div><button class="check" data-id="q5">Überprüfen</button><div class="feedback" aria-live="polite"></div></div></div>
-<div class="task"><h3>7 · Vergleiche die Reaktionen <span class="level">AFB III</span></h3><p>Vergleiche die radikalische Substitution von Methan mit Chlor und die elektrophile Addition von HBr an Ethen. Gehe auf Bindungsspaltung, Zwischenprodukte, Elektronenpfeile, Veränderung des Moleküls und die Rolle von UV-Licht ein.</p><textarea aria-label="Vergleich" style="min-height:140px"></textarea><details class="solution"><summary>Musterlösung</summary><p>Substitution: homolytische Spaltung, Radikale, halbseitige Pfeile für einzelne Elektronen, Austausch eines H-Atoms, UV-Licht zur Initiation. Addition: heterolytische Spaltung, ionische Zwischenprodukte, vollständige Pfeile für Elektronenpaare, Auflösung der π-Bindung und Anlagerung neuer Atome, kein UV-Licht zur Initiation des ionischen Mechanismus nötig.</p></details></div></section>
-<section id="sortieren"><div class="num">06 · ABSCHLUSSCHALLENGE</div><h2>Bringe den Mechanismus in die richtige Reihenfolge!</h2><p>Die Karten beschreiben die Addition von HBr an Ethen. Sortiere sie vom Ausgangszustand bis zum Produkt. Die beiden Elektronenbewegungen des elektrophilen Angriffs sind bewusst in einer Karte zusammengefasst, weil sie zum selben elementaren Schritt gehören.</p><p class="screenonly caption">Verschiebe die Karten durch Ziehen (am Computer) oder mit den Pfeiltasten auf jeder Karte (auch auf dem Tablet oder Smartphone).</p><ol id="sortlist" class="sortlist" aria-label="Sortierbare Mechanismuskarten"></ol><div class="rowbuttons"><button id="sortCheck">Reihenfolge überprüfen</button><button class="secondary" id="shuffle">Neu mischen</button></div><div id="sortFeedback" class="feedback" aria-live="polite"></div><p class="sortprint">Notiere die Buchstaben der Karten in der richtigen Reihenfolge: ______________________________</p><details class="solution"><summary>Musterlösung anzeigen</summary><ol id="sortSolution"></ol></details><div class="note"><strong>Zusatz:</strong> Zeichne den sortierten Mechanismus aus dem Gedächtnis mit Halbstrukturformeln, Ladungen und vollständigen Elektronenpaarpfeilen. Begründe anschließend, warum es sich um eine elektrophile Addition handelt.</div></section>
-<p class="footer">Chemie · Klasse 10 · Elektrophile Addition · Offline-Lernheft</p></main>
-<script>
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)]; let step=0,arrows=true;const solved=new Set();
-function progress(id,ok){if(ok)solved.add(id);else solved.delete(id);$('#bar').style.width=(solved.size/6*100)+'%';$('.progress').setAttribute('aria-valuenow',solved.size);$('#progresslabel').textContent=solved.size+' / 6 Selbstchecks gelöst';}
-function showStep(i){step=Math.max(0,Math.min(4,i));$$('[data-panel]').forEach(p=>p.hidden=+p.dataset.panel!==step);$$('[data-step]').forEach(b=>b.setAttribute('aria-selected',+b.dataset.step===step));$('#prev').disabled=step===0;$('#next').disabled=step===4;}
-$$('[data-step]').forEach(b=>b.onclick=()=>showStep(+b.dataset.step));$('#prev').onclick=()=>showStep(step-1);$('#next').onclick=()=>showStep(step+1);showStep(0);$('#toggleArrows').onclick=()=>{arrows=!arrows;$$('.arrowlayer').forEach(g=>g.classList.toggle('off',!arrows));$('#toggleArrows').setAttribute('aria-pressed',arrows);$('#toggleArrows').textContent=arrows?'Elektronenpfeile ausblenden':'Elektronenpfeile einblenden';};
-$$('.energy').forEach(b=>b.onclick=()=>{const on=$('#'+b.dataset.target).classList.toggle('show');b.setAttribute('aria-pressed',on);b.classList.toggle('secondary',!on);});
-$$('.regio').forEach(b=>b.onclick=()=>{$$('.regio').forEach(x=>x.classList.toggle('secondary',x!==b));$('#regioOut').innerHTML=b.dataset.r==='end'?'<strong>Begünstigter Weg:</strong> CH₃–CH⁺–CH₃ (sekundäres Carbokation) → CH₃–CHBr–CH₃ (2-Brompropan, Hauptprodukt).':'<strong>Weniger begünstigter Weg:</strong> CH₃–CH₂–CH₂⁺ (primäres Carbokation) → CH₃–CH₂–CH₂Br (1-Brompropan).';});
-$$('.check').forEach(b=>b.onclick=()=>{const root=$('#'+b.dataset.id);const fields=[...root.querySelectorAll('[data-answer]')];let n=0,missing=0;fields.forEach(el=>{const val=el.matches('select')?el.value:(el.querySelector('input:checked')?.value||'');if(!val)missing++;const ok=val===el.dataset.answer;if(ok)n++;el.classList.toggle('correct',ok);el.classList.toggle('wrong',!!val&&!ok);if(el.dataset.radio){el.closest('.claim').querySelector('.why').hidden=!val;}});let f=root.querySelector('.feedback');f.textContent=n+' von '+fields.length+' richtig. '+(n===fields.length?'Sehr gut – vollständig gelöst!':missing?'Bitte beantworte auch die offenen Felder.':'Überprüfe die rot markierten Antworten.');f.className='feedback '+(n===fields.length?'correct':'wrong');progress(b.dataset.id,n===fields.length);});
-$$('[data-check]').forEach(root=>root.addEventListener('change',()=>{progress(root.dataset.check,false);root.querySelector('.feedback').textContent='Antwort geändert – erneut überprüfen.';root.querySelectorAll('[data-answer]').forEach(e=>e.classList.remove('correct','wrong'));root.querySelectorAll('.why').forEach(e=>e.hidden=true);}));
-const cards=[{id:'D',text:'Ethen und Bromwasserstoff liegen als Edukte vor. Die π-Bindung ist elektronenreich; das H-Atom von HBr trägt δ⁺.'},{id:'B',text:'Die π-Elektronen bilden eine C–H-Bindung. Gleichzeitig gehen beide Elektronen der H–Br-Bindung zum Bromatom.'},{id:'E',text:'Ein Carbokation (CH₃–CH₂⁺) und ein Bromidion (Br⁻) liegen als Zwischenprodukte vor.'},{id:'A',text:'Ein freies Elektronenpaar des Bromidions wird zum positiv geladenen C-Atom verschoben.'},{id:'C',text:'Die C–Br-Bindung ist gebildet. Die Ladungen sind ausgeglichen; Bromethan (CH₃–CH₂Br) liegt als Produkt vor.'}];
-let order=[3,0,4,1,2],dragIndex=null;const sl=$('#sortlist');
-function clearSort(){progress('sort',false);$('#sortFeedback').textContent='';$('#sortFeedback').className='feedback';}
-function renderSort(focusIndex=null,dir=null){sl.innerHTML='';order.forEach((c,i)=>{const li=document.createElement('li');li.className='sortitem';li.draggable=true;li.innerHTML='<span class="index">'+cards[c].id+'</span><span>'+cards[c].text+'</span><span class="moves"><button class="secondary" data-dir="-1" aria-label="Karte '+cards[c].id+' nach oben" '+(i===0?'disabled':'')+'>↑</button><button class="secondary" data-dir="1" aria-label="Karte '+cards[c].id+' nach unten" '+(i===order.length-1?'disabled':'')+'>↓</button></span>';li.querySelectorAll('button').forEach(b=>b.onclick=()=>{let d=+b.dataset.dir;move(i,i+d,d);});li.addEventListener('dragstart',e=>{dragIndex=i;e.dataTransfer.setData('text/plain',String(i));e.dataTransfer.effectAllowed='move';li.classList.add('dragging');});li.addEventListener('dragend',()=>{dragIndex=null;li.classList.remove('dragging');});li.addEventListener('dragover',e=>{e.preventDefault();e.dataTransfer.dropEffect='move';});li.addEventListener('drop',e=>{e.preventDefault();if(dragIndex!==null)move(dragIndex,i);dragIndex=null;});sl.append(li);});if(focusIndex!==null&&dir!==null){const item=sl.children[focusIndex];const target=item.querySelector('button[data-dir="'+dir+'"]');if(target&&!target.disabled)target.focus();else item.querySelector('button:not(:disabled)')?.focus();}}
-function move(from,to,dir=null){if(from===to||to<0||to>=order.length)return;const item=order.splice(from,1)[0];order.splice(to,0,item);clearSort();renderSort(to,dir);}
-$('#sortCheck').onclick=()=>{const n=order.filter((v,i)=>v===i).length;[...sl.children].forEach((li,i)=>{li.classList.toggle('good',order[i]===i);li.classList.toggle('bad',order[i]!==i);});$('#sortFeedback').textContent=n===cards.length?'Perfekt! Alle Schritte sind in der richtigen Reihenfolge.':n+' von '+cards.length+' Karten stehen richtig. Verschiebe die übrigen Karten und versuche es erneut.';$('#sortFeedback').className='feedback '+(n===cards.length?'correct':'wrong');progress('sort',n===cards.length);};
-$('#shuffle').onclick=()=>{const before=order.join(',');do{order=[0,1,2,3,4];for(let i=order.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}while(order.every((v,i)=>v===i)||order.join(',')===before);clearSort();renderSort();};cards.forEach(c=>{const li=document.createElement('li');li.textContent=c.id+': '+c.text;$('#sortSolution').append(li);});renderSort();
-</script></body></html>
+      --teal: #0d9488;
+      --teal-dark: #0f766e;
+      --teal-soft: rgba(13, 148, 136, 0.11);
+      --teal-glow: rgba(13, 148, 136, 0.25);
+
+      --amber: #d97706;
+      --amber-soft: rgba(217, 119, 6, 0.12);
+      --rose: #e11d48;
+      --rose-soft: rgba(225, 29, 72, 0.11);
+      --emerald: #059669;
+      --emerald-soft: rgba(5, 150, 105, 0.12);
+      --indigo: #4f46e5;
+      --indigo-soft: rgba(79, 70, 229, 0.12);
+
+      --hero-bg: linear-gradient(135deg, #092c38 0%, #0f4c5c 52%, #0d7377 100%);
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 20px 40px -15px rgba(15, 23, 42, 0.12);
+
+      --radius-xl: 22px;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+      --transition: 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    [data-theme="dark"] {
+      --bg: #080f18;
+      --bg-mesh-1: rgba(20, 184, 166, 0.14);
+      --bg-mesh-2: rgba(245, 158, 11, 0.09);
+      --surface: #0f172a;
+      --surface-elevated: #162033;
+      --surface-glass: rgba(15, 23, 42, 0.84);
+      --ink: #f1f5f9;
+      --ink-secondary: #cbd5e1;
+      --muted: #94a3b8;
+      --line: #1e293b;
+      --line-strong: #334155;
+
+      --teal: #2dd4bf;
+      --teal-dark: #14b8a6;
+      --teal-soft: rgba(45, 212, 191, 0.14);
+      --teal-glow: rgba(45, 212, 191, 0.3);
+
+      --amber: #fbbf24;
+      --amber-soft: rgba(251, 191, 36, 0.14);
+      --rose: #fb7185;
+      --rose-soft: rgba(251, 113, 133, 0.15);
+      --emerald: #34d399;
+      --emerald-soft: rgba(52, 211, 153, 0.14);
+      --indigo: #818cf8;
+      --indigo-soft: rgba(129, 140, 248, 0.15);
+
+      --hero-bg: linear-gradient(135deg, #04151f 0%, #092e3b 52%, #0a4d52 100%);
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 12px 32px -8px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 24px 48px -12px rgba(0, 0, 0, 0.65);
+    }
+
+    /* ==========================================================================
+       RESET & BASE TYPOGRAPHY
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(circle at 12% 8%, var(--bg-mesh-1) 0%, transparent 42%),
+        radial-gradient(circle at 88% 22%, var(--bg-mesh-2) 0%, transparent 38%);
+      background-attachment: fixed;
+      color: var(--ink);
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      transition: background-color var(--transition), color var(--transition);
+      overflow-x: hidden;
+    }
+
+    .mono, code, .chem-eq {
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--ink);
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5.5vw, 56px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.06;
+      margin: 12px 0 16px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-size: clamp(23px, 3.2vw, 31px);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      letter-spacing: -0.015em;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--ink-secondary);
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       HERO HEADER
+       ========================================================================== */
+    header.hero {
+      position: relative;
+      background: var(--hero-bg);
+      color: #ffffff;
+      padding: 46px max(22px, calc((100% - 1080px) / 2)) 48px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #99f6e4;
+    }
+
+    .hero-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2dd4bf;
+      box-shadow: 0 0 10px #2dd4bf;
+      animation: pulseDot 2s infinite;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.65; }
+    }
+
+    header.hero p.hero-sub {
+      max-width: 640px;
+      color: #cbd5e1;
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 12px 0 24px;
+    }
+
+    .hero-visual-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius-xl);
+      padding: 18px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+    }
+
+    .hero-visual-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #99f6e4;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Progress Bar in Hero */
+    .progress-card {
+      background: rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      max-width: 620px;
+    }
+
+    .progress-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .xp-pill {
+      background: rgba(45, 212, 191, 0.2);
+      color: #5eead4;
+      border: 1px solid rgba(45, 212, 191, 0.35);
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .progress-track {
+      height: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #2dd4bf, #34d399, #fbbf24);
+      border-radius: 999px;
+      transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 0 12px rgba(45, 212, 191, 0.6);
+    }
+
+    /* ==========================================================================
+       STICKY GLASS NAVIGATION
+       ========================================================================== */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--surface-glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .navinner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .navinner::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--ink-secondary);
+      font-size: 13.5px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+      transition: all var(--transition);
+    }
+
+    .nav a:hover {
+      background: var(--teal-soft);
+      color: var(--teal);
+    }
+
+    .nav a.active {
+      background: var(--teal);
+      color: #ffffff;
+    }
+
+    .nav .spacer {
+      flex: 1;
+      min-width: 12px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .nav-mini-badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      border: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    /* ==========================================================================
+       MAIN CONTAINER & SECTIONS
+       ========================================================================== */
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 20px 72px;
+    }
+
+    section.card-section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: clamp(22px, 4vw, 38px);
+      margin: 24px 0;
+      box-shadow: var(--shadow-md);
+      transition: background-color var(--transition), border-color var(--transition);
+    }
+
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .num-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--teal);
+      background: var(--teal-soft);
+      border: 1px solid rgba(13, 148, 136, 0.22);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    /* ==========================================================================
+       BUTTONS & INTERACTIVE CONTROLS
+       ========================================================================== */
+    button, select, input, textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      background: var(--teal-dark);
+      color: #ffffff;
+      border: 1px solid transparent;
+      border-radius: var(--radius-sm);
+      padding: 10px 16px;
+      font-weight: 600;
+      font-size: 14.5px;
+      line-height: 1.3;
+      transition: all var(--transition);
+      user-select: none;
+    }
+
+    button:hover:not(:disabled) {
+      transform: translateY(-1px);
+      filter: brightness(1.06);
+      box-shadow: 0 6px 16px var(--teal-glow);
+    }
+
+    button:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    button.secondary {
+      background: var(--surface-elevated);
+      color: var(--ink);
+      border: 1px solid var(--line-strong);
+      box-shadow: none;
+    }
+
+    button.secondary:hover:not(:disabled) {
+      background: var(--teal-soft);
+      border-color: var(--teal);
+      color: var(--teal);
+      box-shadow: none;
+    }
+
+    button.icon-btn {
+      padding: 8px 12px;
+      font-size: 13.5px;
+    }
+
+    button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 2px;
+    }
+
+    .rowbuttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+      align-items: center;
+    }
+
+    /* ==========================================================================
+       CHEMICAL EQUATIONS, CALLOUTS & BENTO CARDS
+       ========================================================================== */
+    .eq-box {
+      background: var(--surface-elevated);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 18px 16px;
+      margin: 18px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .eq {
+      font-size: clamp(18px, 3.3vw, 25px);
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+      overflow-wrap: anywhere;
+    }
+
+    .eq .highlight-pi {
+      color: var(--teal);
+      font-weight: 800;
+    }
+
+    .eq .highlight-el {
+      color: var(--rose);
+      font-weight: 800;
+    }
+
+    .caption {
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.5;
+      margin-top: 6px;
+    }
+
+    .note {
+      border-left: 4px solid var(--teal);
+      background: var(--teal-soft);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 18px 0;
+      color: var(--ink-secondary);
+    }
+
+    .note strong {
+      color: var(--ink);
+    }
+
+    .note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .note.amber {
+      border-left-color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .note.emerald {
+      border-left-color: var(--emerald);
+      background: var(--emerald-soft);
+    }
+
+    /* Bento Grid for Key Concepts */
+    .bento-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 18px 0;
+    }
+
+    .concept-card {
+      background: var(--surface-elevated);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .concept-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--teal);
+      box-shadow: var(--shadow-md);
+    }
+
+    .concept-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .formula-badge {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.2;
+      padding: 6px 12px;
+      border-radius: var(--radius-md);
+    }
+
+    .formula-badge.teal {
+      background: var(--teal-soft);
+      color: var(--teal);
+    }
+
+    .formula-badge.indigo {
+      background: var(--indigo-soft);
+      color: var(--indigo);
+    }
+
+    .formula-badge.rose {
+      background: var(--rose-soft);
+      color: var(--rose);
+    }
+
+    .concept-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      background: var(--surface);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+    }
+
+    .concept-card h4 {
+      font-size: 17px;
+      margin: 4px 0 6px;
+    }
+
+    .concept-card p {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+
+    .mnemonic {
+      font-size: 12.5px;
+      color: var(--muted);
+      background: var(--surface);
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px dashed var(--line-strong);
+    }
+
+    /* ==========================================================================
+       SVG FIGURES & INTERACTIVE DIAGRAMS
+       ========================================================================== */
+    .figure {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--surface-elevated);
+      padding: 16px;
+      margin: 18px 0;
+      position: relative;
+    }
+
+    .figure svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .figure-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .pill-toggle {
+      padding: 6px 13px;
+      font-size: 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--ink-secondary);
+      border: 1px solid var(--line-strong);
+    }
+
+    .pill-toggle.active, .pill-toggle[aria-pressed="true"] {
+      background: var(--teal);
+      color: #ffffff;
+      border-color: var(--teal);
+    }
+
+    /* SVG Molecule Typography & Animations */
+    .molecule text {
+      fill: var(--ink);
+      font-size: 24px;
+      font-weight: 700;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    .molecule .sm {
+      font-size: 15px;
+      fill: var(--muted);
+    }
+
+    .molecule .charge {
+      fill: var(--rose);
+      font-weight: 800;
+    }
+
+    .molecule .charge-pos {
+      fill: var(--rose);
+      font-weight: 800;
+    }
+
+    .molecule .charge-neg {
+      fill: var(--teal);
+      font-weight: 800;
+    }
+
+    .molecule .electron {
+      fill: var(--teal);
+      stroke: none;
+      transition: opacity 0.25s, transform 0.25s;
+    }
+
+    .molecule .bond {
+      stroke: var(--ink);
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+    }
+
+    .molecule .bond-pi {
+      stroke: var(--teal);
+      stroke-width: 3.5;
+      fill: none;
+      stroke-linecap: round;
+    }
+
+    .molecule .ep {
+      stroke: var(--teal);
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-dasharray: 220;
+      stroke-dashoffset: 0;
+      animation: flowArrow 1.8s ease-in-out infinite;
+    }
+
+    @keyframes flowArrow {
+      0% { stroke-dashoffset: 220; opacity: 0.4; }
+      55% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+
+    .arrowlayer {
+      transition: opacity 0.25s ease;
+    }
+
+    .arrowlayer.off {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .xray-layer {
+      transition: opacity 0.25s ease;
+    }
+
+    .xray-off .xray-layer {
+      opacity: 0.18;
+    }
+
+    /* Mechanism Stepper */
+    .stepper-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin: 16px 0 12px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      background: var(--surface-elevated);
+      color: var(--ink-secondary);
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13.5px;
+    }
+
+    .tab[aria-selected="true"] {
+      background: var(--teal);
+      color: #ffffff;
+      border-color: var(--teal);
+      box-shadow: 0 4px 14px var(--teal-glow);
+    }
+
+    .phase {
+      padding: 8px 0;
+      animation: fadeSlide 0.28s ease;
+    }
+
+    .phase[hidden] {
+      display: none;
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .stepcounter {
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    .step-type-tag {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: var(--amber-soft);
+      color: var(--amber);
+    }
+
+    /* ==========================================================================
+       ENERGY DIAGRAM INTERACTIVE CONTROLS
+       ========================================================================== */
+    .diagramhighlight {
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .diagramhighlight.show {
+      opacity: 1;
+    }
+
+    .energy-slider-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      margin-top: 12px;
+    }
+
+    .slider-label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--teal);
+      cursor: pointer;
+      height: 6px;
+    }
+
+    .energy-stations {
+      display: flex;
+      justify-content: space-between;
+      gap: 4px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .station-btn {
+      font-size: 12px;
+      padding: 4px 9px;
+      border-radius: 6px;
+      background: var(--surface-elevated);
+      color: var(--ink-secondary);
+      border: 1px solid var(--line);
+    }
+
+    .station-btn.active {
+      background: var(--teal-soft);
+      color: var(--teal);
+      border-color: var(--teal);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       REGIOSELECTIVITY & BROMINE TEST TUBE LAB
+       ========================================================================== */
+    .lab-split {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 20px;
+      align-items: center;
+      background: var(--surface-elevated);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      margin: 16px 0;
+    }
+
+    .test-tube-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      text-align: center;
+    }
+
+    .bromine-liquid {
+      transition: fill 1.4s ease, opacity 1.4s ease;
+    }
+
+    .bubble {
+      animation: riseBubble 1.4s ease-in infinite;
+      opacity: 0;
+    }
+
+    .bubbling .bubble {
+      opacity: 0.85;
+    }
+
+    @keyframes riseBubble {
+      0% { transform: translateY(0); opacity: 0; }
+      30% { opacity: 0.9; }
+      100% { transform: translateY(-68px); opacity: 0; }
+    }
+
+    /* ==========================================================================
+       TASKS, INPUTS, SELF-CHECKS & SOLUTIONS
+       ========================================================================== */
+    .task {
+      border-top: 1px solid var(--line);
+      padding: 26px 0 16px;
+    }
+
+    .task:first-of-type {
+      border-top: 0;
+      padding-top: 10px;
+    }
+
+    .task h3 {
+      margin: 0 0 10px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .level {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--teal);
+      background: var(--teal-soft);
+      border: 1px solid rgba(13, 148, 136, 0.25);
+      border-radius: 6px;
+      padding: 2px 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .question {
+      padding: 10px 0;
+    }
+
+    .question label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    input[type="text"], select, textarea {
+      background: var(--surface);
+      border: 1.5px solid var(--line-strong);
+      border-radius: var(--radius-sm);
+      padding: 9px 12px;
+      color: var(--ink);
+      max-width: 100%;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    select:hover, textarea:hover, input[type="text"]:hover {
+      border-color: var(--teal);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 78px;
+      resize: vertical;
+      margin-bottom: 12px;
+    }
+
+    .chem-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin: 8px 0 12px;
+      padding: 8px 10px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+    }
+
+    .chem-toolbar span {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-right: 4px;
+    }
+
+    .chem-key {
+      padding: 4px 10px;
+      font-size: 14px;
+      font-weight: 700;
+      background: var(--surface);
+      color: var(--ink);
+      border: 1px solid var(--line-strong);
+      border-radius: 6px;
+      min-width: 34px;
+    }
+
+    .chem-key:hover {
+      background: var(--teal);
+      color: #ffffff;
+      border-color: var(--teal);
+    }
+
+    .feedback {
+      min-height: 24px;
+      font-size: 14.5px;
+      font-weight: 650;
+      margin: 12px 0 4px;
+      color: var(--muted);
+    }
+
+    .feedback.correct {
+      color: var(--emerald);
+      background: var(--emerald-soft);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(5, 150, 105, 0.25);
+    }
+
+    .feedback.wrong {
+      color: var(--rose);
+      background: var(--rose-soft);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(225, 29, 72, 0.25);
+    }
+
+    select.correct, .choices.correct {
+      border-color: var(--emerald) !important;
+      background-color: var(--emerald-soft) !important;
+    }
+
+    select.wrong, .choices.wrong {
+      border-color: var(--rose) !important;
+      background-color: var(--rose-soft) !important;
+    }
+
+    .solution {
+      margin: 12px 0;
+      background: var(--surface-elevated);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+    }
+
+    .solution summary {
+      cursor: pointer;
+      color: var(--teal);
+      font-weight: 700;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .solution summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .solution summary::before {
+      content: "▸";
+      display: inline-block;
+      transition: transform 0.2s;
+    }
+
+    .solution[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    .solution p:last-child, .solution ol:last-child {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+
+    .inline-select {
+      display: inline-block;
+      width: auto;
+      max-width: 100%;
+      margin: 3px 3px;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 5px 10px;
+    }
+
+    .matchrow {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(175px, 230px);
+      gap: 12px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding: 12px 0;
+    }
+
+    .matchrow:last-child {
+      border-bottom: 0;
+    }
+
+    .choices {
+      display: inline-flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+    }
+
+    .choices label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .claim {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .claim:last-of-type {
+      border-bottom: 0;
+    }
+
+    .claim p {
+      margin: 0 0 8px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .claim .why {
+      font-size: 13.5px;
+      margin: 8px 0 0;
+      color: var(--teal);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       SORTING CHALLENGE (SECTION 06)
+       ========================================================================== */
+    .sortlist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .sortitem {
+      display: grid;
+      grid-template-columns: 38px minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      border: 1.5px solid var(--line-strong);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      background: var(--surface-elevated);
+      cursor: grab;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+    }
+
+    .sortitem:hover {
+      border-color: var(--teal);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sortitem:active {
+      cursor: grabbing;
+    }
+
+    .sortitem .index {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .sortitem .moves {
+      display: flex;
+      gap: 6px;
+    }
+
+    .moves button {
+      padding: 7px 11px;
+      min-width: 38px;
+      font-size: 15px;
+    }
+
+    .sortitem.good {
+      border-color: var(--emerald);
+      background: var(--emerald-soft);
+    }
+
+    .sortitem.good .index {
+      background: var(--emerald);
+      color: #ffffff;
+    }
+
+    .sortitem.bad {
+      border-color: var(--rose);
+      background: var(--rose-soft);
+    }
+
+    .sortitem.bad .index {
+      background: var(--rose);
+      color: #ffffff;
+    }
+
+    .sortitem.dragging {
+      opacity: 0.45;
+      transform: scale(0.99);
+    }
+
+    .sortprint, .printonly {
+      display: none;
+    }
+
+    /* Confetti Canvas */
+    #confettiCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--muted);
+      margin-top: 32px;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 820px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .lab-split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .navinner {
+        padding: 9px 12px;
+      }
+      main {
+        padding: 14px 12px 48px;
+      }
+      section.card-section {
+        border-radius: var(--radius-lg);
+        padding: 18px 16px;
+      }
+      .matchrow {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .matchrow select {
+        width: 100%;
+      }
+      .sortitem {
+        grid-template-columns: 32px minmax(0, 1fr) auto;
+        padding: 10px 12px;
+        gap: 8px;
+        font-size: 14.5px;
+      }
+      .moves button {
+        padding: 6px 9px;
+        min-width: 34px;
+      }
+      .figure {
+        padding: 10px 8px;
+      }
+    }
+
+    /* ==========================================================================
+       PRINT / PDF WORKSHEET STYLESHEET
+       ========================================================================== */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #111827 !important;
+        font-size: 11pt;
+      }
+      header.hero {
+        padding: 18px 0;
+        background: #ffffff !important;
+        color: #111827 !important;
+        border-bottom: 2px solid #111827;
+      }
+      header.hero h1 {
+        color: #111827 !important;
+        font-size: 24pt;
+      }
+      header.hero p.hero-sub {
+        color: #374151 !important;
+      }
+      .hero-badge, .hero-visual-card, .progress-card, .nav, .rowbuttons, .tabs, .figure-toolbar, .energy-slider-box, .chem-toolbar, button, .feedback, .screenonly, #confettiCanvas, .footer {
+        display: none !important;
+      }
+      main {
+        max-width: none;
+        padding: 0;
+      }
+      section.card-section {
+        border: 0 !important;
+        box-shadow: none !important;
+        padding: 12px 0 !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+      }
+      .phase[hidden] {
+        display: block !important;
+      }
+      .task, .figure, .note, .concept-card, .sortitem {
+        break-inside: avoid;
+      }
+      .printonly, .sortprint {
+        display: block !important;
+      }
+      .solution {
+        display: none !important;
+      }
+      .diagramhighlight, .arrowlayer {
+        opacity: 1 !important;
+      }
+      textarea {
+        min-height: 54px;
+        border: 1px solid #9ca3af;
+      }
+      .moves {
+        display: none !important;
+      }
+      .sortitem {
+        grid-template-columns: 32px 1fr;
+        background: #ffffff !important;
+        border-color: #9ca3af !important;
+      }
+      section#aufgaben {
+        break-before: page;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       HERO HEADER
+       ======================================================================== -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge"><span class="dot"></span> Chemie · Jahrgang 10 · Organische Chemie</div>
+        <h1>Elektrophile<br />Addition</h1>
+        <p class="hero-sub">
+          Entdecke auf molekularer Ebene, wie die elektronenreiche Doppelbindung der Alkene reagiert – und wie aus einer π-Bindung zwei stabile Einfachbindungen entstehen.
+        </p>
+
+        <div class="progress-card">
+          <div class="progress-top">
+            <span id="progresslabel">0 / 6 Selbstchecks gelöst</span>
+            <span class="xp-pill" id="xpLabel">0 / 600 XP</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Gelöste Selbstchecks" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0">
+            <div class="progress-fill" id="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-card screenonly" aria-hidden="true">
+        <div class="hero-visual-title">
+          <span>Reaktions-Vorschau</span>
+          <span>ΔE &lt; 0 (exotherm)</span>
+        </div>
+        <svg viewBox="0 0 360 175" role="img" aria-label="Mini-Vorschau Ethen reagiert mit HBr zu Bromethan">
+          <defs>
+            <marker id="heroArr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0 0L7 4L0 8Z" fill="#2dd4bf" />
+            </marker>
+          </defs>
+          <!-- Ethen -->
+          <text x="58" y="88" fill="#ffffff" font-size="18" font-weight="700" text-anchor="middle">CH₂=CH₂</text>
+          <text x="58" y="110" fill="#99f6e4" font-size="11" text-anchor="middle">π-Elektronen (Nu)</text>
+          <!-- HBr -->
+          <text x="165" y="88" fill="#ffffff" font-size="18" font-weight="700" text-anchor="middle">H–Br</text>
+          <text x="151" y="66" fill="#fb7185" font-size="12" font-weight="700" text-anchor="middle">δ⁺</text>
+          <text x="180" y="66" fill="#2dd4bf" font-size="12" font-weight="700" text-anchor="middle">δ⁻</text>
+          <!-- Curved arrow -->
+          <path d="M72 68 Q112 24 146 66" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" marker-end="url(#heroArr)" />
+          <!-- Reaction Arrow -->
+          <path d="M204 83 H238" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#heroArr)" />
+          <!-- Product -->
+          <rect x="248" y="54" width="102" height="56" rx="12" fill="rgba(45,212,191,0.16)" stroke="rgba(45,212,191,0.45)" />
+          <text x="299" y="85" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">CH₃–CH₂Br</text>
+          <text x="299" y="102" fill="#99f6e4" font-size="11" text-anchor="middle">Bromethan</text>
+          <text x="180" y="154" fill="#cbd5e1" font-size="11.5" text-anchor="middle">2-stufiger ionischer Mechanismus über ein Carbokation</text>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       STICKY NAVIGATION
+       ======================================================================== -->
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="navinner">
+      <a href="#wissen" class="nav-link">01 · Grundlagen</a>
+      <a href="#mechanismus" class="nav-link">02 · Mechanismus</a>
+      <a href="#energie" class="nav-link">03 · Energie</a>
+      <a href="#produkte" class="nav-link">04 · Produkte</a>
+      <a href="#aufgaben" class="nav-link">05 · Übungen</a>
+      <a href="#sortieren" class="nav-link">06 · Challenge</a>
+      <span class="spacer"></span>
+      <div class="nav-actions">
+        <span class="nav-mini-badge" id="navScoreBadge">0 / 6</span>
+        <button type="button" class="secondary icon-btn" id="themeToggle" aria-label="Farbschema wechseln">🌙 Dark Mode</button>
+        <button type="button" class="secondary icon-btn" onclick="window.print()">🖨️ Drucken / PDF</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main>
+    <!-- ======================================================================
+         SECTION 01: GRUNDLAGEN
+         ====================================================================== -->
+    <section id="wissen" class="card-section">
+      <div class="num-pill">01 · Grundlagen</div>
+      <h2>Was ist eine elektrophile Addition?</h2>
+      <p>
+        Alkene sind ungesättigte Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung. Eine Doppelbindung besteht aus einer <strong>σ-Bindung (Sigma-Bindung)</strong> und einer <strong>π-Bindung (Pi-Bindung)</strong>. Die Elektronendichte der π-Bindung liegt ober- und unterhalb der Bindungsachse. Sie ist dadurch nach außen exponiert und für angreifende elektrophile Teilchen gut zugänglich.
+      </p>
+
+      <!-- Interactive Orbital / Bond Explorer -->
+      <div class="figure">
+        <div class="figure-toolbar screenonly" role="group" aria-label="Bindungsansicht wählen">
+          <button type="button" class="pill-toggle active" data-orbital="all">Gesamtansicht (σ + π)</button>
+          <button type="button" class="pill-toggle" data-orbital="pi">Nur π-Elektronenwolke (Angriffsziel)</button>
+          <button type="button" class="pill-toggle" data-orbital="sigma">Nur σ-Bindungsgerüst</button>
+        </div>
+
+        <svg id="orbitalSvg" viewBox="0 0 560 205" role="img" aria-label="Interaktive Darstellung der Sigma- und Pi-Bindung von Ethen">
+          <defs>
+            <linearGradient id="piGradTop" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0d9488" stop-opacity="0.45" />
+              <stop offset="100%" stop-color="#0d9488" stop-opacity="0.12" />
+            </linearGradient>
+            <linearGradient id="piGradBot" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#0d9488" stop-opacity="0.45" />
+              <stop offset="100%" stop-color="#0d9488" stop-opacity="0.12" />
+            </linearGradient>
+          </defs>
+
+          <!-- Pi-Wolken oben und unten -->
+          <g id="piLayer" style="transition: opacity 0.3s ease;">
+            <ellipse cx="275" cy="48" rx="102" ry="28" fill="url(#piGradTop)" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="5 3" />
+            <ellipse cx="275" cy="144" rx="102" ry="28" fill="url(#piGradBot)" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="5 3" />
+            <path d="M377 48 H442" stroke="#0d9488" stroke-width="1.8" />
+            <text x="450" y="53" fill="#0d9488" font-size="16" font-weight="800">π-Bindung (e⁻-reich)</text>
+          </g>
+
+          <!-- Sigma-Gerüst -->
+          <g id="sigmaLayer" style="transition: opacity 0.3s ease;">
+            <path d="M222 96 H328" stroke="var(--ink)" stroke-width="6.5" stroke-linecap="round" />
+            <g stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round">
+              <path d="M190 83 L144 46" />
+              <path d="M190 109 L144 146" />
+              <path d="M360 83 L406 46" />
+              <path d="M360 109 L406 146" />
+            </g>
+            <g font-size="26" font-weight="800" fill="var(--ink)" text-anchor="middle">
+              <text x="204" y="105">C</text>
+              <text x="346" y="105">C</text>
+            </g>
+            <g font-size="22" font-weight="700" fill="var(--ink)" text-anchor="middle">
+              <text x="128" y="45">H</text>
+              <text x="128" y="160">H</text>
+              <text x="422" y="45">H</text>
+              <text x="422" y="160">H</text>
+            </g>
+            <path d="M275 98 V186 H352" fill="none" stroke="var(--ink-secondary)" stroke-width="1.6" />
+            <text x="360" y="191" font-size="15" font-weight="700" fill="var(--ink-secondary)">σ-Bindung (stabil)</text>
+          </g>
+        </svg>
+        <div class="caption" id="orbitalCaption" style="text-align: center;">
+          Vereinfachtes Modell von Ethen: Die farbigen Bereiche zeigen die leicht angreifbare π-Elektronendichte ober- und unterhalb der Molekülebene; die σ-Bindung liegt direkt auf der Kernverbindungsachse.
+        </div>
+      </div>
+
+      <p>
+        Bei einer <strong>Addition</strong> lagern sich Atome oder Atomgruppen an die Kohlenstoffatome einer Mehrfachbindung an. Bei einer C=C-Doppelbindung wird dabei die schwächere π-Bindung aufgelöst, während die stabile C–C-σ-Bindung erhalten bleibt. Es entstehen zwei neue σ-Bindungen zu den addierten Teilchen.
+      </p>
+
+      <div class="eq-box">
+        <div class="eq">
+          <span class="highlight-pi">CH₂=CH₂</span> + <span class="highlight-el">HBr</span> ⟶ CH₃–CH₂Br
+        </div>
+        <div class="caption">
+          Ethen + Bromwasserstoff → Bromethan (es entsteht kein weiteres stöchiometrisches Nebenprodukt)
+        </div>
+      </div>
+
+      <div class="bento-cards">
+        <div class="concept-card">
+          <div>
+            <div class="concept-top">
+              <span class="formula-badge rose">E⁺</span>
+              <span class="concept-tag">Angreifer</span>
+            </div>
+            <h4>Elektrophil</h4>
+            <p>
+              <strong>Elektronenpaarakzeptor:</strong> nimmt ein Elektronenpaar zur Bindungsbildung auf. Beispiel: das positiv polarisierte H-Atom in HBr (H<sup>δ⁺</sup>).
+            </p>
+          </div>
+          <div class="mnemonic">💡 <em>„elektronenliebend“</em> – sucht Bereiche mit hoher Elektronendichte.</div>
+        </div>
+
+        <div class="concept-card">
+          <div>
+            <div class="concept-top">
+              <span class="formula-badge teal">Nu⁻</span>
+              <span class="concept-tag">Elektronenspender</span>
+            </div>
+            <h4>Nukleophil</h4>
+            <p>
+              <strong>Elektronenpaardonator:</strong> stellt ein Elektronenpaar zur Bindungsbildung bereit. Beispiele: die π-Bindung des Alkens sowie das Bromidion (Br⁻).
+            </p>
+          </div>
+          <div class="mnemonic">💡 <em>„kernliebend“</em> – greift positive oder positiv polarisierte Zentren an.</div>
+        </div>
+
+        <div class="concept-card">
+          <div>
+            <div class="concept-top">
+              <span class="formula-badge indigo">C⁺</span>
+              <span class="concept-tag">Zwischenstufe</span>
+            </div>
+            <h4>Carbokation</h4>
+            <p>
+              Positiv geladenes Zwischenprodukt mit einem elektronenarmen Kohlenstoffatom (Sextett). Reagiert im zweiten Schritt rasch mit einem Nukleophil.
+            </p>
+          </div>
+          <div class="mnemonic">💡 Besitzt nur <strong>3 Bindungen</strong> am geladenen C-Atom → sehr reaktiv!</div>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Merke:</strong> Elektrophile und Nukleophile müssen nicht zwingend vollständig geladen sein. Auch die <strong>Partialladung</strong> (δ⁺ / δ⁻) eines Atoms in einer polaren Atombindung reicht aus, um eine Reaktion einzuleiten.
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02: REAKTIONSMECHANISMUS
+         ====================================================================== -->
+    <section id="mechanismus" class="card-section">
+      <div class="num-pill">02 · Reaktionsmechanismus</div>
+      <h2>Die Addition von HBr an Ethen</h2>
+      <p>
+        Verfolge die Elektronenbewegungen Schritt für Schritt. Die türkisfarbenen gebogenen Pfeile zeigen, von wo nach wo ein <strong>ganzes Elektronenpaar</strong> verschoben wird. Anders als bei der radikalischen Substitution entstehen hier im dargestellten Mechanismus keine Radikale, sondern Ionen.
+      </p>
+
+      <div class="stepper-header">
+        <div class="tabs" role="group" aria-label="Mechanismusschritte">
+          <button type="button" class="tab" data-step="0" aria-selected="true">1 · Ausgangslage</button>
+          <button type="button" class="tab" data-step="1" aria-selected="false">2 · Elektrophiler Angriff</button>
+          <button type="button" class="tab" data-step="2" aria-selected="false">3 · Zwischenprodukt</button>
+          <button type="button" class="tab" data-step="3" aria-selected="false">4 · Nukleophiler Angriff</button>
+          <button type="button" class="tab" data-step="4" aria-selected="false">5 · Produkt</button>
+        </div>
+      </div>
+
+      <div id="mechanismPanels">
+        <!-- STEP 1 -->
+        <div class="phase" data-panel="0">
+          <div class="step-badge-row">
+            <span class="stepcounter">Schritt 1 von 5</span>
+            <span class="step-type-tag">Edukte & Polarisierung</span>
+          </div>
+          <h3>Ethen und polarer Bromwasserstoff</h3>
+          <div class="figure">
+            <svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 1: Ethen und HBr">
+              <text x="120" y="105" text-anchor="middle">CH₂</text>
+              <text x="240" y="105" text-anchor="middle">CH₂</text>
+              <path class="bond" d="M153 91 L207 91" />
+              <path class="bond-pi" d="M153 102 L207 102" />
+              <text x="302" y="105" text-anchor="middle">+</text>
+              <text x="365" y="105" text-anchor="middle">H</text>
+              <text x="455" y="105" text-anchor="middle">Br</text>
+              <path class="bond" d="M382 97 L434 97" />
+              <g class="xray-layer">
+                <text x="365" y="69" class="charge-pos" font-size="19" text-anchor="middle">δ⁺</text>
+                <text x="455" y="69" class="charge-neg" font-size="19" text-anchor="middle">δ⁻</text>
+                <circle class="electron" cx="451" cy="122" r="2.7" />
+                <circle class="electron" cx="459" cy="122" r="2.7" />
+                <circle class="electron" cx="451" cy="81" r="2.7" />
+                <circle class="electron" cx="459" cy="81" r="2.7" />
+                <circle class="electron" cx="481" cy="96" r="2.7" />
+                <circle class="electron" cx="489" cy="96" r="2.7" />
+              </g>
+            </svg>
+          </div>
+          <p>
+            Die H–Br-Bindung ist aufgrund der unterschiedlichen Elektronegativitäten polar: Brom zieht das gemeinsame Bindungselektronenpaar stärker an. Das H-Atom trägt eine positive Partialladung (δ⁺) und wirkt als <strong>Elektrophil</strong>.
+          </p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="phase" data-panel="1" hidden>
+          <div class="step-badge-row">
+            <span class="stepcounter">Schritt 2 von 5</span>
+            <span class="step-type-tag">Teilschritt 1 · Langsam (geschwindigkeitsbestimmend)</span>
+          </div>
+          <h3>Protonierung: Bildung der ersten neuen Bindung</h3>
+          <div class="figure">
+            <svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 2: Elektrophiler Angriff">
+              <defs>
+                <marker id="arr1" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+                  <path d="M0 0 L8 4.5 L0 9 Z" fill="var(--teal)" />
+                </marker>
+              </defs>
+              <text x="120" y="105" text-anchor="middle">CH₂</text>
+              <text x="240" y="105" text-anchor="middle">CH₂</text>
+              <path class="bond" d="M153 91 L207 91" />
+              <path class="bond-pi" d="M153 102 L207 102" />
+              <text x="365" y="105" text-anchor="middle">H</text>
+              <text x="455" y="105" text-anchor="middle">Br</text>
+              <path class="bond" d="M382 97 L434 97" />
+              <g class="xray-layer">
+                <text x="365" y="69" class="charge-pos" font-size="19" text-anchor="middle">δ⁺</text>
+                <text x="455" y="69" class="charge-neg" font-size="19" text-anchor="middle">δ⁻</text>
+                <circle class="electron" cx="451" cy="122" r="2.7" />
+                <circle class="electron" cx="459" cy="122" r="2.7" />
+                <circle class="electron" cx="451" cy="81" r="2.7" />
+                <circle class="electron" cx="459" cy="81" r="2.7" />
+                <circle class="electron" cx="481" cy="96" r="2.7" />
+                <circle class="electron" cx="489" cy="96" r="2.7" />
+              </g>
+              <g class="arrowlayer">
+                <path class="ep" d="M180 91 Q238 14 353 86" marker-end="url(#arr1)" />
+                <path class="ep" d="M408 97 Q425 148 449 111" marker-end="url(#arr1)" />
+              </g>
+            </svg>
+          </div>
+          <p>
+            Das π-Elektronenpaar des Ethens bildet eine neue C–H-Bindung zum Proton (H). Gleichzeitig wird die H–Br-Bindung <strong>heterolytisch</strong> gespalten: Beide Bindungselektronen wandern vollständig zum elektronegativeren Bromatom.
+          </p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="phase" data-panel="2" hidden>
+          <div class="step-badge-row">
+            <span class="stepcounter">Schritt 3 von 5</span>
+            <span class="step-type-tag">Reaktive Zwischenstufe</span>
+          </div>
+          <h3>Carbokation und Bromidion</h3>
+          <div class="figure">
+            <svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 3: Carbokation und Bromidion">
+              <text x="135" y="105" text-anchor="middle">CH₃</text>
+              <text x="255" y="105" text-anchor="middle">CH₂</text>
+              <path class="bond" d="M167 97 L223 97" />
+              <text x="281" y="79" class="charge-pos" text-anchor="middle">⁺</text>
+              <text x="340" y="105" text-anchor="middle">+</text>
+              <text x="425" y="105" text-anchor="middle">Br</text>
+              <text x="448" y="77" class="charge-neg" text-anchor="middle">⁻</text>
+              <g class="xray-layer">
+                <circle class="electron" cx="420" cy="77" r="2.7" />
+                <circle class="electron" cx="428" cy="77" r="2.7" />
+                <circle class="electron" cx="420" cy="121" r="2.7" />
+                <circle class="electron" cx="428" cy="121" r="2.7" />
+                <circle class="electron" cx="394" cy="96" r="2.7" />
+                <circle class="electron" cx="402" cy="96" r="2.7" />
+                <circle class="electron" cx="452" cy="99" r="2.7" />
+                <circle class="electron" cx="460" cy="99" r="2.7" />
+              </g>
+            </svg>
+          </div>
+          <p>
+            Nach der Protonierung trägt das zweite Kohlenstoffatom nur noch drei Bindungen und damit die positive Ladung: Es liegt ein <strong>Carbokation</strong> (Ethyl-Kation) vor. Daneben befindet sich das negativ geladene <strong>Bromidion (Br⁻)</strong> mit vier freien Elektronenpaaren.
+          </p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="phase" data-panel="3" hidden>
+          <div class="step-badge-row">
+            <span class="stepcounter">Schritt 4 von 5</span>
+            <span class="step-type-tag">Teilschritt 2 · Schnell</span>
+          </div>
+          <h3>Bromid greift das Carbokation an</h3>
+          <div class="figure">
+            <svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 4: Nukleophiler Angriff">
+              <defs>
+                <marker id="arr3" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+                  <path d="M0 0 L8 4.5 L0 9 Z" fill="var(--teal)" />
+                </marker>
+              </defs>
+              <text x="135" y="105" text-anchor="middle">CH₃</text>
+              <text x="255" y="105" text-anchor="middle">CH₂</text>
+              <path class="bond" d="M167 97 L223 97" />
+              <text x="281" y="79" class="charge-pos" text-anchor="middle">⁺</text>
+              <text x="425" y="105" text-anchor="middle">Br</text>
+              <text x="448" y="77" class="charge-neg" text-anchor="middle">⁻</text>
+              <g class="xray-layer">
+                <circle class="electron" cx="420" cy="77" r="2.7" />
+                <circle class="electron" cx="428" cy="77" r="2.7" />
+                <circle class="electron" cx="420" cy="121" r="2.7" />
+                <circle class="electron" cx="428" cy="121" r="2.7" />
+                <circle class="electron" cx="394" cy="96" r="2.7" />
+                <circle class="electron" cx="402" cy="96" r="2.7" />
+                <circle class="electron" cx="452" cy="99" r="2.7" />
+                <circle class="electron" cx="460" cy="99" r="2.7" />
+              </g>
+              <g class="arrowlayer">
+                <path class="ep" d="M396 96 Q350 24 274 88" marker-end="url(#arr3)" />
+              </g>
+            </svg>
+          </div>
+          <p>
+            Ein freies Elektronenpaar des nukleophilen Bromidions greift das positiv geladene Kohlenstoffatom an und knüpft eine neue C–Br-Bindung. Die entgegengesetzten Ladungen gleichen sich dabei aus.
+          </p>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="phase" data-panel="4" hidden>
+          <div class="step-badge-row">
+            <span class="stepcounter">Schritt 5 von 5</span>
+            <span class="step-type-tag">Endprodukt (Halogenalkan)</span>
+          </div>
+          <h3>Bromethan ist entstanden</h3>
+          <div class="figure">
+            <svg class="molecule" viewBox="0 0 560 190" role="img" aria-label="Mechanismusschritt 5: Bromethan">
+              <text x="120" y="105" text-anchor="middle">CH₃</text>
+              <text x="240" y="105" text-anchor="middle">CH₂</text>
+              <text x="365" y="105" text-anchor="middle">Br</text>
+              <path class="bond" d="M153 97 L207 97" />
+              <path class="bond" d="M273 97 L342 97" />
+              <g class="xray-layer">
+                <circle class="electron" cx="360" cy="77" r="2.7" />
+                <circle class="electron" cx="368" cy="77" r="2.7" />
+                <circle class="electron" cx="360" cy="121" r="2.7" />
+                <circle class="electron" cx="368" cy="121" r="2.7" />
+                <circle class="electron" cx="390" cy="97" r="2.7" />
+                <circle class="electron" cx="398" cy="97" r="2.7" />
+              </g>
+            </svg>
+          </div>
+          <p>
+            Beide Kohlenstoffatome besitzen wieder vier kovalente Bindungen. Aus der ungesättigten C=C-Doppelbindung ist eine gesättigte C–C-Einfachbindung geworden. Das Produkt ist das Halogenalkan <strong>Bromethan</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="rowbuttons screenonly">
+        <button type="button" class="secondary" id="prev">← Zurück</button>
+        <button type="button" id="next">Weiter →</button>
+        <button type="button" class="secondary" id="autoPlayBtn" aria-pressed="false">▶ Auto-Play</button>
+        <button type="button" class="secondary" id="toggleArrows" aria-pressed="true">Elektronenpfeile ausblenden</button>
+        <button type="button" class="secondary" id="toggleXray" aria-pressed="true">Elektronen-Röntgenblick: AN</button>
+      </div>
+
+      <div class="note">
+        <strong>Heterolytische Bindungsspaltung:</strong> Beide Elektronen einer Atombindung gehen bei der Trennung zu demselben Bindungspartner. Hier entstehen nach der Protonierung Ionen (Carbokation + Bromidion), keine Radikale.
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 03: REAKTIONSENERGIEDIAGRAMM
+         ====================================================================== -->
+    <section id="energie" class="card-section">
+      <div class="num-pill">03 · Energieprofil</div>
+      <h2>Reaktionsenergiediagramm</h2>
+      <p>
+        Der vereinfachte Mechanismus besitzt <strong>zwei Teilschritte</strong> und ein <strong>Zwischenprodukt</strong>. Jeder Teilschritt hat eine eigene Aktivierungsenergie (E<sub>a</sub>). Für die Addition von HBr an Ethen liegt das Produkt energetisch tiefer als die Edukte – die Gesamtreaktion ist daher <strong>exotherm</strong> (ΔE &lt; 0).
+      </p>
+
+      <div class="figure">
+        <svg id="energySvg" viewBox="0 0 640 340" role="img" aria-label="Interaktives Energiediagramm der elektrophilen Addition mit zwei Maxima und einem Zwischenminimum">
+          <defs>
+            <marker id="axis" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0 0 L7 4 L0 8 Z" fill="var(--ink)" />
+            </marker>
+            <linearGradient id="curveFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0d9488" stop-opacity="0.22" />
+              <stop offset="100%" stop-color="#0d9488" stop-opacity="0.0" />
+            </linearGradient>
+          </defs>
+
+          <!-- Axes -->
+          <g fill="none" stroke="var(--ink)" stroke-width="2">
+            <path d="M58 286 V20" marker-end="url(#axis)" />
+            <path d="M58 286 H616" marker-end="url(#axis)" />
+          </g>
+          <g fill="var(--ink)" font-size="14" font-weight="700">
+            <text x="22" y="150" transform="rotate(-90 22 150)" text-anchor="middle">Innere Energie E</text>
+            <text x="340" y="324" text-anchor="middle">Reaktionsverlauf (Reaktionskoordinate)</text>
+          </g>
+
+          <!-- Area under curve -->
+          <path d="M68 202 H114 C148 202 158 60 202 60 S254 132 296 132 H320 C352 132 358 98 390 98 S445 252 490 252 H572 V286 H68 Z" fill="url(#curveFill)" />
+
+          <!-- Main Energy Curve -->
+          <path id="energyCurvePath" d="M68 202 H114 C148 202 158 60 202 60 S254 132 296 132 H320 C352 132 358 98 390 98 S445 252 490 252 H572" fill="none" stroke="var(--teal)" stroke-width="4" stroke-linecap="round" />
+
+          <!-- Station Labels -->
+          <g fill="var(--ink)" font-size="13" font-weight="600" text-anchor="middle">
+            <text x="102" y="222">Ethen + HBr</text>
+            <text x="202" y="42">Übergangszustand 1</text>
+            <text x="308" y="153">Carbokation + Br⁻</text>
+            <text x="412" y="80">Übergangszustand 2</text>
+            <text x="532" y="271">Bromethan</text>
+          </g>
+
+          <!-- Highlight Ea1 -->
+          <g id="ea1" class="diagramhighlight" stroke="var(--amber)" stroke-width="2" fill="none">
+            <path d="M158 202 H68 M158 202 V60 H202" stroke-dasharray="4 4" />
+            <path d="M158 202 V60 M153 68 L158 60 L163 68 M153 194 L158 202 L163 194" />
+            <text x="148" y="132" text-anchor="end" fill="var(--amber)" stroke="none" font-size="15" font-weight="800">Eₐ₁</text>
+          </g>
+
+          <!-- Highlight Ea2 -->
+          <g id="ea2" class="diagramhighlight" stroke="var(--amber)" stroke-width="2" fill="none">
+            <path d="M342 132 V98 H390" stroke-dasharray="4 4" />
+            <path d="M342 132 V98 M337 106 L342 98 L347 106 M337 124 L342 132 L347 124" />
+            <text x="334" y="93" text-anchor="end" fill="var(--amber)" stroke="none" font-size="15" font-weight="800">Eₐ₂</text>
+          </g>
+
+          <!-- Highlight Delta E -->
+          <g id="de" class="diagramhighlight" fill="none" stroke="var(--indigo)" stroke-width="2">
+            <path d="M68 202 H584" stroke-dasharray="4 4" />
+            <path d="M584 202 V252 M579 244 L584 252 L589 244" />
+            <text x="576" y="232" text-anchor="end" fill="var(--indigo)" stroke="none" font-size="15" font-weight="800">ΔE &lt; 0</text>
+          </g>
+
+          <!-- Interactive Tracer Dot -->
+          <g id="energyTracer">
+            <circle cx="92" cy="202" r="12" fill="var(--rose)" opacity="0.24" />
+            <circle cx="92" cy="202" r="6.5" fill="var(--rose)" stroke="#ffffff" stroke-width="2" />
+          </g>
+        </svg>
+
+        <!-- Interactive Slider & Station Selector -->
+        <div class="energy-slider-box screenonly">
+          <div class="slider-label-row">
+            <span>🔍 Reaktionsverlauf abfahren:</span>
+            <span id="tracerStatus" style="color: var(--teal);">Edukte: Ethen + HBr (Ausgangsniveau)</span>
+          </div>
+          <input type="range" id="energySlider" min="0" max="100" value="0" aria-label="Position auf dem Energiediagramm" />
+          <div class="energy-stations">
+            <button type="button" class="station-btn active" data-pos="0">1. Edukte</button>
+            <button type="button" class="station-btn" data-pos="26">2. ÜZ 1 (Maximum)</button>
+            <button type="button" class="station-btn" data-pos="48">3. Zwischenprodukt</button>
+            <button type="button" class="station-btn" data-pos="65">4. ÜZ 2 (Maximum)</button>
+            <button type="button" class="station-btn" data-pos="100">5. Produkt</button>
+          </div>
+        </div>
+
+        <div class="caption" style="text-align: center;">
+          Qualitatives Modell, nicht maßstabsgetreu. Gezeigt wird ein typischer zweistufiger ionischer Reaktionsweg; die genauen Energiewerte hängen von den Reaktionsbedingungen ab.
+        </div>
+      </div>
+
+      <div class="rowbuttons screenonly">
+        <button type="button" class="secondary energy" data-target="ea1" aria-pressed="false">Aktivierungsenergie 1 (Eₐ₁)</button>
+        <button type="button" class="secondary energy" data-target="ea2" aria-pressed="false">Aktivierungsenergie 2 (Eₐ₂)</button>
+        <button type="button" class="secondary energy" data-target="de" aria-pressed="false">Reaktionsenergie (ΔE)</button>
+      </div>
+
+      <p style="margin-top: 14px;">
+        Die Maxima stehen für energiereiche <strong>Übergangszustände</strong>, das lokale Minimum dazwischen für das isolierbare oder kurzlebige <strong>Zwischenprodukt</strong> (Carbokation + Br⁻). Weil das Produkt energetisch tiefer liegt als die Edukte, ist ΔE negativ. Der erste Schritt (Aufbrechen der π-Bindung und Bildung des Carbokations) besitzt die größere Energiebarriere (E<sub>a1</sub> &gt; E<sub>a2</sub>).
+      </p>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 04: TRANSFER & PRODUKTE
+         ====================================================================== -->
+    <section id="produkte" class="card-section">
+      <div class="num-pill">04 · Transfer & Nachweis</div>
+      <h2>Welche Produkte können entstehen?</h2>
+
+      <h3>Addition von HBr an Propen (Regioselektivität)</h3>
+      <p>
+        Bei einem unsymmetrischen Alken wie Propen gibt es zwei Möglichkeiten, das H-Atom an die Doppelbindung zu addieren. Je nach Position der positiven Ladung entsteht ein <strong>primäres</strong> oder ein stabileres <strong>sekundäres Carbokation</strong>.
+      </p>
+
+      <div class="eq-box">
+        <div class="eq">CH₃–CH=CH₂ + HBr ⟶ ?</div>
+        <div class="caption">Wähle unten aus, an welches C-Atom der Doppelbindung das H-Atom gebunden wird:</div>
+        <div class="rowbuttons screenonly" style="justify-content: center;">
+          <button type="button" class="secondary regio" data-r="end">H an endständiges C (–CH₂)</button>
+          <button type="button" class="secondary regio" data-r="middle">H an mittleres C (–CH–)</button>
+        </div>
+      </div>
+
+      <div id="regioOut" class="note" aria-live="polite">
+        Klicke oben auf eine der beiden Möglichkeiten, um das entstehende Carbokation und das Produkt zu vergleichen.
+      </div>
+      <div class="printonly">
+        <strong>H an endständiges C:</strong> CH₃–CH⁺–CH₃ (sekundäres Carbokation) → 2-Brompropan (Hauptprodukt).<br />
+        <strong>H an mittleres C:</strong> CH₃–CH₂–CH₂⁺ (primäres Carbokation) → 1-Brompropan (weniger begünstigter Weg).
+      </div>
+
+      <p>
+        <strong>Markownikow-Regel:</strong> Bei der gewöhnlichen ionischen Addition von HBr an unsymmetrische Alkene wie Propen bindet sich H bevorzugt an das C-Atom der Doppelbindung, das bereits <strong>mehr H-Atome trägt</strong>. Das stabilere (höher substituierte) Carbokation wird bevorzugt gebildet. Bei Propen ist <strong>2-Brompropan</strong> das Hauptprodukt. Die Regel gilt hier für den ionischen Weg ohne radikalische Initiatoren wie Peroxide.
+      </p>
+
+      <h3>Exkurs: Brom als Nachweis von Doppelbindungen</h3>
+      <div class="eq-box">
+        <div class="eq">CH₂=CH₂ + Br₂ ⟶ BrCH₂–CH₂Br</div>
+        <div class="caption">Ethen + Brom → 1,2-Dibromethan (Farbwechsel von orange-braun zu farblos)</div>
+      </div>
+
+      <div class="lab-split">
+        <div>
+          <p>
+            Auch unpolares elementares Brom (Br₂) kann elektrophil an Alkene addiert werden. Die dichte π-Elektronenwolke stößt die Bindungselektronen im Brommolekül ab und <strong>polarisiert</strong> es induktiv (Br<sup>δ⁺</sup>–Br<sup>δ⁻</sup>).
+          </p>
+          <p>
+            Es bildet sich im üblichen Mechanismus zunächst ein verbrücktes <strong>Bromoniumion</strong> (Dreiring), das anschließend von der Rückseite durch Br⁻ geöffnet wird. Hier entsteht also nicht dasselbe freie Carbokation wie bei der HBr-Addition.
+          </p>
+
+          <div class="figure" style="margin: 12px 0 0;">
+            <svg viewBox="0 0 540 140" role="img" aria-label="Bromoniumion mit Dreiring und Bromidion">
+              <g class="molecule">
+                <path class="bond" d="M214 93 L276 93 M212 80 L238 40 M278 80 L252 40" />
+                <text x="190" y="102" text-anchor="middle">CH₂</text>
+                <text x="300" y="102" text-anchor="middle">CH₂</text>
+                <text x="245" y="34" text-anchor="middle">Br</text>
+                <text x="270" y="20" class="charge-pos">⁺</text>
+                <text x="377" y="79">+</text>
+                <text x="422" y="79">Br</text>
+                <text x="452" y="61" class="charge-neg">⁻</text>
+              </g>
+            </svg>
+            <div class="caption" style="text-align: center;">Verbrücktes Bromoniumion + Bromidion (vereinfachte Strukturformel)</div>
+          </div>
+        </div>
+
+        <!-- Interactive Test Tube Experiment -->
+        <div class="test-tube-stage screenonly">
+          <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px;">
+            Virtueller Nachweis
+          </div>
+          <svg id="testTubeSvg" viewBox="0 0 160 210" width="145" height="190" role="img" aria-label="Reagenzglas mit Brom-Lösung">
+            <!-- Liquid -->
+            <path id="bromineLiquid" class="bromine-liquid" d="M56 75 H104 V162 A24 24 0 0 1 56 162 Z" fill="#d97706" opacity="0.88" />
+            <!-- Gas Bubbles -->
+            <circle class="bubble" cx="72" cy="168" r="3.5" fill="#ffffff" style="animation-delay: 0s;" />
+            <circle class="bubble" cx="85" cy="172" r="4" fill="#ffffff" style="animation-delay: 0.35s;" />
+            <circle class="bubble" cx="78" cy="165" r="3" fill="#ffffff" style="animation-delay: 0.7s;" />
+            <circle class="bubble" cx="88" cy="162" r="3.5" fill="#ffffff" style="animation-delay: 1.05s;" />
+            <!-- Gas Inlet Tube -->
+            <path d="M32 14 H76 V168" fill="none" stroke="var(--muted)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- Glass Tube -->
+            <path d="M54 30 V162 A26 26 0 0 0 106 162 V30" fill="none" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round" />
+            <ellipse cx="80" cy="30" rx="28" ry="5" fill="none" stroke="var(--ink)" stroke-width="3" />
+          </svg>
+          <div id="tubeStatus" style="font-size: 13px; font-weight: 700; margin: 6px 0 10px; color: var(--amber);">
+            Br₂-Lösung: orange-braun
+          </div>
+          <button type="button" id="bromineTestBtn" class="icon-btn">🧪 Ethen einleiten</button>
+        </div>
+      </div>
+
+      <p>
+        Die charakteristische orange-braune Farbe von Brom verschwindet beim Verbrauch von Br₂ (<strong>Entfärbung als Nachweis</strong> für Mehrfachbindungen). In Wasser können zusätzlich Bromhydrine gebildet werden; die obige Gleichung beschreibt die Addition von Br₂ zum Dibromalkan unter geeigneten nichtwässrigen Bedingungen.
+      </p>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05: ÜBUNGEN & SELBSTCHECKS
+         ====================================================================== -->
+    <section id="aufgaben" class="card-section">
+      <div class="num-pill">05 · Übungen & Selbstchecks</div>
+      <h2>Überprüfe dein Wissen</h2>
+      <p>
+        Bearbeite die Aufgaben der Reihe nach. Bei den Selbstchecks erhältst du sofort Rückmeldung und sammelst XP. Deine freien Antworten kannst du anschließend direkt mit der Musterlösung vergleichen.
+      </p>
+
+      <!-- TASK 1 -->
+      <div class="task">
+        <h3>1 · Grundbegriffe <span class="level">AFB I</span></h3>
+        <p>Ordne jeder Beschreibung den richtigen Fachbegriff zu.</p>
+        <div id="q1" data-check="q1">
+          <div class="matchrow">
+            <label for="q1_0">Teilchen, das ein Elektronenpaar aufnimmt.</label>
+            <select id="q1_0" data-answer="Elektrophil">
+              <option value="">Auswählen …</option>
+              <option>Addition</option>
+              <option>Carbokation</option>
+              <option>Elektrophil</option>
+              <option>Heterolyse</option>
+              <option>Nukleophil</option>
+            </select>
+          </div>
+          <div class="matchrow">
+            <label for="q1_1">Teilchen, das ein Elektronenpaar zur Verfügung stellt.</label>
+            <select id="q1_1" data-answer="Nukleophil">
+              <option value="">Auswählen …</option>
+              <option>Addition</option>
+              <option>Carbokation</option>
+              <option>Elektrophil</option>
+              <option>Heterolyse</option>
+              <option>Nukleophil</option>
+            </select>
+          </div>
+          <div class="matchrow">
+            <label for="q1_2">Positiv geladenes Kohlenstoff-Zwischenprodukt.</label>
+            <select id="q1_2" data-answer="Carbokation">
+              <option value="">Auswählen …</option>
+              <option>Addition</option>
+              <option>Carbokation</option>
+              <option>Elektrophil</option>
+              <option>Heterolyse</option>
+              <option>Nukleophil</option>
+            </select>
+          </div>
+          <div class="matchrow">
+            <label for="q1_3">Bindungsspaltung, bei der beide Elektronen zum selben Atom gelangen.</label>
+            <select id="q1_3" data-answer="Heterolyse">
+              <option value="">Auswählen …</option>
+              <option>Addition</option>
+              <option>Carbokation</option>
+              <option>Elektrophil</option>
+              <option>Heterolyse</option>
+              <option>Nukleophil</option>
+            </select>
+          </div>
+          <div class="matchrow">
+            <label for="q1_4">Anlagerung an eine Mehrfachbindung.</label>
+            <select id="q1_4" data-answer="Addition">
+              <option value="">Auswählen …</option>
+              <option>Addition</option>
+              <option>Carbokation</option>
+              <option>Elektrophil</option>
+              <option>Heterolyse</option>
+              <option>Nukleophil</option>
+            </select>
+          </div>
+          <div class="rowbuttons">
+            <button type="button" class="check" data-id="q1">Überprüfen</button>
+          </div>
+          <div class="feedback" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <!-- TASK 2 -->
+      <div class="task">
+        <h3>2 · Lückentext <span class="level">AFB I–II</span></h3>
+        <div id="q2" data-check="q2">
+          <p style="line-height: 2;">
+            Bei der elektrophilen Addition reagiert die
+            <select class="inline-select" aria-label="Bindung" data-answer="π-Bindung">
+              <option value="">…</option>
+              <option>σ-Bindung</option>
+              <option>π-Bindung</option>
+            </select>
+            des Alkens zuerst mit dem
+            <select class="inline-select" aria-label="Reaktionspartner" data-answer="Elektrophil">
+              <option value="">…</option>
+              <option>Nukleophil</option>
+              <option>Elektrophil</option>
+            </select>.
+            Im HBr-Mechanismus wird die H–Br-Bindung
+            <select class="inline-select" aria-label="Bindungsspaltung" data-answer="heterolytisch">
+              <option value="">…</option>
+              <option>homolytisch</option>
+              <option>heterolytisch</option>
+            </select>
+            gespalten. Es entsteht ein
+            <select class="inline-select" aria-label="Zwischenprodukt" data-answer="Carbokation">
+              <option value="">…</option>
+              <option>Carbokation</option>
+              <option>Alkylradikal</option>
+            </select>.
+            Anschließend reagiert es mit dem
+            <select class="inline-select" aria-label="Ion" data-answer="Bromidion">
+              <option value="">…</option>
+              <option>Bromidion</option>
+              <option>Chlorradikal</option>
+            </select>.
+          </p>
+          <div class="rowbuttons">
+            <button type="button" class="check" data-id="q2">Überprüfen</button>
+          </div>
+          <div class="feedback" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <!-- TASK 3 -->
+      <div class="task">
+        <h3>3 · Reaktionsgleichungen <span class="level">AFB II</span></h3>
+        <p>
+          Formuliere die Reaktionsgleichungen in Halbstrukturformeln und benenne die Produkte. Gehe jeweils von einer einfachen Addition aus.
+        </p>
+
+        <div class="chem-toolbar screenonly" aria-label="Chemische Sonderzeichen einfügen">
+          <span>Sonderzeichen einfügen:</span>
+          <button type="button" class="chem-key" data-char="→">→</button>
+          <button type="button" class="chem-key" data-char="=">=</button>
+          <button type="button" class="chem-key" data-char="–">–</button>
+          <button type="button" class="chem-key" data-char="₂">₂</button>
+          <button type="button" class="chem-key" data-char="₃">₃</button>
+          <button type="button" class="chem-key" data-char="⁺">⁺</button>
+          <button type="button" class="chem-key" data-char="⁻">⁻</button>
+        </div>
+
+        <label for="free3a" style="display: block; font-weight: 600; margin-bottom: 4px;">a) Ethen + HCl</label>
+        <textarea id="free3a" class="chem-target" placeholder="z. B. CH₂=CH₂ + HCl → ..."></textarea>
+
+        <label for="free3b" style="display: block; font-weight: 600; margin-bottom: 4px;">b) But-2-en + HBr</label>
+        <textarea id="free3b" class="chem-target" placeholder="z. B. CH₃–CH=CH–CH₃ + HBr → ..."></textarea>
+
+        <label for="free3c" style="display: block; font-weight: 600; margin-bottom: 4px;">c) Ethen + Br₂ (nichtwässrige Bedingungen)</label>
+        <textarea id="free3c" class="chem-target" placeholder="z. B. CH₂=CH₂ + Br₂ → ..."></textarea>
+
+        <details class="solution">
+          <summary>Musterlösung anzeigen</summary>
+          <p class="mono" style="font-size: 14px; line-height: 1.8;">
+            a) CH₂=CH₂ + HCl → CH₃–CH₂Cl (Chlorethan)<br />
+            b) CH₃–CH=CH–CH₃ + HBr → CH₃–CHBr–CH₂–CH₃ (2-Brombutan)<br />
+            c) CH₂=CH₂ + Br₂ → BrCH₂–CH₂Br (1,2-Dibromethan)
+          </p>
+        </details>
+      </div>
+
+      <!-- TASK 4 -->
+      <div class="task">
+        <h3>4 · Elektronenpfeile verstehen <span class="level">AFB II</span></h3>
+        <div id="q3" data-check="q3">
+          <p>Wähle für jeden Pfeil den korrekten Start- und Endpunkt aus.</p>
+          <div class="question">
+            <label for="p0">Pfeil 1 beim elektrophilen Angriff</label>
+            <select id="p0" data-answer="1">
+              <option value="">Auswählen …</option>
+              <option value="0">Vom H-Atom zur π-Bindung</option>
+              <option value="1">Von der π-Bindung zum H-Atom</option>
+              <option value="2">Vom Br-Atom zum H-Atom</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="p1">Pfeil 2 bei der H–Br-Spaltung</label>
+            <select id="p1" data-answer="2">
+              <option value="">Auswählen …</option>
+              <option value="0">Von der H–Br-Bindung zum H-Atom</option>
+              <option value="1">Vom C-Atom zum Br-Atom</option>
+              <option value="2">Von der H–Br-Bindung zum Br-Atom</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="p2">Pfeil beim nukleophilen Angriff</label>
+            <select id="p2" data-answer="0">
+              <option value="">Auswählen …</option>
+              <option value="0">Vom freien Elektronenpaar des Br⁻ zum C⁺</option>
+              <option value="1">Vom C⁺ zum Br⁻</option>
+              <option value="2">Von der C–C-Bindung zum Br⁻</option>
+            </select>
+          </div>
+          <div class="rowbuttons">
+            <button type="button" class="check" data-id="q3">Überprüfen</button>
+          </div>
+          <div class="feedback" aria-live="polite"></div>
+        </div>
+
+        <p style="margin-top: 14px;">
+          <strong>Transfer-Übung auf Papier:</strong> Zeichne danach den gesamten Mechanismus der Addition von HCl an Ethen auf Papier mit vollständigen Elektronenpaarpfeilen.
+        </p>
+        <details class="solution">
+          <summary>Musterlösung zum Zeichnen</summary>
+          <p>
+            Pfeil 1: π-Bindung → H; Pfeil 2: H–Cl-Bindung → Cl.<br />
+            Zwischenprodukt: CH₃–CH₂⁺ + Cl⁻.<br />
+            Pfeil 3: Freies Elektronenpaar am Cl⁻ → positiv geladenes C-Atom.<br />
+            Produkt: CH₃–CH₂Cl (Chlorethan).
+          </p>
+        </details>
+      </div>
+
+      <!-- TASK 5 -->
+      <div class="task">
+        <h3>5 · Energie auswerten <span class="level">AFB II</span></h3>
+        <div id="q4" data-check="q4">
+          <p>Nutze das Energiediagramm aus Abschnitt 03.</p>
+          <div class="question">
+            <label for="e0">Wie viele Übergangszustände sind dargestellt?</label>
+            <select id="e0" data-answer="1">
+              <option value="">Auswählen …</option>
+              <option value="0">Einer</option>
+              <option value="1">Zwei</option>
+              <option value="2">Drei</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="e1">Was beschreibt das Minimum zwischen den Maxima?</label>
+            <select id="e1" data-answer="1">
+              <option value="">Auswählen …</option>
+              <option value="0">Edukte</option>
+              <option value="1">Zwischenprodukt</option>
+              <option value="2">Endprodukt</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="e2">Ist die Gesamtreaktion exotherm oder endotherm?</label>
+            <select id="e2" data-answer="0">
+              <option value="">Auswählen …</option>
+              <option value="0">Exotherm</option>
+              <option value="1">Endotherm</option>
+              <option value="2">Energieneutral</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="e3">Welche Aktivierungsenergie ist im Modell größer?</label>
+            <select id="e3" data-answer="0">
+              <option value="">Auswählen …</option>
+              <option value="0">Erster Teilschritt</option>
+              <option value="1">Zweiter Teilschritt</option>
+              <option value="2">Beide gleich</option>
+            </select>
+          </div>
+          <div class="rowbuttons">
+            <button type="button" class="check" data-id="q4">Überprüfen</button>
+          </div>
+          <div class="feedback" aria-live="polite"></div>
+        </div>
+
+        <label for="free5" style="display: block; font-weight: 600; margin: 16px 0 6px;">
+          Erkläre, warum auch eine exotherme Reaktion eine Aktivierungsenergie benötigt:
+        </label>
+        <textarea id="free5" placeholder="Deine Begründung …"></textarea>
+        <details class="solution">
+          <summary>Musterlösung anzeigen</summary>
+          <p>
+            Damit neue Bindungen entstehen können, müssen zunächst bestehende Bindungen (hier die π-Bindung und die H–Br-Bindung) gelockert bzw. gespalten werden. Die dafür notwendige Energiebarriere muss erst überwunden werden, auch wenn die Produkte am Ende insgesamt energieärmer sind.
+          </p>
+        </details>
+      </div>
+
+      <!-- TASK 6 -->
+      <div class="task">
+        <h3>6 · Richtig oder falsch? <span class="level">AFB II–III</span></h3>
+        <div id="q5" data-check="q5">
+          <div class="claim">
+            <p>1. Bei der elektrophilen Addition wird ein H-Atom des Alkens ausgetauscht.</p>
+            <div class="choices" data-radio="c0" data-answer="false">
+              <label><input type="radio" name="c0" value="true" /> Richtig</label>
+              <label><input type="radio" name="c0" value="false" /> Falsch</label>
+            </div>
+            <p class="why" hidden>→ Bei der Addition werden Teilchen an die Doppelbindung angelagert, nicht ausgetauscht (das wäre eine Substitution).</p>
+          </div>
+
+          <div class="claim">
+            <p>2. Das π-Elektronenpaar kann als Elektronenpaardonator reagieren.</p>
+            <div class="choices" data-radio="c1" data-answer="true">
+              <label><input type="radio" name="c1" value="true" /> Richtig</label>
+              <label><input type="radio" name="c1" value="false" /> Falsch</label>
+            </div>
+            <p class="why" hidden>→ Die Doppelbindung ist elektronenreich und wirkt gegenüber Elektrophilen als Nukleophil.</p>
+          </div>
+
+          <div class="claim">
+            <p>3. HBr wird im dargestellten ionischen Mechanismus homolytisch gespalten.</p>
+            <div class="choices" data-radio="c2" data-answer="false">
+              <label><input type="radio" name="c2" value="true" /> Richtig</label>
+              <label><input type="radio" name="c2" value="false" /> Falsch</label>
+            </div>
+            <p class="why" hidden>→ Die Bindungsspaltung erfolgt heterolytisch: Beide Bindungselektronen wandern zum Bromatom.</p>
+          </div>
+
+          <div class="claim">
+            <p>4. Ein vollständiger gebogener Elektronenpfeil steht für ein Elektronenpaar.</p>
+            <div class="choices" data-radio="c3" data-answer="true">
+              <label><input type="radio" name="c3" value="true" /> Richtig</label>
+              <label><input type="radio" name="c3" value="false" /> Falsch</label>
+            </div>
+            <p class="why" hidden>→ Ein halbseitiger Pfeil (Fischhaken) steht dagegen für ein einzelnes Elektron (wie bei Radikalen).</p>
+          </div>
+
+          <div class="claim">
+            <p>5. Bei der ionischen Addition von HBr an Propen entsteht bevorzugt 2-Brompropan.</p>
+            <div class="choices" data-radio="c4" data-answer="true">
+              <label><input type="radio" name="c4" value="true" /> Richtig</label>
+              <label><input type="radio" name="c4" value="false" /> Falsch</label>
+            </div>
+            <p class="why" hidden>→ Das sekundäre Carbokation (CH₃–CH⁺–CH₃) ist energetisch stabiler als das primäre Carbokation.</p>
+          </div>
+
+          <div class="claim">
+            <p>6. Bei der Addition von Br₂ an Ethen entsteht üblicherweise zuerst ein freies Carbokation.</p>
+            <div class="choices" data-radio="c5" data-answer="false">
+              <label><input type="radio" name="c5" value="true" /> Richtig</label>
+              <label><input type="radio" name="c5" value="false" /> Falsch</label>
+            </div>
+            <p class="why" hidden>→ Im üblichen Mechanismus bildet sich stattdessen ein verbrücktes, cyclisches Bromoniumion.</p>
+          </div>
+
+          <div class="rowbuttons">
+            <button type="button" class="check" data-id="q5">Überprüfen</button>
+          </div>
+          <div class="feedback" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <!-- TASK 7 -->
+      <div class="task">
+        <h3>7 · Vergleiche die Reaktionen <span class="level">AFB III</span></h3>
+        <p>
+          Vergleiche die <strong>radikalische Substitution</strong> von Methan mit Chlor und die <strong>elektrophile Addition</strong> von HBr an Ethen. Gehe auf Bindungsspaltung, Zwischenprodukte, Elektronenpfeile, Veränderung des Moleküls und die Rolle von UV-Licht ein.
+        </p>
+        <textarea aria-label="Vergleich der Reaktionen" style="min-height: 135px;" placeholder="Strukturiere deinen Vergleich nach den genannten Kriterien …"></textarea>
+        <details class="solution">
+          <summary>Musterlösung anzeigen</summary>
+          <p>
+            <strong>Radikalische Substitution (Methan + Cl₂):</strong> homolytische Bindungsspaltung, ungeladene Radikale als Zwischenprodukte, halbseitige Pfeile (Fischhaken) für einzelne Elektronen, Austausch eines H-Atoms gegen ein Cl-Atom (HCl als Nebenprodukt), UV-Licht/Wärme zur Startreaktion (Initiation) nötig.<br /><br />
+            <strong>Elektrophile Addition (Ethen + HBr):</strong> heterolytische Bindungsspaltung, ionische Zwischenprodukte (Carbokation und Bromidion), vollständige Pfeile für ganze Elektronenpaare, Auflösung der π-Bindung und Anlagerung neuer Atome ohne Nebenprodukt, kein UV-Licht zur Initiation des ionischen Mechanismus nötig.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 06: ABSCHLUSSCHALLENGE (SORTIERAUFGABE)
+         ====================================================================== -->
+    <section id="sortieren" class="card-section">
+      <div class="num-pill">06 · Abschlusschallenge</div>
+      <h2>Bringe den Mechanismus in die richtige Reihenfolge!</h2>
+      <p>
+        Die Karten beschreiben die Addition von HBr an Ethen. Sortiere sie vom Ausgangszustand bis zum Produkt. Die beiden Elektronenbewegungen des elektrophilen Angriffs sind bewusst in einer Karte zusammengefasst, weil sie zum selben elementaren Teilschritt gehören.
+      </p>
+      <p class="screenonly caption">
+        Verschiebe die Karten durch Ziehen (Drag &amp; Drop) oder nutze die Pfeiltasten ↑ / ↓ auf jeder Karte.
+      </p>
+
+      <ol id="sortlist" class="sortlist" aria-label="Sortierbare Mechanismuskarten"></ol>
+
+      <div class="rowbuttons screenonly">
+        <button type="button" id="sortCheck">Reihenfolge überprüfen</button>
+        <button type="button" class="secondary" id="shuffle">🔀 Neu mischen</button>
+      </div>
+
+      <div id="sortFeedback" class="feedback" aria-live="polite"></div>
+
+      <p class="sortprint">
+        Notiere die Buchstaben der Karten in der richtigen Reihenfolge: ______________________________
+      </p>
+
+      <details class="solution">
+        <summary>Musterlösung anzeigen</summary>
+        <ol id="sortSolution" style="line-height: 1.7;"></ol>
+      </details>
+
+      <div class="note emerald">
+        <strong>Zusatz-Challenge:</strong> Zeichne den sortierten Mechanismus aus dem Gedächtnis mit Halbstrukturformeln, Ladungen und vollständigen Elektronenpaarpfeilen. Begründe anschließend, warum es sich um eine <em>elektrophile Addition</em> handelt.
+      </div>
+    </section>
+
+    <p class="footer">Chemie · Jahrgang 10 · Elektrophile Addition · Interaktives Lern- &amp; Laborheft</p>
+  </main>
+
+  <!-- ========================================================================
+       JAVASCRIPT ENGINE
+       ======================================================================== -->
+  <script>
+    (() => {
+      const $ = (s) => document.querySelector(s);
+      const $$ = (s) => [...document.querySelectorAll(s)];
+
+      /* ----------------------------------------------------------------------
+         1. THEME TOGGLE (LIGHT / DARK LAB MODE)
+         ---------------------------------------------------------------------- */
+      const themeToggle = $('#themeToggle');
+      const rootHtml = document.documentElement;
+
+      function applyTheme(theme) {
+        rootHtml.setAttribute('data-theme', theme);
+        themeToggle.textContent = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+        try {
+          localStorage.setItem('chem10-theme', theme);
+        } catch (e) {}
+      }
+
+      try {
+        const savedTheme = localStorage.getItem('chem10-theme');
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          applyTheme(savedTheme);
+        }
+      } catch (e) {}
+
+      themeToggle.addEventListener('click', () => {
+        const next = rootHtml.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+      });
+
+      /* ----------------------------------------------------------------------
+         2. STICKY NAV ACTIVE SECTION OBSERVER
+         ---------------------------------------------------------------------- */
+      const navLinks = $$('.nav-link');
+      const sections = navLinks.map((a) => $(a.getAttribute('href'))).filter(Boolean);
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const id = '#' + entry.target.id;
+                navLinks.forEach((link) => {
+                  link.classList.toggle('active', link.getAttribute('href') === id);
+                });
+              }
+            });
+          },
+          { rootMargin: '-25% 0px -60% 0px' }
+        );
+        sections.forEach((sec) => observer.observe(sec));
+      }
+
+      /* ----------------------------------------------------------------------
+         3. PROGRESS, XP & CONFETTI CELEBRATION
+         ---------------------------------------------------------------------- */
+      const solved = new Set();
+      let celebrated = false;
+
+      function updateProgress(id, ok) {
+        if (ok) solved.add(id);
+        else solved.delete(id);
+
+        const count = solved.size;
+        const pct = (count / 6) * 100;
+        $('#bar').style.width = pct + '%';
+        $('.progress-track').setAttribute('aria-valuenow', count);
+        $('#progresslabel').textContent = count + ' / 6 Selbstchecks gelöst';
+        $('#xpLabel').textContent = count * 100 + ' / 600 XP';
+        $('#navScoreBadge').textContent = count + ' / 6';
+
+        if (count === 6 && !celebrated) {
+          celebrated = true;
+          launchConfetti();
+        } else if (count < 6) {
+          celebrated = false;
+        }
+      }
+
+      function launchConfetti() {
+        const canvas = $('#confettiCanvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const colors = ['#0d9488', '#2dd4bf', '#fbbf24', '#34d399', '#818cf8', '#fb7185'];
+        const pieces = Array.from({ length: 90 }, () => ({
+          x: Math.random() * canvas.width,
+          y: -20 - Math.random() * 140,
+          w: 7 + Math.random() * 6,
+          h: 10 + Math.random() * 8,
+          vx: (Math.random() - 0.5) * 4,
+          vy: 2.5 + Math.random() * 4,
+          rot: Math.random() * 360,
+          vrot: (Math.random() - 0.5) * 10,
+          color: colors[Math.floor(Math.random() * colors.length)]
+        }));
+
+        let frames = 0;
+        function tick() {
+          frames++;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          pieces.forEach((p) => {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.rot += p.vrot;
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate((p.rot * Math.PI) / 180);
+            ctx.fillStyle = p.color;
+            ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+            ctx.restore();
+          });
+          if (frames < 150) {
+            requestAnimationFrame(tick);
+          } else {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+          }
+        }
+        requestAnimationFrame(tick);
+      }
+
+      /* ----------------------------------------------------------------------
+         4. SECTION 01: INTERACTIVE ORBITAL VIEWER
+         ---------------------------------------------------------------------- */
+      const orbitalCaptions = {
+        all: 'Vereinfachtes Modell von Ethen: Die farbigen Bereiche zeigen die leicht angreifbare π-Elektronendichte ober- und unterhalb der Molekülebene; die σ-Bindung liegt direkt auf der Kernverbindungsachse.',
+        pi: 'Fokus auf die π-Bindung: Die Elektronenwolke liegt frei zugänglich außerhalb der Kernachse – ein ideales Ziel für positiv polarisierte Elektrophile (E⁺).',
+        sigma: 'Fokus auf das σ-Gerüst: Alle C–H-Bindungen und die innere C–C-σ-Bindung sind rotationssymmetrisch und bleiben während der Addition erhalten.'
+      };
+
+      $$('[data-orbital]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const mode = btn.dataset.orbital;
+          $$('[data-orbital]').forEach((b) => b.classList.toggle('active', b === btn));
+          $('#piLayer').style.opacity = mode === 'sigma' ? '0.12' : '1';
+          $('#sigmaLayer').style.opacity = mode === 'pi' ? '0.28' : '1';
+          $('#orbitalCaption').textContent = orbitalCaptions[mode];
+        });
+      });
+
+      /* ----------------------------------------------------------------------
+         5. SECTION 02: REACTION MECHANISM STEPPER & AUTO-PLAY
+         ---------------------------------------------------------------------- */
+      let step = 0;
+      let arrowsVisible = true;
+      let xrayVisible = true;
+      let autoTimer = null;
+
+      function showStep(i) {
+        step = Math.max(0, Math.min(4, i));
+        $$('[data-panel]').forEach((p) => {
+          p.hidden = +p.dataset.panel !== step;
+        });
+        $$('[data-step]').forEach((b) => {
+          b.setAttribute('aria-selected', String(+b.dataset.step === step));
+        });
+        $('#prev').disabled = step === 0;
+        $('#next').disabled = step === 4;
+      }
+
+      function stopAutoPlay() {
+        if (autoTimer) {
+          clearInterval(autoTimer);
+          autoTimer = null;
+          const btn = $('#autoPlayBtn');
+          btn.setAttribute('aria-pressed', 'false');
+          btn.textContent = '▶ Auto-Play';
+          btn.classList.add('secondary');
+        }
+      }
+
+      $$('[data-step]').forEach((b) =>
+        b.addEventListener('click', () => {
+          stopAutoPlay();
+          showStep(+b.dataset.step);
+        })
+      );
+
+      $('#prev').addEventListener('click', () => {
+        stopAutoPlay();
+        showStep(step - 1);
+      });
+
+      $('#next').addEventListener('click', () => {
+        stopAutoPlay();
+        showStep(step + 1);
+      });
+
+      $('#autoPlayBtn').addEventListener('click', () => {
+        const btn = $('#autoPlayBtn');
+        if (autoTimer) {
+          stopAutoPlay();
+        } else {
+          btn.setAttribute('aria-pressed', 'true');
+          btn.textContent = '⏸ Pause';
+          btn.classList.remove('secondary');
+          if (step === 4) showStep(0);
+          autoTimer = setInterval(() => {
+            if (step < 4) {
+              showStep(step + 1);
+            } else {
+              stopAutoPlay();
+            }
+          }, 2300);
+        }
+      });
+
+      $('#toggleArrows').addEventListener('click', () => {
+        arrowsVisible = !arrowsVisible;
+        $$('.arrowlayer').forEach((g) => g.classList.toggle('off', !arrowsVisible));
+        $('#toggleArrows').setAttribute('aria-pressed', String(arrowsVisible));
+        $('#toggleArrows').textContent = arrowsVisible
+          ? 'Elektronenpfeile ausblenden'
+          : 'Elektronenpfeile einblenden';
+      });
+
+      $('#toggleXray').addEventListener('click', () => {
+        xrayVisible = !xrayVisible;
+        $$('svg.molecule').forEach((svg) => svg.classList.toggle('xray-off', !xrayVisible));
+        $('#toggleXray').setAttribute('aria-pressed', String(xrayVisible));
+        $('#toggleXray').textContent = xrayVisible
+          ? 'Elektronen-Röntgenblick: AN'
+          : 'Elektronen-Röntgenblick: AUS';
+      });
+
+      showStep(0);
+
+      /* ----------------------------------------------------------------------
+         6. SECTION 03: INTERACTIVE ENERGY DIAGRAM TRACER
+         ---------------------------------------------------------------------- */
+      $$('.energy').forEach((b) =>
+        b.addEventListener('click', () => {
+          const on = $('#' + b.dataset.target).classList.toggle('show');
+          b.setAttribute('aria-pressed', String(on));
+          b.classList.toggle('secondary', !on);
+        })
+      );
+
+      const curvePath = $('#energyCurvePath');
+      const tracer = $('#energyTracer');
+      const energySlider = $('#energySlider');
+      const tracerStatus = $('#tracerStatus');
+      const stationBtns = $$('.station-btn');
+
+      function updateTracer(pct) {
+        if (!curvePath || !tracer) return;
+        const totalLen = curvePath.getTotalLength();
+        const pt = curvePath.getPointAtLength((pct / 100) * totalLen);
+        tracer.setAttribute('transform', `translate(${pt.x - 92}, ${pt.y - 202})`);
+
+        let statusText = '';
+        let activeStation = 0;
+        if (pct < 14) {
+          statusText = 'Edukte: Ethen + HBr (Ausgangsenergie)';
+          activeStation = 0;
+        } else if (pct < 36) {
+          statusText = 'Übergangszustand 1: π-Bindung öffnet sich, H–Br wird gedehnt (Maximum Eₐ₁)';
+          activeStation = 26;
+        } else if (pct < 56) {
+          statusText = 'Zwischenprodukt: Carbokation (CH₃–CH₂⁺) + Br⁻ (lokales Minimum)';
+          activeStation = 48;
+        } else if (pct < 78) {
+          statusText = 'Übergangszustand 2: C–Br-Bindung knüpft sich (kleinere Barriere Eₐ₂)';
+          activeStation = 65;
+        } else {
+          statusText = 'Produkt: Bromethan (CH₃–CH₂Br) — energetisch tiefer (ΔE < 0, exotherm)';
+          activeStation = 100;
+        }
+        tracerStatus.textContent = statusText;
+        stationBtns.forEach((b) => b.classList.toggle('active', +b.dataset.pos === activeStation));
+      }
+
+      energySlider.addEventListener('input', (e) => updateTracer(+e.target.value));
+      stationBtns.forEach((b) =>
+        b.addEventListener('click', () => {
+          const pos = +b.dataset.pos;
+          energySlider.value = pos;
+          updateTracer(pos);
+        })
+      );
+      updateTracer(0);
+
+      /* ----------------------------------------------------------------------
+         7. SECTION 04: REGIOSELECTIVITY & VIRTUAL BROMINE TEST TUBE
+         ---------------------------------------------------------------------- */
+      $$('.regio').forEach((b) =>
+        b.addEventListener('click', () => {
+          $$('.regio').forEach((x) => x.classList.toggle('secondary', x !== b));
+          const isEnd = b.dataset.r === 'end';
+          const box = $('#regioOut');
+          box.className = isEnd ? 'note emerald' : 'note amber';
+          box.innerHTML = isEnd
+            ? '<strong>✅ Begünstigter Weg (Markownikow-Hauptprodukt):</strong> Das H-Atom bindet an das endständige CH₂-Atom. Es entsteht das stabilere <strong>sekundäre Carbokation</strong> (<code>CH₃–CH⁺–CH₃</code>), aus dem <strong>2-Brompropan</strong> (<code>CH₃–CHBr–CH₃</code>) gebildet wird.'
+            : '<strong>⚠️ Weniger begünstigter Weg (Nebenprodukt):</strong> Das H-Atom bindet an das mittlere CH-Atom. Dabei entstünde ein deutlich instabileres <strong>primäres Carbokation</strong> (<code>CH₃–CH₂–CH₂⁺</code>) → <strong>1-Brompropan</strong> (<code>CH₃–CH₂–CH₂Br</code>).';
+        })
+      );
+
+      let decolorized = false;
+      const bromineBtn = $('#bromineTestBtn');
+      const bromineLiquid = $('#bromineLiquid');
+      const tubeStatus = $('#tubeStatus');
+      const testTubeSvg = $('#testTubeSvg');
+
+      bromineBtn.addEventListener('click', () => {
+        if (!decolorized) {
+          decolorized = true;
+          bromineBtn.disabled = true;
+          testTubeSvg.classList.add('bubbling');
+          tubeStatus.textContent = 'Ethen strömt ein … Reaktion läuft!';
+          tubeStatus.style.color = 'var(--teal)';
+          bromineLiquid.setAttribute('fill', '#e2e8f0');
+          bromineLiquid.setAttribute('opacity', '0.45');
+
+          setTimeout(() => {
+            testTubeSvg.classList.remove('bubbling');
+            tubeStatus.textContent = '✅ Entfärbt! 1,2-Dibromethan entstanden';
+            tubeStatus.style.color = 'var(--emerald)';
+            bromineBtn.textContent = '↺ Reagenzglas zurücksetzen';
+            bromineBtn.disabled = false;
+          }, 1500);
+        } else {
+          decolorized = false;
+          bromineLiquid.setAttribute('fill', '#d97706');
+          bromineLiquid.setAttribute('opacity', '0.88');
+          tubeStatus.textContent = 'Br₂-Lösung: orange-braun';
+          tubeStatus.style.color = 'var(--amber)';
+          bromineBtn.textContent = '🧪 Ethen einleiten';
+        }
+      });
+
+      /* ----------------------------------------------------------------------
+         8. SECTION 05: SELF-CHECKS & CHEMICAL TOOLBAR
+         ---------------------------------------------------------------------- */
+      let activeTextarea = $('#free3a');
+      $$('.chem-target').forEach((ta) => {
+        ta.addEventListener('focus', () => {
+          activeTextarea = ta;
+        });
+      });
+
+      $$('.chem-key').forEach((key) => {
+        key.addEventListener('click', () => {
+          if (!activeTextarea) return;
+          const ch = key.dataset.char;
+          const start = activeTextarea.selectionStart ?? activeTextarea.value.length;
+          const end = activeTextarea.selectionEnd ?? activeTextarea.value.length;
+          const val = activeTextarea.value;
+          activeTextarea.value = val.slice(0, start) + ch + val.slice(end);
+          activeTextarea.focus();
+          activeTextarea.setSelectionRange(start + ch.length, start + ch.length);
+        });
+      });
+
+      $$('.check').forEach((b) =>
+        b.addEventListener('click', () => {
+          const root = $('#' + b.dataset.id);
+          const fields = [...root.querySelectorAll('[data-answer]')];
+          let n = 0;
+          let missing = 0;
+
+          fields.forEach((el) => {
+            const val = el.matches('select')
+              ? el.value
+              : el.querySelector('input:checked')?.value || '';
+            if (!val) missing++;
+            const ok = val === el.dataset.answer;
+            if (ok) n++;
+            el.classList.toggle('correct', ok);
+            el.classList.toggle('wrong', !!val && !ok);
+            if (el.dataset.radio) {
+              el.closest('.claim').querySelector('.why').hidden = !val;
+            }
+          });
+
+          const f = root.querySelector('.feedback');
+          const allOk = n === fields.length;
+          f.textContent =
+            n +
+            ' von ' +
+            fields.length +
+            ' richtig. ' +
+            (allOk
+              ? 'Sehr gut – vollständig gelöst! (+100 XP)'
+              : missing
+              ? 'Bitte beantworte auch die offenen Felder.'
+              : 'Überprüfe die rot markierten Antworten.');
+          f.className = 'feedback ' + (allOk ? 'correct' : 'wrong');
+          updateProgress(b.dataset.id, allOk);
+        })
+      );
+
+      $$('[data-check]').forEach((root) =>
+        root.addEventListener('change', () => {
+          updateProgress(root.dataset.check, false);
+          const f = root.querySelector('.feedback');
+          f.textContent = 'Antwort geändert – klicke auf „Überprüfen“.';
+          f.className = 'feedback';
+          root.querySelectorAll('[data-answer]').forEach((e) => e.classList.remove('correct', 'wrong'));
+          root.querySelectorAll('.why').forEach((e) => (e.hidden = true));
+        })
+      );
+
+      /* ----------------------------------------------------------------------
+         9. SECTION 06: SORTING CHALLENGE
+         ---------------------------------------------------------------------- */
+      const cards = [
+        {
+          id: 'D',
+          text: 'Ethen und Bromwasserstoff liegen als Edukte vor. Die π-Bindung ist elektronenreich; das H-Atom von HBr trägt δ⁺.'
+        },
+        {
+          id: 'B',
+          text: 'Die π-Elektronen bilden eine C–H-Bindung. Gleichzeitig gehen beide Elektronen der H–Br-Bindung zum Bromatom.'
+        },
+        {
+          id: 'E',
+          text: 'Ein Carbokation (CH₃–CH₂⁺) und ein Bromidion (Br⁻) liegen als Zwischenprodukte vor.'
+        },
+        {
+          id: 'A',
+          text: 'Ein freies Elektronenpaar des Bromidions wird zum positiv geladenen C-Atom verschoben.'
+        },
+        {
+          id: 'C',
+          text: 'Die C–Br-Bindung ist gebildet. Die Ladungen sind ausgeglichen; Bromethan (CH₃–CH₂Br) liegt als Produkt vor.'
+        }
+      ];
+
+      let order = [3, 0, 4, 1, 2];
+      let dragIndex = null;
+      const sl = $('#sortlist');
+
+      function clearSort() {
+        updateProgress('sort', false);
+        const fb = $('#sortFeedback');
+        fb.textContent = '';
+        fb.className = 'feedback';
+      }
+
+      function renderSort(focusIndex = null, dir = null) {
+        sl.innerHTML = '';
+        order.forEach((c, i) => {
+          const li = document.createElement('li');
+          li.className = 'sortitem';
+          li.draggable = true;
+          li.innerHTML =
+            '<span class="index">' +
+            cards[c].id +
+            '</span><span>' +
+            cards[c].text +
+            '</span><span class="moves"><button type="button" class="secondary" data-dir="-1" aria-label="Karte ' +
+            cards[c].id +
+            ' nach oben" ' +
+            (i === 0 ? 'disabled' : '') +
+            '>↑</button><button type="button" class="secondary" data-dir="1" aria-label="Karte ' +
+            cards[c].id +
+            ' nach unten" ' +
+            (i === order.length - 1 ? 'disabled' : '') +
+            '>↓</button></span>';
+
+          li.querySelectorAll('button').forEach((b) =>
+            b.addEventListener('click', () => {
+              const d = +b.dataset.dir;
+              move(i, i + d, d);
+            })
+          );
+
+          li.addEventListener('dragstart', (e) => {
+            dragIndex = i;
+            e.dataTransfer.setData('text/plain', String(i));
+            e.dataTransfer.effectAllowed = 'move';
+            li.classList.add('dragging');
+          });
+
+          li.addEventListener('dragend', () => {
+            dragIndex = null;
+            li.classList.remove('dragging');
+          });
+
+          li.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+          });
+
+          li.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (dragIndex !== null) move(dragIndex, i);
+            dragIndex = null;
+          });
+
+          sl.append(li);
+        });
+
+        if (focusIndex !== null && dir !== null) {
+          const item = sl.children[focusIndex];
+          const target = item?.querySelector('button[data-dir="' + dir + '"]');
+          if (target && !target.disabled) target.focus();
+          else item?.querySelector('button:not(:disabled)')?.focus();
+        }
+      }
+
+      function move(from, to, dir = null) {
+        if (from === to || to < 0 || to >= order.length) return;
+        const item = order.splice(from, 1)[0];
+        order.splice(to, 0, item);
+        clearSort();
+        renderSort(to, dir);
+      }
+
+      $('#sortCheck').addEventListener('click', () => {
+        const n = order.filter((v, i) => v === i).length;
+        [...sl.children].forEach((li, i) => {
+          li.classList.toggle('good', order[i] === i);
+          li.classList.toggle('bad', order[i] !== i);
+        });
+        const allOk = n === cards.length;
+        const fb = $('#sortFeedback');
+        fb.textContent = allOk
+          ? 'Perfekt! Alle 5 Schritte sind in der richtigen Reihenfolge (D → B → E → A → C). (+100 XP)'
+          : n +
+            ' von ' +
+            cards.length +
+            ' Karten stehen bereits an der richtigen Position. Verschiebe die rot markierten Karten und versuche es erneut.';
+        fb.className = 'feedback ' + (allOk ? 'correct' : 'wrong');
+        updateProgress('sort', allOk);
+      });
+
+      $('#shuffle').addEventListener('click', () => {
+        const before = order.join(',');
+        do {
+          order = [0, 1, 2, 3, 4];
+          for (let i = order.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [order[i], order[j]] = [order[j], order[i]];
+          }
+        } while (order.every((v, i) => v === i) || order.join(',') === before);
+        clearSort();
+        renderSort();
+      });
+
+      cards.forEach((c) => {
+        const li = document.createElement('li');
+        li.innerHTML = '<strong>' + c.id + ':</strong> ' + c.text;
+        $('#sortSolution').append(li);
+      });
+
+      renderSort();
+    })();
+  </script>
+</body>
+</html>
