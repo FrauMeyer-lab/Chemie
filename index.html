@@ -18,15 +18,64 @@
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{display:flex;flex-direction:column;min-height:360px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 14px 40px #14243b0a;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 45px #14243b16}.card-top{min-height:155px;display:flex;align-items:center;justify-content:space-between;padding:24px 30px;overflow:hidden}.card--blue .card-top{background:var(--blue)}.card--orange .card-top{background:var(--orange)}.card--purple .card-top{background:var(--purple)}.formula{font-size:clamp(2.4rem,5vw,4.3rem);font-weight:750;letter-spacing:-.09em;white-space:nowrap}.formula sub{font-size:.45em;vertical-align:baseline;position:relative;bottom:-.25em}.molecule{width:100px;height:100px;flex:none;border:2px solid #23335140;border-radius:50%;display:grid;place-items:center;transform:rotate(-12deg);font-size:3.6rem;color:var(--muted)}.card-body{padding:27px 30px 30px;display:flex;flex-direction:column;flex:1}.tag{font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--tag)}.card h3{font-size:1.55rem;letter-spacing:-.04em;line-height:1.2;margin:9px 0}.card p{margin:0 0 24px;color:var(--muted);max-width:44ch}.card-link{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;width:fit-content;border-bottom:2px solid var(--mint);padding-bottom:3px}.card-link:hover{color:var(--tag)}
     .note{margin-top:38px;display:flex;gap:15px;align-items:start;background:var(--note);border:1px solid var(--note-line);border-radius:16px;padding:20px 23px}.note-icon{font-size:1.4rem;line-height:1}.note p{margin:0;color:var(--note-ink)}.note strong{color:var(--note-strong)}footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--foot);font-size:.87rem}
     @media(max-width:700px){.shell{width:min(100% - 32px,1120px)}.topbar{align-items:flex-start;flex-wrap:wrap}.topbar nav{flex-wrap:wrap;gap:10px 16px}.hero{padding:58px 0 70px}.hero::after{right:-270px}.section-head{display:block}.section-head p{margin-top:12px}.grid{grid-template-columns:1fr}.card{min-height:0}.card-top{min-height:135px}.formula{font-size:3rem}.molecule{width:80px;height:80px;font-size:2.8rem}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.hero-link{transition:none}}
+
+    .hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(220px,.55fr);align-items:center;gap:42px}
+    .hero-art{position:relative;z-index:1;width:min(100%,310px);height:400px;margin:0 0 0 auto;overflow:hidden;border:1px solid #ffffff40;border-radius:24px;box-shadow:0 25px 70px #0008;transform:rotate(2deg)}
+    .hero-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 57%}
+    .learning-map{margin-bottom:70px;scroll-margin-top:24px}
+    .map-intro{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}
+    .map-intro h2{font-size:clamp(1.8rem,4vw,2.45rem);letter-spacing:-.045em;line-height:1.15;margin:8px 0 0}
+    .map-intro p{max-width:440px;color:var(--muted);margin:0}
+    .map-hub{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;width:fit-content;max-width:100%;margin:0 auto 34px;padding:13px 18px;border-radius:999px;background:var(--navy);color:#fff;font-weight:800;text-align:center;box-shadow:0 9px 24px #14243b20}
+    .map-hub span{color:var(--mint);font-size:1.3rem}
+    .map-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;position:relative}
+    .map-grid::before{content:"";position:absolute;left:12.5%;right:12.5%;top:-19px;border-top:2px dashed var(--line)}
+    .map-topic{position:relative;display:flex;flex-direction:column;gap:10px;padding:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 22px #14243b0a}
+    .map-topic::before{content:"";position:absolute;top:-19px;left:50%;height:19px;border-left:2px dashed var(--line)}
+    .map-illustration{min-height:122px;display:flex;align-items:center;justify-content:center;border-radius:13px;text-decoration:none;font-size:clamp(1.55rem,3vw,2.2rem);font-weight:800;letter-spacing:-.05em;transition:transform .2s}
+    .map-illustration:hover{transform:scale(1.025)}
+    .map-topic:nth-child(1) .map-illustration{background:var(--blue)}
+    .map-topic:nth-child(2) .map-illustration{background:var(--orange)}
+    .map-topic:nth-child(3) .map-illustration{background:var(--purple)}
+    .map-topic:nth-child(4) .map-illustration{background:var(--note)}
+    .map-topic small{color:var(--tag);font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+    .map-topic h3{font-size:1.13rem;line-height:1.25;margin:0;letter-spacing:-.025em}
+    .map-topic h3 a{text-decoration:none}
+    .map-topic h3 a:hover{text-decoration:underline}
+    .map-topic p{font-size:.88rem;color:var(--muted);margin:0 0 4px}
+    .map-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+    .map-actions a{font-size:.82rem;font-weight:750;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:7px 9px}
+    .map-actions a:hover{border-color:var(--tag);color:var(--tag)}
+    .map-connections{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+    .map-connections p{margin:0;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-size:.86rem;color:var(--muted)}
+    .map-connections strong{color:var(--ink)}
+    @media(max-width:900px){.map-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}.map-grid::before,.map-topic::before{display:none}.map-connections{grid-template-columns:1fr}}
+    @media(max-width:700px){.hero{grid-template-columns:1fr;gap:30px}.hero-art{width:min(65%,230px);height:280px;margin:0 auto;transform:none}.map-intro{display:block}.map-intro p{margin-top:12px}}
+    @media(max-width:520px){.map-grid{grid-template-columns:1fr}.map-illustration{min-height:110px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.hero-link,.map-illustration{transition:none}}
   </style>
 </head>
 <body>
   <header>
-    <div class="shell topbar"><a class="brand" href="./" aria-label="Chemie lernen – Startseite"><span class="brand-mark" aria-hidden="true">⚗</span>Chemie lernen</a><nav aria-label="Hauptnavigation"><a href="#klasse-10">Klasse 10</a><a href="#klasse-11">Klasse 11</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dunkelmodus einschalten" aria-pressed="false">☾ Dunkelmodus</button></nav></div>
-    <div class="shell hero"><div class="hero-content"><span class="eyebrow"><span class="dot" aria-hidden="true"></span>Interaktiv · Klassen 10 und 11</span><h1>Chemie verstehen.<br><span>Schritt für Schritt.</span></h1><p>Entdecke Chemie mit anschaulichen Erklärungen, interaktiven Aufgaben und unmittelbarem Feedback.</p><a class="hero-link" href="#klasse-10">Lernhefte entdecken <span aria-hidden="true">↗</span></a></div></div>
+    <div class="shell topbar"><a class="brand" href="./" aria-label="Chemie lernen – Startseite"><span class="brand-mark" aria-hidden="true">⚗</span>Chemie lernen</a><nav aria-label="Hauptnavigation"><a href="#lernlandkarte">Lernlandkarte</a><a href="#klasse-10">Klasse 10</a><a href="#klasse-11">Klasse 11</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dunkelmodus einschalten" aria-pressed="false">☾ Dunkelmodus</button></nav></div>
+    <div class="shell hero"><div class="hero-content"><span class="eyebrow"><span class="dot" aria-hidden="true"></span>Interaktiv · Klassen 10 und 11</span><h1>Chemie verstehen.<br><span>Schritt für Schritt.</span></h1><p>Entdecke Chemie mit anschaulichen Erklärungen, interaktiven Aufgaben und unmittelbarem Feedback.</p><a class="hero-link" href="#lernlandkarte">Lernlandkarte entdecken <span aria-hidden="true">↗</span></a></div><figure class="hero-art"><img src="assets/chemie-reaktion.jpg" width="408" height="728" alt="Leuchtende chemische Reaktion in einem Labor" fetchpriority="high"></figure></div>
   </header>
   <main class="shell">
+    <section class="learning-map" id="lernlandkarte" aria-labelledby="map-title">
+      <div class="map-intro"><div><span class="kicker">Dein Überblick</span><h2 id="map-title">Lernlandkarte Chemie</h2></div><p>Alle Themen hängen über Teilchenbau, Bindungen und Elektronen zusammen. Wähle direkt den Wissenstext oder die Aufgaben eines Lernhefts.</p></div>
+      <div class="map-hub"><span aria-hidden="true">✦</span>Teilchen · Bindungen · Elektronen</div>
+      <div class="map-grid">
+        <article class="map-topic"><a class="map-illustration" href="Radikalische_Substitution_Klasse_10.html#wissen" aria-label="Wissenstext zur radikalischen Substitution öffnen">Cl• + CH₄</a><small>Klasse 10 · Alkane</small><h3><a href="Radikalische_Substitution_Klasse_10.html#wissen">Radikalische Substitution</a></h3><p>Licht startet die Kette: Ein H-Atom wird ersetzt.</p><div class="map-actions"><a href="Radikalische_Substitution_Klasse_10.html#wissen">Wissenstext</a><a href="Radikalische_Substitution_Klasse_10.html#aufgaben">Aufgaben</a></div></article>
+        <article class="map-topic"><a class="map-illustration" href="Elektrophile_Addition_Klasse_10.html#wissen" aria-label="Wissenstext zur elektrophilen Addition öffnen">C=C + HBr</a><small>Klasse 10 · Alkene</small><h3><a href="Elektrophile_Addition_Klasse_10.html#wissen">Elektrophile Addition</a></h3><p>Die Doppelbindung reagiert mit einem Elektrophil.</p><div class="map-actions"><a href="Elektrophile_Addition_Klasse_10.html#wissen">Wissenstext</a><a href="Elektrophile_Addition_Klasse_10.html#aufgaben">Aufgaben</a></div></article>
+        <article class="map-topic"><a class="map-illustration" href="Kunststoffe_PE_Klasse_10.html#start" aria-label="Wissenstext zu Kunststoffen und Polyethylen öffnen">[–CH₂–]ₙ</a><small>Klasse 10 · Polymere</small><h3><a href="Kunststoffe_PE_Klasse_10.html#start">Kunststoffe &amp; Polyethylen</a></h3><p>Aus Ethen entstehen lange Ketten mit neuen Eigenschaften.</p><div class="map-actions"><a href="Kunststoffe_PE_Klasse_10.html#start">Wissenstext</a><a href="Kunststoffe_PE_Klasse_10.html#finale">Aufgaben</a></div></article>
+        <article class="map-topic"><a class="map-illustration" href="Isoelektrischer_Punkt_Aminosaeuren_Klasse_11.html#wissen" aria-label="Wissenstext zum isoelektrischen Punkt öffnen">pH = pI</a><small>Klasse 11 · Aminosäuren</small><h3><a href="Isoelektrischer_Punkt_Aminosaeuren_Klasse_11.html#wissen">Isoelektrischer Punkt</a></h3><p>Der pH-Wert beeinflusst die mittlere Ladung.</p><div class="map-actions"><a href="Isoelektrischer_Punkt_Aminosaeuren_Klasse_11.html#wissen">Wissenstext</a><a href="Isoelektrischer_Punkt_Aminosaeuren_Klasse_11.html#aufgaben">Aufgaben</a></div></article>
+      </div>
+      <div class="map-connections" aria-label="Verbindungen zwischen den Themen">
+        <p><strong>Substitution ↔ Addition:</strong> Beide sind Reaktionsmechanismen. Die Elektronen bewegen sich dabei auf unterschiedliche Weise.</p>
+        <p><strong>Addition → Polyethylen:</strong> Die C=C-Doppelbindung ist auch Ausgangspunkt der Polymerisation; der Mechanismus ist ein anderer.</p>
+        <p><strong>Alle Themen:</strong> Bindungen und Elektronenverteilung bestimmen, wie Teilchen reagieren oder welche Ladung sie tragen.</p>
+      </div>
+    </section>
     <section class="year-section" id="klasse-10" aria-labelledby="title-10">
       <div class="section-head"><div><span class="kicker">Lernhefte</span><h2 id="title-10">Klasse 10</h2></div><p>Reaktionen der organischen Chemie entdecken und ihre Mechanismen verstehen.</p></div>
       <div class="grid">
@@ -51,3 +100,4 @@
   </script>
 </body>
 </html>
+
