@@ -16,6 +16,7 @@
     @media print{html,body{background:#fff!important;color:#111!important}.hero{background:#fff!important;color:#111!important;padding:12px 0}.hero .eyebrow{color:#333}.hero h1{font-size:26pt}.hero p{font-size:11pt}.hero-tools,.progress-panel,nav,#jsNotice,.chips,button,.feedback,footer,#confettiCanvas{display:none!important}main{padding:0}section{margin-top:22px;break-inside:avoid}.card,.panel,.plot-box,.status,.molecule,.note,.callout{background:#fff!important;color:#111!important;box-shadow:none!important;border:1px solid #bbb}.task{break-inside:avoid}.print-lines{display:block;height:55px;border-bottom:1px solid #777}.answer-input{display:none}.grid{gap:9px}.card{padding:12px}svg{max-height:240px}}
     .hero{position:relative;overflow:hidden;background:#061522}.hero-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%;z-index:0}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,14,26,.97) 0%,rgba(3,14,26,.88) 45%,rgba(3,14,26,.38) 100%);z-index:1}.hero .wrap{position:relative;z-index:2}@media(max-width:760px){.hero::before{background:linear-gradient(90deg,rgba(3,14,26,.91),rgba(3,14,26,.68))}.hero-art{object-position:54% center}}@media print{.hero-art,.hero::before{display:none!important}}
     .map-section{margin-top:31px}.map-flow{max-width:720px;margin:22px auto 0;display:flex;flex-direction:column;align-items:center}.map-node{width:min(100%,360px);display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--card);border:2px solid var(--line);border-radius:15px;box-shadow:var(--shadow);color:var(--ink);text-decoration:none;transition:transform .16s,border-color .16s}.map-node:hover,.map-node:focus-visible{transform:translateY(-2px);border-color:var(--teal)}.map-node strong{display:block;font-size:1.05rem;line-height:1.25}.map-node small{display:block;color:var(--muted);font-size:.83rem;line-height:1.35;margin-top:3px}.map-icon{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border-radius:12px;background:#e0f3ef;color:#086e67;font-size:1.35rem;font-weight:850}.map-arrow{height:29px;line-height:29px;color:var(--teal);font-size:1.45rem;font-weight:800;text-align:center}.map-branches{display:grid;grid-template-columns:1fr 1fr;gap:18px;width:100%}.map-branches .map-node{width:100%}.map-fork,.map-merge{width:100%;display:flex;justify-content:space-around}.map-note{text-align:center;color:var(--muted);font-size:.9rem;margin:17px 0 0}.map-node[id],article[id],.callout[id]{scroll-margin-top:83px}[data-theme="dark"] .map-icon{background:#245066;color:#aee8dc}@media(max-width:560px){.map-node{padding:12px}.map-branches{gap:9px}.map-branches .map-node{display:block;text-align:center}.map-branches .map-icon{margin:0 auto 9px}.map-branches .map-node small{font-size:.75rem}}@media(prefers-reduced-motion:reduce){.map-node{transition:none}.map-node:hover,.map-node:focus-visible{transform:none}}@media print{.map-node{box-shadow:none!important;break-inside:avoid}.map-flow{max-width:550px}.map-icon{background:#eee!important;color:#111!important}}
+    .challenge-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-weight:850;margin:10px 0 3px}.drag-bank,.drop-zone{background:var(--paper);border:2px dashed var(--line);border-radius:14px;padding:12px;min-height:82px}.drag-bank{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.drop-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}.drop-zone{min-height:136px}.drop-zone strong{display:block;margin-bottom:8px}.drop-zone small{display:block;color:var(--muted);line-height:1.3}.drop-zone.over,.drag-bank.over{border-color:var(--teal);background:#e5f6f1}.aa-card{touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;background:var(--card);color:var(--ink);border:2px solid var(--blue);border-radius:10px;padding:9px 12px;font-weight:800;box-shadow:0 4px 12px #102c4722}.aa-card.dragging{cursor:grabbing;position:relative;z-index:40;box-shadow:0 12px 26px #102c4755}.drop-zone .aa-card{display:block;margin-top:7px;width:100%}.detective-card{border:1px solid var(--line);background:var(--paper);border-radius:13px;padding:18px;margin:13px 0}.detective-card strong{display:block;font-size:1.12rem}.detective-choices{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}.puzzle-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.puzzle-grid label{font-weight:750}.puzzle-grid select{display:block;width:100%;margin-top:6px;border:1px solid var(--line);border-radius:9px;padding:9px;background:var(--card);color:var(--ink)}.puzzle-result{display:inline-block;background:#e7f5f1;border-radius:9px;padding:10px 13px;font-weight:800;margin:8px 0}[data-theme="dark"] .drop-zone.over,[data-theme="dark"] .drag-bank.over,[data-theme="dark"] .puzzle-result{background:#214d50}[data-theme="dark"] .aa-card{background:#203d52;border-color:#85c7ff}@media(max-width:650px){.drop-grid{grid-template-columns:1fr}.drop-zone{min-height:105px}.puzzle-grid{grid-template-columns:1fr}}@media print{.drag-bank,.drop-zone,.detective-card{background:#fff!important;border-color:#888}.aa-card{box-shadow:none}.drop-grid{grid-template-columns:repeat(3,1fr)}}
   </style>
 </head>
 <body>
@@ -26,9 +27,9 @@
     <p>Entdecke den isoelektrischen Punkt mit einem pH-Regler, einer Ladungskurve und Aufgaben zum Ausprobieren.</p>
     <div class="meta"><span class="pill">ca. 25–35 Minuten</span><span class="pill">Glycin · Asparaginsäure · Lysin</span></div>
     <div class="hero-tools"><button id="themeToggle" type="button" aria-pressed="false">🌙 Dunkelmodus</button><button id="printButton" type="button">🖨️ Drucken / PDF</button></div>
-    <div class="progress-panel"><div class="progress-stats"><p id="progressLabel">0 von 6 Selbstchecks gelöst</p><span class="xp-pill" id="xpLabel">0 / 600 XP</span></div><div class="progress-track" role="progressbar" aria-label="Gelöste Selbstchecks" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><div class="progress-fill" id="progressFill"></div></div></div>
+    <div class="progress-panel"><div class="progress-stats"><p id="progressLabel">0 von 8 XP-Aufgaben gelöst</p><span class="xp-pill" id="xpLabel">0 / 800 XP</span></div><div class="progress-track" role="progressbar" aria-label="Gelöste Selbstchecks" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0"><div class="progress-fill" id="progressFill"></div></div></div>
   </div></header>
-  <nav aria-label="Seitennavigation"><div class="wrap"><a href="#lernlandkarte">Start</a><a href="#wissen">1 · Wissen</a><a href="#labor">2 · pH-Labor</a><a href="#feld">3 · Elektrisches Feld</a><a href="#aufgaben">4 · Üben</a><a href="#quellen">Quellen</a><span class="nav-score" id="navScoreBadge">0 / 6</span></div></nav>
+  <nav aria-label="Seitennavigation"><div class="wrap"><a href="#lernlandkarte">Start</a><a href="#wissen">1 · Wissen</a><a href="#labor">2 · pH-Labor</a><a href="#feld">3 · Elektrisches Feld</a><a href="#aufgaben">4 · Üben</a><a href="#quellen">Quellen</a><span class="nav-score" id="navScoreBadge">0 / 8</span></div></nav>
   <main class="wrap">
     <div id="jsNotice" class="callout" role="status"><p><strong>Interaktionen sind hier nicht verfügbar.</strong> Diese Datei wird wahrscheinlich nur als Vorschau angezeigt. Öffne die Lernseite über einen Weblink in Safari; dann funktionieren pH-Regler und „Prüfen“-Knöpfe.</p></div>
     <section id="lernlandkarte" class="map-section" aria-labelledby="mapTitle">
@@ -101,7 +102,7 @@
 
     <section id="aufgaben">
       <h2>4 · Jetzt bist du dran</h2>
-      <p class="section-lead">Nutze die Erklärungen und das pH-Labor. Nach jeder Antwort erhältst du eine kurze Rückmeldung. Jeder richtig gelöste Selbstcheck zählt 100 XP; insgesamt sind 600 XP möglich. AFB bezeichnet den Anforderungsbereich.</p>
+      <p class="section-lead">Nutze die Erklärungen und das pH-Labor. Nach jeder Antwort erhältst du eine kurze Rückmeldung. Die acht eindeutig prüfbaren Aufgaben geben je 100 XP; insgesamt sind 800 XP möglich. Die Rückmeldung zur Freitextaufgabe ist eine Hilfe und vergibt keine XP. AFB bezeichnet den Anforderungsbereich.</p>
       <div class="panel">
         <div class="task" id="task1"><div class="task-title">Aufgabe 1 · Was bedeutet pI?</div><p>Wähle die fachlich richtige Aussage.</p><div class="options"><label class="option"><input type="radio" name="q1" value="a">Am pI hat jedes Molekül keinerlei elektrische Ladung.</label><label class="option"><input type="radio" name="q1" value="b">Am pI ist die mittlere Nettoladung der Aminosäure 0.</label><label class="option"><input type="radio" name="q1" value="c">Am pI sind alle Gruppen vollständig deprotoniert.</label></div><button class="primary" type="button" data-check="1">Prüfen</button><p class="feedback" id="feedback1" aria-live="polite"></p></div>
         <div class="task" id="task2"><div class="task-title">Aufgabe 2 · Was bedeutet −0,01 e?</div><p>Im Labor wird für eine Aminosäure die mittlere Ladung −0,01 e angezeigt. Was bedeutet das?</p><div class="options"><label class="option"><input type="radio" name="q2" value="a">Ein einzelnes Molekül besitzt ein Hundertstel eines Elektrons.</label><label class="option"><input type="radio" name="q2" value="b">Die durchschnittliche Ladung vieler Moleküle ist leicht negativ und nahe 0.</label><label class="option"><input type="radio" name="q2" value="c">Alle Moleküle sind stark negativ geladen.</label></div><button class="primary" type="button" data-check="2">Prüfen</button><p class="feedback" id="feedback2" aria-live="polite"></p></div>
@@ -109,6 +110,10 @@
         <div class="task" id="task4"><div class="task-title">Aufgabe 4 · Transfer: elektrisches Feld</div><p>Eine Lösung mit Lysin hat pH 7. Der pI von Lysin liegt bei etwa 9,73. Welche Bewegung erwartest du im elektrischen Feld?</p><div class="options"><label class="option"><input type="radio" name="q4" value="a">Zur positiven Elektrode (Anode)</label><label class="option"><input type="radio" name="q4" value="b">Zur negativen Elektrode (Kathode)</label><label class="option"><input type="radio" name="q4" value="c">Im Mittel keine gerichtete Wanderung</label></div><button class="primary" type="button" data-check="4">Prüfen</button><p class="feedback" id="feedback4" aria-live="polite"></p></div>
         <div class="task" id="task5"><div class="task-title">Aufgabe 5 · Eigene Begründung</div><p>Erkläre in zwei Sätzen, warum Lysin bei pH 7 zur negativen Elektrode wandert. Nutze die Begriffe <em>pI</em>, <em>positiv</em> und <em>Kathode</em>.</p><textarea id="reflection" class="answer-input" rows="3" aria-label="Eigene Begründung" placeholder="Meine Erklärung …"></textarea><div class="print-lines" aria-hidden="true"></div><div class="task-actions" style="margin-top:10px"><button class="primary" type="button" data-check="5">Prüfen</button><span class="small">Die automatische Prüfung erkennt Kerngedanken, aber nicht jede mögliche Formulierung.</span></div><p class="feedback" id="feedback5" aria-live="polite"></p><details><summary>Musterlösung anzeigen</summary><p>Der pH-Wert 7 liegt unter dem pI von Lysin (ungefähr 9,73). Deshalb ist Lysin im Durchschnitt positiv geladen und wandert zur negativen Kathode.</p></details></div>
         <div class="task" id="task6"><div class="task-title">Aufgabe 6 · Drei Aminosäuren vergleichen</div><p>Alle drei Aminosäuren befinden sich in einer Lösung mit pH 7. Ordne ihre durchschnittliche Ladung zu. Nutze dazu die pI-Werte im Labor.</p><div class="match-grid"><label>Glycin<select id="matchGly"><option value="">Bitte wählen</option><option value="positive">positiv</option><option value="negative">negativ</option><option value="zero">ungefähr 0</option></select></label><label>Asparaginsäure<select id="matchAsp"><option value="">Bitte wählen</option><option value="positive">positiv</option><option value="negative">negativ</option><option value="zero">ungefähr 0</option></select></label><label>Lysin<select id="matchLys"><option value="">Bitte wählen</option><option value="positive">positiv</option><option value="negative">negativ</option><option value="zero">ungefähr 0</option></select></label></div><button class="primary" type="button" data-check="6">Prüfen</button><p class="feedback" id="feedback6" aria-live="polite"></p><details><summary>Begründung anzeigen</summary><p>pH 7 liegt über dem pI von Glycin (5,97) und Asparaginsäure (ungefähr 2,98). Beide sind im Durchschnitt negativ geladen. pH 7 liegt unter dem pI von Lysin (ungefähr 9,73); Lysin ist im Durchschnitt positiv geladen.</p></details></div>
+        <div class="challenge-label">Interaktive Challenges</div>
+        <div class="task" id="task7"><div class="task-title">Aufgabe 7 · Aminosäuren verschieben</div><p>Alle drei Aminosäuren befinden sich bei <strong>pH 6</strong> im elektrischen Feld. Ziehe jede Karte mit dem Finger oder der Maus an den Ort, zu dem sie im Mittel wandert. Glycin liegt dabei ungefähr an seinem pI. Mit einer Tastatur kannst du eine Karte fokussieren und mit ← oder → verschieben.</p><div class="drag-bank" id="dragBank" data-dropzone="bank" aria-label="Ausgangsbereich der Aminosäuren"><button class="aa-card" type="button" data-aa="asp" aria-label="Asparaginsäure verschieben">Asparaginsäure</button><button class="aa-card" type="button" data-aa="gly" aria-label="Glycin verschieben">Glycin</button><button class="aa-card" type="button" data-aa="lys" aria-label="Lysin verschieben">Lysin</button></div><div class="drop-grid"><div class="drop-zone" data-dropzone="kathode"><strong>Kathode (−)</strong><small>Hier sammeln sich im Mittel positive Aminosäuren.</small></div><div class="drop-zone" data-dropzone="mitte"><strong>Mitte</strong><small>Hier bleibt eine Aminosäure nahe ihrem pI im Mittel.</small></div><div class="drop-zone" data-dropzone="anode"><strong>Anode (+)</strong><small>Hier sammeln sich im Mittel negative Aminosäuren.</small></div></div><button class="primary" type="button" data-check="7">Prüfen</button><p class="feedback" id="feedback7" aria-live="polite"></p></div>
+        <div class="task" id="task8"><div class="task-title">Aufgabe 8 · pH-Detektiv</div><p>Löse drei kurze Fälle. Vergleiche jeweils pH-Wert und pI und entscheide, wohin die Aminosäure wandert.</p><div class="detective-card"><span class="small" id="detectiveRound">Runde 1 von 3</span><strong id="detectiveCase"></strong></div><div class="options"><label class="option"><input type="radio" name="q8" value="kathode">Zur Kathode (−)</label><label class="option"><input type="radio" name="q8" value="mitte">Im Mittel keine gerichtete Wanderung</label><label class="option"><input type="radio" name="q8" value="anode">Zur Anode (+)</label></div><button class="primary" type="button" data-check="8">Prüfen</button><button class="secondary" id="detectiveNext" type="button" hidden>Nächster Fall →</button><p class="feedback" id="detectiveHint" aria-live="polite"></p><p class="feedback" id="feedback8" aria-live="polite"></p></div>
+        <div class="task" id="task9"><div class="task-title">Aufgabe 9 · Baue ein Zwitterion</div><p>Glycin soll am pI gleichzeitig eine positive und eine negative Gruppe tragen. Wähle die Form von Amino- und Carboxylgruppe aus. Die Gesamtladung wird sofort angezeigt.</p><div class="puzzle-grid"><label>Aminogruppe<select id="puzzleAmine"><option value="">Bitte wählen</option><option value="plus">–NH₃⁺ (+1 e)</option><option value="zero">–NH₂ (0 e)</option></select></label><label>Carboxylgruppe<select id="puzzleCarboxyl"><option value="">Bitte wählen</option><option value="zero">–COOH (0 e)</option><option value="minus">–COO⁻ (−1 e)</option></select></label></div><div class="puzzle-result" id="puzzleCharge" aria-live="polite">Gesamtladung: noch offen</div><div><button class="primary" type="button" data-check="9">Prüfen</button></div><p class="feedback" id="feedback9" aria-live="polite"></p></div>
         <div class="task"><button type="button" class="secondary" id="resetTasks">Antworten zurücksetzen</button><span class="small">Deine Eingaben bleiben nur auf dieser geöffneten Seite.</span></div>
       </div>
     </section>
@@ -204,18 +209,19 @@
       requestAnimationFrame(tick);
     }
     function setSolved(n,ok){
+      if(n===5){$(`#task${n}`).classList.toggle('task-solved',ok);return}
       if(ok)solved.add(n);else solved.delete(n);
       const count=solved.size;
-      $('#progressLabel').textContent=`${count} von 6 Selbstchecks gelöst`;
-      $('#xpLabel').textContent=`${count*100} / 600 XP`;
-      $('#navScoreBadge').textContent=`${count} / 6`;
-      $('#progressFill').style.width=`${count/6*100}%`;
+      $('#progressLabel').textContent=`${count} von 8 XP-Aufgaben gelöst`;
+      $('#xpLabel').textContent=`${count*100} / 800 XP`;
+      $('#navScoreBadge').textContent=`${count} / 8`;
+      $('#progressFill').style.width=`${count/8*100}%`;
       $('.progress-track').setAttribute('aria-valuenow',String(count));
       $(`#task${n}`).classList.toggle('task-solved',ok);
-      if(count===6&&!celebrated){celebrated=true;celebrate()}
-      if(count<6)celebrated=false;
+      if(count===8&&!celebrated){celebrated=true;celebrate()}
+      if(count<8)celebrated=false;
     }
-    function feedback(n,ok,text){const el=$(`#feedback${n}`);el.textContent=ok?`${text} · 100 XP für diesen Selbstcheck.`:text;el.className=`feedback ${ok?'good':'try'}`;setSolved(n,ok)}
+    function feedback(n,ok,text){const el=$(`#feedback${n}`);el.textContent=ok&&n!==5?`${text} · 100 XP für diesen Selbstcheck.`:text;el.className=`feedback ${ok?'good':'try'}`;setSolved(n,ok)}
     function clearFeedback(n){const el=$(`#feedback${n}`);el.textContent='';el.className='feedback';setSolved(n,false)}
     function checkReflection(value){
       const t=value.toLocaleLowerCase('de').replace(/\s+/g,' ').trim();
@@ -230,6 +236,96 @@
       if(missing.length)return {ok:false,text:`Ergänze noch, ${missing.join('; ')}. Prüfe danach deine Erklärung erneut.`};
       return {ok:true,text:'Deine Erklärung enthält die drei wichtigen Gedanken: pH 7 liegt unter dem pI, Lysin ist positiv geladen und wandert zur negativen Kathode. Vergleiche sie auch mit der Musterlösung.'};
     }
+    const dragBank=$('#dragBank');
+    const aminoCards=[...document.querySelectorAll('.aa-card')];
+    const dropAreas=[...document.querySelectorAll('[data-dropzone]')];
+    let activeDrag=null;
+    function dragTargetAt(x,y,card){
+      card.style.pointerEvents='none';
+      const target=document.elementFromPoint(x,y)?.closest('[data-dropzone]')||null;
+      card.style.pointerEvents='';
+      return target;
+    }
+    function clearDropGlow(){dropAreas.forEach(area=>area.classList.remove('over'))}
+    function placeCard(card,area){area.appendChild(card);clearFeedback(7)}
+    aminoCards.forEach(card=>{
+      card.addEventListener('pointerdown',event=>{
+        if(event.pointerType==='mouse'&&event.button!==0)return;
+        activeDrag={card,x:event.clientX,y:event.clientY,scrollY:window.scrollY,moved:false};
+        card.setPointerCapture(event.pointerId);
+        card.classList.add('dragging');
+        event.preventDefault();
+      });
+      card.addEventListener('pointermove',event=>{
+        if(!activeDrag||activeDrag.card!==card)return;
+        if(event.clientY>window.innerHeight-65)window.scrollBy(0,14);
+        else if(event.clientY<80)window.scrollBy(0,-14);
+        const dx=event.clientX-activeDrag.x,dy=event.clientY-activeDrag.y+window.scrollY-activeDrag.scrollY;
+        if(Math.hypot(dx,dy)>5)activeDrag.moved=true;
+        if(activeDrag.moved){card.style.transform=`translate(${dx}px,${dy}px)`;const target=dragTargetAt(event.clientX,event.clientY,card);dropAreas.forEach(area=>area.classList.toggle('over',area===target))}
+      });
+      function endDrag(event){
+        if(!activeDrag||activeDrag.card!==card)return;
+        const target=activeDrag.moved&&event.type==='pointerup'?dragTargetAt(event.clientX,event.clientY,card):null;
+        card.style.transform='';card.classList.remove('dragging');clearDropGlow();activeDrag=null;
+        if(target)placeCard(card,target);
+      }
+      card.addEventListener('pointerup',endDrag);
+      card.addEventListener('pointercancel',endDrag);
+      card.addEventListener('keydown',event=>{
+        if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+        event.preventDefault();
+        const order=['bank','kathode','mitte','anode'];
+        const current=order.indexOf(card.parentElement.dataset.dropzone);
+        const next=Math.max(0,Math.min(order.length-1,current+(event.key==='ArrowRight'?1:-1)));
+        if(next!==current)placeCard(card,document.querySelector(`[data-dropzone="${order[next]}"]`));
+        card.focus();
+      });
+    });
+    function checkDrag(){
+      const names={asp:'Asparaginsäure',gly:'Glycin',lys:'Lysin'};
+      const correct={asp:'anode',gly:'mitte',lys:'kathode'};
+      const unplaced=aminoCards.filter(card=>card.parentElement===dragBank);
+      if(unplaced.length){feedback(7,false,`Ziehe noch ${unplaced.map(card=>names[card.dataset.aa]).join(', ')} in einen Zielbereich.`);return}
+      const wrong=aminoCards.filter(card=>card.parentElement.dataset.dropzone!==correct[card.dataset.aa]);
+      feedback(7,wrong.length===0,wrong.length?`Prüfe noch ${wrong.map(card=>names[card.dataset.aa]).join(', ')}. Vergleiche pH 6 mit dem jeweiligen pI im Labor.`:'Richtig: Lysin wandert zur Kathode, Glycin bleibt ungefähr in der Mitte und Asparaginsäure wandert zur Anode.');
+    }
+    const detectiveCases=[
+      {name:'Asparaginsäure',ph:'7',pi:'2,98',route:'anode',why:'pH 7 liegt über dem pI. Die Aminosäure ist im Mittel negativ.'},
+      {name:'Lysin',ph:'7',pi:'9,73',route:'kathode',why:'pH 7 liegt unter dem pI. Die Aminosäure ist im Mittel positiv.'},
+      {name:'Glycin',ph:'5,97',pi:'5,97',route:'mitte',why:'Der pH-Wert entspricht dem pI. Im Mittel gibt es keine gerichtete Wanderung.'}
+    ];
+    let detectiveIndex=0,detectiveReady=false;
+    function renderDetective(){
+      const item=detectiveCases[detectiveIndex];
+      $('#detectiveRound').textContent=`Runde ${detectiveIndex+1} von 3`;
+      $('#detectiveCase').textContent=`${item.name} bei pH ${item.ph} (pI ≈ ${item.pi}): Wohin wandert es?`;
+      document.querySelectorAll('input[name=q8]').forEach(input=>{input.checked=false;input.disabled=false});
+      $('#detectiveHint').textContent='';$('#detectiveHint').className='feedback';
+      $('#detectiveNext').hidden=true;detectiveReady=false;
+    }
+    function checkDetective(){
+      if(detectiveReady)return;
+      const choice=document.querySelector('input[name=q8]:checked');
+      if(!choice){$('#detectiveHint').textContent='Wähle zuerst eine Richtung.';$('#detectiveHint').className='feedback try';return}
+      const item=detectiveCases[detectiveIndex];
+      if(choice.value!==item.route){$('#detectiveHint').textContent=`Noch nicht. ${item.why} Versuche es erneut.`;$('#detectiveHint').className='feedback try';return}
+      detectiveReady=true;
+      document.querySelectorAll('input[name=q8]').forEach(input=>input.disabled=true);
+      $('#detectiveHint').textContent=`Richtig! ${item.why}`;$('#detectiveHint').className='feedback good';
+      if(detectiveIndex===detectiveCases.length-1)feedback(8,true,'Alle drei Fälle gelöst. Du hast die Wanderungsrichtung sicher zugeordnet.');
+      else $('#detectiveNext').hidden=false;
+    }
+    $('#detectiveNext').addEventListener('click',()=>{if(detectiveReady&&detectiveIndex<detectiveCases.length-1){detectiveIndex++;renderDetective()}});
+    renderDetective();
+    function updatePuzzle(){
+      const amine=$('#puzzleAmine').value,carboxyl=$('#puzzleCarboxyl').value;
+      if(!amine||!carboxyl){$('#puzzleCharge').textContent='Gesamtladung: noch offen';return}
+      const charge=(amine==='plus'?1:0)+(carboxyl==='minus'?-1:0);
+      $('#puzzleCharge').textContent=`Gesamtladung: ${charge>0?'+':''}${charge} e`;
+    }
+    ['#puzzleAmine','#puzzleCarboxyl'].forEach(id=>$(id).addEventListener('change',()=>{updatePuzzle();clearFeedback(9)}));
+    updatePuzzle();
     document.querySelectorAll('[data-check]').forEach(b=>b.addEventListener('click',()=>{
       const n=Number(b.dataset.check);
       if(n===5){const result=checkReflection($('#reflection').value);feedback(5,result.ok,result.text);return}
@@ -241,10 +337,19 @@
         feedback(6,wrong.length===0,wrong.length?`Prüfe noch ${wrong.map(([name])=>name).join(', ')}: Vergleiche jeweils pH 7 mit dem pI im Labor.`:'Richtig. Glycin und Asparaginsäure sind bei pH 7 im Durchschnitt negativ, Lysin ist positiv geladen.');
         return;
       }
+      if(n===7){checkDrag();return}
+      if(n===8){checkDetective();return}
+      if(n===9){
+        const amine=$('#puzzleAmine').value,carboxyl=$('#puzzleCarboxyl').value;
+        if(!amine||!carboxyl){feedback(9,false,'Wähle zuerst beide Gruppen aus.');return}
+        const ok=amine==='plus'&&carboxyl==='minus';
+        feedback(9,ok,ok?'Richtig: –NH₃⁺ und –COO⁻ bilden zusammen ein Zwitterion mit Gesamtladung 0.':'Prüfe: Ein Zwitterion braucht gleichzeitig eine positive und eine negative Gruppe.');
+        return;
+      }
       const choice=document.querySelector(`input[name=q${n}]:checked`);if(!choice){feedback(n,false,'Wähle zuerst eine Antwort.');return}
       const ok=choice.value===(n===3?'a':'b');feedback(n,ok,ok?messages[n].good:messages[n].bad);
     }));
-    document.querySelectorAll('#aufgaben input[type=radio]').forEach(el=>el.addEventListener('change',()=>clearFeedback(Number(el.name.slice(1)))));
+    document.querySelectorAll('#aufgaben input[type=radio]').forEach(el=>el.addEventListener('change',()=>{if(el.name!=='q8')clearFeedback(Number(el.name.slice(1)))}));
     $('#reflection').addEventListener('input',()=>clearFeedback(5));
     ['#matchGly','#matchAsp','#matchLys'].forEach(id=>$(id).addEventListener('change',()=>clearFeedback(6)));
     function resetTask(n){
@@ -252,6 +357,9 @@
       task.querySelectorAll('input[type=radio]').forEach(el=>el.checked=false);
       task.querySelectorAll('select').forEach(el=>el.value='');
       task.querySelectorAll('textarea').forEach(el=>el.value='');
+      if(n===7)aminoCards.forEach(card=>dragBank.appendChild(card));
+      if(n===8){detectiveIndex=0;renderDetective()}
+      if(n===9)updatePuzzle();
       clearFeedback(n);
     }
     document.querySelectorAll('[data-check]').forEach(button=>{
@@ -261,12 +369,12 @@
       reset.addEventListener('click',()=>resetTask(n));
       button.insertAdjacentElement('afterend',reset);
     });
-    const levels={1:'AFB I',2:'AFB I',3:'AFB I–II',4:'AFB II',5:'AFB II–III',6:'AFB II'};
+    const levels={1:'AFB I',2:'AFB I',3:'AFB I–II',4:'AFB II',5:'AFB II–III',6:'AFB II',7:'AFB II',8:'AFB II–III',9:'AFB I–II'};
     Object.entries(levels).forEach(([n,label])=>{
       const badge=document.createElement('span');badge.className='level';badge.textContent=label;
       $(`#task${n} .task-title`).appendChild(badge);
     });
-    $('#resetTasks').addEventListener('click',()=>{for(let n=1;n<=6;n++)resetTask(n)});
+    $('#resetTasks').addEventListener('click',()=>{for(let n=1;n<=9;n++)resetTask(n)});
     update();
     document.querySelector('#jsNotice').hidden=true;
   })();
